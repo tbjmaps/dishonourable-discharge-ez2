@@ -1,0 +1,100 @@
+// Choreo version 1
+actor "angrycop"
+{
+  channel "angrycopchannel"
+  {
+    event speak "dd_angrycop.wentdownlike"
+    {
+      time 0.106667 4.577121
+      param "dd_angrycop.wentdownlike"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_angrycop.sleepitoff"
+    {
+      time 6.380000 9.723674
+      param "dd_angrycop.sleepitoff"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "p_bouncing"
+    {
+      time 0.020000 1.753334
+      param "p_bouncing"
+      absolutetags playback_time
+      {
+        "apex" 0.235294
+        "loop" 0.549020
+        "end" 0.764706
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.235294
+        "loop" 0.549020
+        "end" 0.764706
+      }
+      sequenceduration 1.733333
+    }
+    event sequence "LineIdle02"
+    {
+      time 1.773334 9.726667
+      param "LineIdle02"
+    }
+  }
+  faceposermodel "models\police.mdl"
+}
+
+actor "kungfucop"
+{
+  channel "kungfucopchannel"
+  {
+    event speak "dd_kungfucop.whatthehell"
+    {
+      time 4.560000 6.255057
+      param "dd_kungfucop.whatthehell"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "g_ez2_c0_guncop_panic"
+    {
+      time 4.553333 6.520000
+      param "g_ez2_c0_guncop_panic"
+      absolutetags playback_time
+      {
+        "apex" 0.206897
+        "accent" 0.362069
+        "loop" 0.500000
+        "end" 0.689655
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.206897
+        "accent" 0.362069
+        "loop" 0.500000
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+    event sequence "LineIdle02"
+    {
+      time 6.539999 9.746666
+      param "LineIdle02"
+    }
+  }
+  faceposermodel "models\police_female.mdl"
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

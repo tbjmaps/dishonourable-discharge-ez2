@@ -1,26 +1,3 @@
-
-"dd_angrycop.cantbelieve"
-{
-	"channel"		"CHAN_VOICE"
-	"volume"		"VOL_NORM"
-	"pitch"			"PITCH_NORM"
-
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"			"*dd/vo_angrycop_cantbelieve.wav"
-}
-
-"dd_angrycop.finalwarning"
-{
-	"channel"		"CHAN_VOICE"
-	"volume"		"VOL_NORM"
-	"pitch"			"PITCH_NORM"
-
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"			"*dd/vo_angrycop_finalwarning.wav"
-}
-
 "dd_angrycop.intro"
 {
 	"channel"		"CHAN_VOICE"
@@ -52,17 +29,6 @@
 	"soundlevel"	"SNDLVL_NORM"
 
 	"wave"			"*dd/vo_angrycop_overwatchcall.wav"
-}
-
-"dd_angrycop.staythere"
-{
-	"channel"		"CHAN_VOICE"
-	"volume"		"VOL_NORM"
-	"pitch"			"PITCH_NORM"
-
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"			"*dd/vo_angrycop_staythere.wav"
 }
 
 "dd_overwatch.guilty1"
@@ -118,4 +84,20 @@
 	"soundlevel"	"SNDLVL_NORM"
 
 	"wave"			"*dd/vo_kungfucop_whatthehell.wav"
+}
+
+"dd_angrycop.pushwarn"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"*dd/vo_angrycop_staythere.wav"
+		"wave"	"*dd/vo_angrycop_cantbelieve.wav"
+		"wave"	"*dd/vo_angrycop_finalwarning.wav"
+	}
+
 }

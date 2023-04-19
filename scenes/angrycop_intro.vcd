@@ -1,0 +1,80 @@
+// Choreo version 1
+actor "angrycop"
+{
+  channel "speech"
+  {
+    event speak "dd_angrycop.intro"
+    {
+      time 0.120000 7.492335
+      param "dd_angrycop.intro"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "hg_nod_no"
+    {
+      time 5.046667 7.380000
+      param "hg_nod_no"
+      absolutetags playback_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      sequenceduration 2.333333
+    }
+    event gesture "g_frustrated_point"
+    {
+      time 0.026667 2.160000
+      param "g_frustrated_point"
+      absolutetags playback_time
+      {
+        "in" 0.079365
+        "loop" 0.603175
+        "end" 0.698413
+        "out" 0.857143
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.079365
+        "loop" 0.603175
+        "end" 0.698413
+        "out" 0.857143
+      }
+      sequenceduration 2.133333
+    }
+    event speak "intro2"
+    {
+      time 7.656826 15.697348
+      param "dd_angrycop.intro2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "foldarms"
+    {
+      time 0.015873 15.793651
+      param "LineIdle02"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "98"
+  "CChoreoView" "84"
+}
+fps 60
+snap off
+ignorePhonemes off

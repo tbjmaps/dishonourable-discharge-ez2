@@ -1,0 +1,33 @@
+// Choreo version 1
+actor "angrycop"
+{
+  channel "push"
+  {
+    event speak "dd_angrycop.pushwarn"
+    {
+      time 0.173334 2.771678
+      param "dd_angrycop.pushwarn"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "pushseq"
+    {
+      time -0.073333 0.926667
+      param "pushplayer"
+      fixedlength
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
