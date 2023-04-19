@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "639"
+	"mapversion" "647"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "639"
+	"mapversion" "647"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -14128,6 +14128,8 @@ entity
 		"OnMapSpawn" "startup_fade,Fade,,0,-1"
 		"OnMapSpawn" "scene_angrycopintro,Start,,3,-1"
 		"OnMapSpawn" "startup_kickproxy,SetLegModel,models/weapons/ez1/v_kick_police.mdl,0,-1"
+		"OnMapSpawn" "can1,SetBodyGroup,LHand,0.2,-1"
+		"OnMapSpawn" "can1,SetParent,lcop1,0,-1"
 	}
 	"origin" "-1616 -440 56"
 	editor
