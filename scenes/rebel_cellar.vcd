@@ -1,0 +1,120 @@
+// Choreo version 1
+actor "male1"
+{
+  channel "male1channel"
+  {
+    event speak "thatwasweird"
+    {
+      time 0.133333 1.099864
+      param "dd_malerebel1.thatwasweird"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_malerebel1.whatdoyouthink"
+    {
+      time 3.653333 4.907210
+      param "dd_malerebel1.whatdoyouthink"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at male2"
+    {
+      time 1.120000 3.606667
+      param "male2"
+    }
+    event sequence "fold"
+    {
+      time -0.026667 5.806666
+      param "LineIdle02"
+    }
+    event speak "dd_malerebel1.theyllkillhim"
+    {
+      time 10.426667 12.464218
+      param "dd_malerebel1.theyllkillhim"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\humans\group01\male_01.mdl"
+}
+
+actor "male2"
+{
+  channel "male2channel"
+  {
+    event speak "dd_malerebel2.iknowright"
+    {
+      time 1.100000 3.607755
+      param "dd_malerebel2.iknowright"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_malerebel2.idunnobut"
+    {
+      time 4.946667 5.860953
+      param "dd_malerebel2.idunnobut"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at male1"
+    {
+      time 0.053333 1.060000
+      param "male1"
+    }
+    event lookat "Look at male1"
+    {
+      time 3.633333 4.920000
+      param "male1"
+    }
+    event speak "dd_malerebel2.whocares"
+    {
+      time 12.493334 15.497416
+      param "dd_malerebel2.whocares"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\humans\group01\male_02.mdl"
+}
+
+actor "radiowoman"
+{
+  channel "radiowomanchannel"
+  {
+    event speak "dd_femalerebel1.moreontheway"
+    {
+      time 5.766667 10.364218
+      param "dd_femalerebel1.moreontheway"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_femalerebel1.comeon"
+    {
+      time 15.513334 17.028437
+      param "dd_femalerebel1.comeon"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\humans\group01\female_01.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
