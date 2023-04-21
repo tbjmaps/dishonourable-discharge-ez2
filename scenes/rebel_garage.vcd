@@ -1,0 +1,66 @@
+// Choreo version 1
+actor "garagerebel1"
+{
+  channel "speech"
+  {
+    event speak "dd_dreamseq.fem_nowsthetime"
+    {
+      time 0.073333 3.260272
+      param "dd_dreamseq.fem_nowsthetime"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_dreamseq.fem_takethemout"
+    {
+      time 10.066667 15.630749
+      param "dd_dreamseq.fem_takethemout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\humans\group01\male_01.mdl"
+}
+
+actor "garagerebel2"
+{
+  channel "speech"
+  {
+    event speak "dd_dreamseq.male_elementsurprise"
+    {
+      time 3.346667 10.034014
+      param "dd_dreamseq.male_elementsurprise"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_dreamseq.male_takegun"
+    {
+      time 15.620000 19.277143
+      param "dd_dreamseq.male_takegun"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "smgdraw"
+    {
+      time 17.948599 19.281933
+      param "smgdraw"
+      fixedlength
+    }
+  }
+  faceposermodel "models\humans\group01\female_01.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "52"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,142 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8864"
+	"mapversion" "853"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "18520"
+	"mapversion" "853"
+	"classname" "worldspawn"
+	"chaptertitlenomessage" "1"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+	"vscriptlanguage_client" "-2"
+}
+entity
+{
+	"id" "18521"
+	"classname" "env_screeneffect"
+	"targetname" "garagescene_effect"
+	"type" "1"
+	"origin" "2155 95.5 671.309"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 7000]"
+	}
+}
+entity
+{
+	"id" "18523"
+	"classname" "env_soundscape"
+	"radius" "128"
+	"soundscape" "d1_canals_07a_warehouse"
+	"origin" "2193.5 158 654.727"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 9000]"
+	}
+}
+entity
+{
+	"id" "18534"
+	"classname" "player_speedmod"
+	"spawnflags" "2"
+	"targetname" "garageseq_speedmod"
+	"origin" "2142 79.5 685.237"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 8500]"
+	}
+}
+entity
+{
+	"id" "18536"
+	"classname" "env_screenoverlay"
+	"OverlayIndex" "-1"
+	"OverlayName1" "debug/yuv"
+	"OverlayTime1" "-1"
+	"OverlayTime10" "1.0"
+	"OverlayTime2" "1.0"
+	"OverlayTime3" "1.0"
+	"OverlayTime4" "1.0"
+	"OverlayTime5" "1.0"
+	"OverlayTime6" "1.0"
+	"OverlayTime7" "1.0"
+	"OverlayTime8" "1.0"
+	"OverlayTime9" "1.0"
+	"targetname" "garagescene_overlay"
+	"origin" "2218 187 650.353"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6000]"
+	}
+}
+entity
+{
+	"id" "18538"
+	"classname" "logic_playerproxy"
+	"SetMaxInputArmor" "100"
+	"SetSuitZoomFOV" "25"
+	"targetname" "garagescene_playerproxy"
+	"origin" "2246 223.5 649.102"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 8000]"
+	}
+}
+entity
+{
+	"id" "18540"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "garagescene_overlay,StartOverlays,,0,-1"
+		"OnMapSpawn" "garagescene_effect,StartEffect,,0,-1"
+		"OnMapSpawn" "garagescene_sc,Command,give item_suit,0,-1"
+		"OnMapSpawn" "garageseq_speedmod,ModifySpeed,0.5,0,-1"
+	}
+	"origin" "2286 225.5 650.342"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6500]"
+	}
+}
+entity
+{
+	"id" "18542"
+	"classname" "point_servercommand"
+	"targetname" "garagescene_sc"
+	"origin" "2345 217.5 649.744"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 7500]"
+	}
+}
