@@ -1,0 +1,97 @@
+// Choreo version 1
+actor "garagescene_cop1"
+{
+  channel "cop1"
+  {
+    event speak "dd_garageseq.cop_frybrains"
+    {
+      time 0.066667 3.544467
+      param "dd_garageseq.cop_frybrains"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_garageseq.cop_lightenup"
+    {
+      time 6.520000 12.673900
+      param "dd_garageseq.cop_lightenup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_garageseq.cop_didyouhear"
+    {
+      time 16.533333 24.893127
+      param "dd_garageseq.cop_didyouhear"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_garageseq.cop_whatyouwaitingfor"
+    {
+      time 28.619047 32.256485
+      param "dd_garageseq.cop_whatyouwaitingfor"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "garagescene_cop2"
+{
+  channel "cop2"
+  {
+    event speak "dd_garageseq.cop2_badtaste"
+    {
+      time 3.533334 6.549638
+      param "dd_garageseq.cop2_badtaste"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_garageseq.cop2_lotofgun"
+    {
+      time 12.783334 16.533356
+      param "dd_garageseq.cop2_lotofgun"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_garageseq.cop2_pressthebutton"
+    {
+      time 24.983334 28.539501
+      param "dd_garageseq.cop2_pressthebutton"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "garagescene_tortureguy"
+{
+  channel "tortureguy"
+  {
+    event speak "npc_citizen.no01"
+    {
+      time 28.547615 29.926958
+      param "npc_citizen.no01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
