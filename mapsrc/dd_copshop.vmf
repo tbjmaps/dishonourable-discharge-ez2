@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "679"
+	"mapversion" "693"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "679"
+	"mapversion" "693"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -27190,6 +27190,124 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	solid
+	{
+		"id" "36479"
+		side
+		{
+			"id" "14998"
+			"plane" "(316 1952 -64) (324 1952 -64) (324 1832 -64)"
+			vertices_plus
+			{
+				"v" "316 1952 -64"
+				"v" "324 1952 -64"
+				"v" "324 1832 -64"
+				"v" "316 1832 -64"
+			}
+			"material" "WOOD/WOODWALL032G"
+			"uaxis" "[1 0 0 -112] 0.25"
+			"vaxis" "[0 -1 0 160] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14999"
+			"plane" "(316 1832 -192) (324 1832 -192) (324 1952 -192)"
+			vertices_plus
+			{
+				"v" "316 1832 -192"
+				"v" "324 1832 -192"
+				"v" "324 1952 -192"
+				"v" "316 1952 -192"
+			}
+			"material" "WOOD/WOODWALL032G"
+			"uaxis" "[1 0 0 -112] 0.25"
+			"vaxis" "[0 -1 0 160] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15000"
+			"plane" "(316 1952 -64) (316 1832 -64) (316 1832 -192)"
+			vertices_plus
+			{
+				"v" "316 1952 -64"
+				"v" "316 1832 -64"
+				"v" "316 1832 -192"
+				"v" "316 1952 -192"
+			}
+			"material" "WOOD/WOODWALL032G"
+			"uaxis" "[0 1 0 80] 0.25"
+			"vaxis" "[0 0 -1 -256] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15001"
+			"plane" "(324 1952 -192) (324 1832 -192) (324 1832 -64)"
+			vertices_plus
+			{
+				"v" "324 1952 -192"
+				"v" "324 1832 -192"
+				"v" "324 1832 -64"
+				"v" "324 1952 -64"
+			}
+			"material" "WOOD/WOODWALL032G"
+			"uaxis" "[0 1 0 80] 0.25"
+			"vaxis" "[0 0 -1 -256] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15002"
+			"plane" "(324 1952 -64) (316 1952 -64) (316 1952 -192)"
+			vertices_plus
+			{
+				"v" "324 1952 -64"
+				"v" "316 1952 -64"
+				"v" "316 1952 -192"
+				"v" "324 1952 -192"
+			}
+			"material" "WOOD/WOODWALL032G"
+			"uaxis" "[1 0 0 -112] 0.25"
+			"vaxis" "[0 0 -1 -256] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15003"
+			"plane" "(324 1832 -192) (316 1832 -192) (316 1832 -64)"
+			vertices_plus
+			{
+				"v" "324 1832 -192"
+				"v" "316 1832 -192"
+				"v" "316 1832 -64"
+				"v" "324 1832 -64"
+			}
+			"material" "WOOD/WOODWALL032G"
+			"uaxis" "[1 0 0 -112] 0.25"
+			"vaxis" "[0 0 -1 -256] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 142 119"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 	group
 	{
 		"id" "32082"
@@ -28883,7 +29001,7 @@ entity
 	"classname" "info_overlay"
 	"angles" "0 0 0"
 	"BasisNormal" "0 0 1"
-	"BasisOrigin" "256 1792 -128"
+	"BasisOrigin" "376 1900 -128"
 	"BasisU" "1 0 -0"
 	"BasisV" "-0 1 0"
 	"EndU" "1"
@@ -28893,11 +29011,11 @@ entity
 	"sides" "11549"
 	"StartU" "0"
 	"StartV" "1"
-	"uv0" "-64 -80 0"
-	"uv1" "-64 80 0"
-	"uv2" "64 80 0"
-	"uv3" "64 -80 0"
-	"origin" "256 1792 -128"
+	"uv0" "-32 -80 0"
+	"uv1" "-32 80 0"
+	"uv2" "32 80 0"
+	"uv3" "32 -80 0"
+	"origin" "376 1900 -128"
 	editor
 	{
 		"color" "80 150 225"
@@ -46105,7 +46223,7 @@ entity
 	"model" "models/props_silo/wall_wires2.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "416 1600 -176"
+	"origin" "236 1600 -176"
 	editor
 	{
 		"color" "255 255 0"
@@ -47337,6 +47455,200 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "36384"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "0 0 1"
+	"BasisOrigin" "376 1740 -128"
+	"BasisU" "1 0 -0"
+	"BasisV" "-0 1 0"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "overlays/garagegroundmarking01f"
+	"sides" "11549"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-32 -80 0"
+	"uv1" "-32 80 0"
+	"uv2" "32 80 0"
+	"uv3" "32 -80 0"
+	"origin" "376 1740 -128"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1500 3500]"
+	}
+}
+entity
+{
+	"id" "36389"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "0 0 1"
+	"BasisOrigin" "376 1580 -128"
+	"BasisU" "1 0 -0"
+	"BasisV" "-0 1 0"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "overlays/garagegroundmarking01f"
+	"sides" "11549"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-32 -80 0"
+	"uv1" "-32 80 0"
+	"uv2" "32 80 0"
+	"uv3" "32 -80 0"
+	"origin" "376 1580 -128"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1500 3500]"
+	}
+}
+entity
+{
+	"id" "36398"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_interiors/vendingmachinesoda01a.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "492 1628 -144"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -5768]"
+	}
+}
+entity
+{
+	"id" "36408"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props/cs_office/vending_machine.mdl"
+	"skin" "1"
+	"solid" "6"
+	"origin" "440 1624 -188"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -5768]"
+	}
+}
+entity
+{
+	"id" "36419"
+	"classname" "light"
+	"_light" "225 225 255 25"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "436 1656 -144.524"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -5268]"
+	}
+}
+entity
+{
+	"id" "36427"
+	"classname" "infodecal"
+	"texture" "decals/bloodstain_002"
+	"origin" "486.134 1725.66 -192"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -4768]"
+	}
+}
+entity
+{
+	"id" "36440"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props/cs_office/light_security.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "700 1792 -57.5314"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -3768]"
+	}
+}
+entity
+{
+	"id" "36448"
+	"classname" "light"
+	"_light" "255 255 220 50"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "640 1792 -52.5446"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -3268]"
+	}
+}
+entity
+{
+	"id" "36463"
+	"classname" "light"
+	"_light" "225 225 255 25"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "488 1664 -144.524"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -5268]"
+	}
+}
+entity
+{
+	"id" "36476"
+	"classname" "infodecal"
+	"texture" "decals/plaster011a"
+	"origin" "260.261 1984 -161.263"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -2768]"
 	}
 }
 cameras
