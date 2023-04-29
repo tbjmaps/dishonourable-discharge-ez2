@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "923"
+	"mapversion" "926"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -162,7 +162,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "923"
+	"mapversion" "926"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -15384,12 +15384,12 @@ world
 		side
 		{
 			"id" "11589"
-			"plane" "(544 1104 -128) (536 1104 -128) (536 1104 -16)"
+			"plane" "(544 1104 -128) (384 1104 -128) (384 1104 -16)"
 			vertices_plus
 			{
 				"v" "544 1104 -128"
-				"v" "536 1104 -128"
-				"v" "536 1104 -16"
+				"v" "384 1104 -128"
+				"v" "384 1104 -16"
 				"v" "544 1104 -16"
 			}
 			"material" "CONCRETE/CONCRETEWALL059F"
@@ -15402,17 +15402,17 @@ world
 		side
 		{
 			"id" "11588"
-			"plane" "(536 1240 -128) (536 1104 -128) (544 1104 -128)"
+			"plane" "(384 1240 -128) (384 1104 -128) (544 1104 -128)"
 			vertices_plus
 			{
-				"v" "536 1240 -128"
-				"v" "536 1104 -128"
+				"v" "384 1240 -128"
+				"v" "384 1104 -128"
 				"v" "544 1104 -128"
 				"v" "544 1240 -128"
 			}
-			"material" "CONCRETE/CONCRETEWALL059F"
-			"uaxis" "[1 0 0 -128] 0.25"
-			"vaxis" "[0 -1 0 256] 0.25"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 -0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -15420,15 +15420,15 @@ world
 		side
 		{
 			"id" "11587"
-			"plane" "(544 1104 -16) (536 1104 -16) (536 1240 -16)"
+			"plane" "(544 1104 -16) (384 1104 -16) (384 1240 -16)"
 			vertices_plus
 			{
 				"v" "544 1104 -16"
-				"v" "536 1104 -16"
-				"v" "536 1240 -16"
+				"v" "384 1104 -16"
+				"v" "384 1240 -16"
 				"v" "544 1240 -16"
 			}
-			"material" "CONCRETE/CONCRETEWALL059F"
+			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -15438,13 +15438,13 @@ world
 		side
 		{
 			"id" "11586"
-			"plane" "(536 1104 -16) (536 1104 -128) (536 1240 -128)"
+			"plane" "(384 1104 -16) (384 1104 -128) (384 1240 -128)"
 			vertices_plus
 			{
-				"v" "536 1104 -16"
-				"v" "536 1104 -128"
-				"v" "536 1240 -128"
-				"v" "536 1240 -16"
+				"v" "384 1104 -16"
+				"v" "384 1104 -128"
+				"v" "384 1240 -128"
+				"v" "384 1240 -16"
 			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -15474,15 +15474,15 @@ world
 		side
 		{
 			"id" "11584"
-			"plane" "(536 1240 -128) (544 1240 -128) (544 1240 -16)"
+			"plane" "(384 1240 -128) (544 1240 -128) (544 1240 -16)"
 			vertices_plus
 			{
-				"v" "536 1240 -128"
+				"v" "384 1240 -128"
 				"v" "544 1240 -128"
 				"v" "544 1240 -16"
-				"v" "536 1240 -16"
+				"v" "384 1240 -16"
 			}
-			"material" "CONCRETE/CONCRETEWALL059F"
+			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -48401,7 +48401,7 @@ entity
 	"model" "models/props_combine/combine_dispenser.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "236 1192 -72"
+	"origin" "216 1192 -72"
 	editor
 	{
 		"color" "255 255 0"
@@ -48457,7 +48457,7 @@ entity
 	"model" "models/props_combine/combine_dispenser.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "236 1140 -72"
+	"origin" "216 1144 -72"
 	editor
 	{
 		"color" "255 255 0"
@@ -52965,7 +52965,7 @@ entity
 	"model" "models/props_combine/combine_door01.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-265.316 2312 -224"
+	"origin" "-264 2304 -224"
 	editor
 	{
 		"color" "255 255 0"
