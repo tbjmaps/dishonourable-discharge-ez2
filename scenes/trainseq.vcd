@@ -1,0 +1,249 @@
+// Choreo version 1
+actor "42cop"
+{
+  channel "voice"
+  {
+    event speak "dd_trainseq2.42_58withus"
+    {
+      time 0.060000 2.048821
+      param "dd_trainseq2.42_58withus"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_trainseq2.42_nothingyet"
+    {
+      time 7.653334 8.825942
+      param "dd_trainseq2.42_nothingyet"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_trainseq2.42_security"
+    {
+      time 17.286667 22.816530
+      param "dd_trainseq2.42_security"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "LineIdle02"
+    {
+      time 0.140000 17.213335
+      param "LineIdle02"
+    }
+    event gesture "g_head_forward"
+    {
+      time 0.257576 2.057576
+      param "g_head_forward"
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "accent" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "accent" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+    }
+    event gesture "hg_nod_no"
+    {
+      time 7.681818 10.015152
+      param "hg_nod_no"
+      absolutetags playback_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      sequenceduration 2.333333
+    }
+    event sequence "LineIdle01"
+    {
+      time 17.212122 23.242426
+      param "LineIdle01"
+    }
+    event gesture "G_noway_big"
+    {
+      time 17.318182 19.551516
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+    }
+    event lookat "Look at james"
+    {
+      time 2.090909 7.560606
+      param "james"
+    }
+    event lookat "Look at !player"
+    {
+      time -0.030303 2.090909
+      param "!player"
+    }
+    event lookat "Look at james"
+    {
+      time 10.136364 17.166668
+      param "james"
+    }
+    event lookat "Look at james"
+    {
+      time 23.363638 31.092806
+      param "james"
+    }
+    event gesture "g_shrug"
+    {
+      time 25.041668 26.741669
+      param "g_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+  }
+  faceposermodel "models\police.mdl"
+}
+
+actor "james"
+{
+  channel "voice"
+  {
+    event speak "dd_trainseq2.james_ar2s"
+    {
+      time 9.200000 17.095396
+      param "dd_trainseq2.james_ar2s"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_trainseq2.james_firepower"
+    {
+      time 22.933334 31.220568
+      param "dd_trainseq2.james_firepower"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at 42cop"
+    {
+      time 17.957144 22.680954
+      param "42cop"
+    }
+    event sequence "LineIdle04"
+    {
+      time -0.023809 10.095238
+      param "LineIdle04"
+    }
+    event gesture "G_what"
+    {
+      time 7.153209 9.961905
+      param "G_what"
+      absolutetags playback_time
+      {
+        "apex" 0.372583
+        "accent" 0.420846
+        "loop" 0.541504
+        "end" 0.662160
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event sequence "LineIdle03"
+    {
+      time 10.261905 17.928572
+      param "LineIdle03"
+    }
+    event lookat "Look at 42cop"
+    {
+      time 0.023809 2.047619
+      param "42cop"
+    }
+    event sequence "LineIdle02"
+    {
+      time 18.533333 31.233334
+      param "LineIdle02"
+    }
+    event gesture "g_rarmpump"
+    {
+      time 24.933334 29.483335
+      param "g_rarmpump"
+      absolutetags playback_time
+      {
+        "apex" 0.111506
+        "accent" 0.185844
+        "loop" 0.341952
+        "end" 0.371687
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.220588
+        "accent" 0.367647
+        "loop" 0.676471
+        "end" 0.735294
+      }
+      sequenceduration 2.300000
+    }
+    event speak "dd_trainseq2.james_howmuchdoesheknow"
+    {
+      time 2.202898 7.973057
+      param "dd_trainseq2.james_howmuchdoesheknow"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\humans\group01\male_02.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "92"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
