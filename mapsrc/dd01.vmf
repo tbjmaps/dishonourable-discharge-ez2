@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "2677"
+	"mapversion" "2684"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -210,7 +210,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "2677"
+	"mapversion" "2684"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -68507,6 +68507,104 @@ world
 	}
 	solid
 	{
+		"id" "165222"
+		side
+		{
+			"id" "44119"
+			"plane" "(5888 -2448 -264) (5888 -2544 -264) (6080 -2544 -264)"
+			vertices_plus
+			{
+				"v" "5888 -2448 -264"
+				"v" "5888 -2544 -264"
+				"v" "6080 -2544 -264"
+				"v" "6080 -2448 -264"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR003C"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "44118"
+			"plane" "(5888 -2544 -264) (5888 -2448 -264) (5888 -2448 -136)"
+			vertices_plus
+			{
+				"v" "5888 -2544 -264"
+				"v" "5888 -2448 -264"
+				"v" "5888 -2448 -136"
+				"v" "5888 -2544 -136"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR003C"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "44117"
+			"plane" "(5888 -2448 -264) (6080 -2448 -264) (5888 -2448 -136)"
+			vertices_plus
+			{
+				"v" "5888 -2448 -264"
+				"v" "6080 -2448 -264"
+				"v" "5888 -2448 -136"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR003C"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "44116"
+			"plane" "(6080 -2544 -264) (5888 -2544 -264) (5888 -2544 -136)"
+			vertices_plus
+			{
+				"v" "6080 -2544 -264"
+				"v" "5888 -2544 -264"
+				"v" "5888 -2544 -136"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR003C"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "44115"
+			"plane" "(5888 -2544 -136) (5888 -2448 -136) (6080 -2448 -264)"
+			vertices_plus
+			{
+				"v" "5888 -2544 -136"
+				"v" "5888 -2448 -136"
+				"v" "6080 -2448 -264"
+				"v" "6080 -2544 -264"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR003C"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 123 196"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
 		"id" "164907"
 		side
 		{
@@ -115509,6 +115607,7 @@ entity
 	"BaseSpeedModifier" "1.0"
 	"cansurrender" "1"
 	"citizentype" "Default"
+	"damagefilter" "df_none"
 	"DontPickupWeapons" "No"
 	"expressiontype" "Random"
 	"FriendlyFireOverride" "2"
@@ -123909,6 +124008,7 @@ entity
 	"angles" "0 90 0"
 	"BaseSpeedModifier" "1.0"
 	"CanOrderSurrender" "2"
+	"damagefilter" "df_none"
 	"DisablePlayerUse" "0"
 	"DontPickupWeapons" "1"
 	"DontUseSpeechSemaphore" "0"
@@ -131126,25 +131226,6 @@ entity
 }
 entity
 {
-	"id" "164903"
-	"classname" "prop_static"
-	"angles" "0 0 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_c17/handrail04_long.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "5884 -2608 -116"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -10768]"
-	}
-}
-entity
-{
 	"id" "164910"
 	"classname" "npc_combine_s"
 	"additionalequipment" "weapon_smg1"
@@ -131160,7 +131241,7 @@ entity
 	"rendercolor" "255 255 255"
 	"SetDynamicInteractions" "2"
 	"SetProficiencyOverride" "-1"
-	"spawnflags" "1573380"
+	"spawnflags" "516"
 	"waitingtorappel" "No"
 	"origin" "6228 -2832 -264"
 	editor
@@ -131188,7 +131269,7 @@ entity
 	"rendercolor" "255 255 255"
 	"SetDynamicInteractions" "2"
 	"SetProficiencyOverride" "-1"
-	"spawnflags" "1573380"
+	"spawnflags" "516"
 	"waitingtorappel" "No"
 	"origin" "6424 -2968 -264"
 	editor
@@ -131216,7 +131297,7 @@ entity
 	"rendercolor" "255 255 255"
 	"SetDynamicInteractions" "2"
 	"SetProficiencyOverride" "-1"
-	"spawnflags" "1573380"
+	"spawnflags" "516"
 	"waitingtorappel" "No"
 	"origin" "6400 -2688 -264"
 	editor
@@ -131841,6 +131922,99 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 -13268]"
+	}
+}
+entity
+{
+	"id" "164903"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_c17/handrail04_long.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "5884 -2608 -116"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -10768]"
+	}
+}
+entity
+{
+	"id" "165224"
+	"classname" "filter_damage_type"
+	"damagetype" "16777216"
+	"filtertype" "1"
+	"Negated" "Allow entities that match criteria"
+	"targetname" "df_none"
+	"origin" "5856 -2592 -128"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -3768]"
+	}
+}
+entity
+{
+	"id" "165233"
+	"classname" "ai_relationship"
+	"disposition" "1"
+	"Reciprocal" "0"
+	"spawnflags" "0"
+	"StartActive" "1"
+	"subject" "npc_combine_s"
+	"target" "!player"
+	"origin" "5840 -2708 -128"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -3268]"
+	}
+}
+entity
+{
+	"id" "165239"
+	"classname" "ai_relationship"
+	"disposition" "3"
+	"Reciprocal" "1"
+	"spawnflags" "0"
+	"StartActive" "1"
+	"subject" "42cop"
+	"target" "!player"
+	"origin" "5824 -2672 -128"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -2768]"
+	}
+}
+entity
+{
+	"id" "165264"
+	"classname" "ai_relationship"
+	"disposition" "1"
+	"Reciprocal" "0"
+	"spawnflags" "0"
+	"StartActive" "1"
+	"subject" "!player"
+	"target" "npc_combine_s"
+	"origin" "5864 -2664 -128"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -3268]"
 	}
 }
 cameras
