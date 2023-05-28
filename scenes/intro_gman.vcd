@@ -1,0 +1,80 @@
+// Choreo version 1
+actor "gman_intro"
+{
+  channel "voice"
+  {
+    event speak "dd_intro.gman_baddreams"
+    {
+      time 0.306667 3.415239
+      param "dd_intro.gman_baddreams"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.gman_somewouldsay"
+    {
+      time 3.473333 11.257822
+      param "dd_intro.gman_somewouldsay"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.gman_turnbackclock"
+    {
+      time 11.333333 21.494965
+      param "dd_intro.gman_turnbackclock"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.gman_myemployers"
+    {
+      time 21.600002 28.130615
+      param "dd_intro.gman_myemployers"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.gman_tipthebalance"
+    {
+      time 28.213335 36.154560
+      param "dd_intro.gman_tipthebalance"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.gman_accomplice"
+    {
+      time 36.206669 42.920139
+      param "dd_intro.gman_accomplice"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.gman_sleepbetter"
+    {
+      time 42.980000 50.686123
+      param "dd_intro.gman_sleepbetter"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.gman_wakeup"
+    {
+      time 50.820004 54.712250
+      param "dd_intro.gman_wakeup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
