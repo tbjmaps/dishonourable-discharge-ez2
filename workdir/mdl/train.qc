@@ -9,4 +9,4 @@ $scale	16
 $sequence idle	"ddtrain.smd"
 
 $scale	16
-$collisionmodel	"ddtrain_collision.smd" { $concave }
+$collisionmodel	"ddtrain_collision.smd" { $convex }
