@@ -1,0 +1,73 @@
+// Choreo version 1
+actor "cop_armoury1"
+{
+  channel "channel"
+  {
+    event speak "dd_intro.acops_notfixedityet"
+    {
+      time 0.060000 2.985715
+      param "dd_intro.acops_notfixedityet"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.acops_maintenanceonjob"
+    {
+      time 3.393333 5.262539
+      param "dd_intro.acops_maintenanceonjob"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.acops_toldyouso"
+    {
+      time 6.993334 8.943810
+      param "dd_intro.acops_toldyouso"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "cop_armoury2"
+{
+  channel "channel"
+  {
+    event speak "dd_intro.acops_nope"
+    {
+      time 3.006667 3.331746
+      param "dd_intro.acops_nope"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at cop_armoury1"
+    {
+      time 3.013333 5.519166
+      param "cop_armoury1"
+    }
+    event face "Face cop_armoury1"
+    {
+      time 2.986666 5.478889
+      param "cop_armoury1"
+    }
+    event firetrigger "explode"
+    {
+      time 5.540000 -1.000000
+      param "1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
