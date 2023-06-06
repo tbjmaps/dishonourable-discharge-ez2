@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "toiletcop"
+{
+  channel "chan"
+  {
+    event speak "dd_intro.toiletcop"
+    {
+      time 0.073333 2.497528
+      param "dd_intro.toiletcop"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
