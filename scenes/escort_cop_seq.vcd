@@ -1,0 +1,96 @@
+// Choreo version 1
+actor "cop_escort_1"
+{
+  channel "chan"
+  {
+    event speak "dd_intro.escortseq_cop_movealong"
+    {
+      time 0.026667 1.417415
+      param "dd_intro.escortseq_cop_movealong"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.escortseq_cop_gotonefor"
+    {
+      time 1.760000 3.457959
+      param "dd_intro.escortseq_cop_gotonefor"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "hg_nod_left"
+    {
+      time 1.773334 3.073334
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+  }
+}
+
+actor "cit_escort"
+{
+  channel "chan"
+  {
+    event gesture "hg_headshake"
+    {
+      time 3.466667 5.100000
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+    }
+  }
+}
+
+actor "deskcop"
+{
+  channel "chan"
+  {
+    event speak "dd_intro.deskseq_cop_takehimdown"
+    {
+      time 3.473333 5.458639
+      param "dd_intro.deskseq_cop_takehimdown"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

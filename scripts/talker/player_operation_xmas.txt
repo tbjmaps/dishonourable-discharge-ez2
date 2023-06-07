@@ -1,0 +1,113 @@
+//============================================================================================================
+// OPERATION XMAS
+//
+// A very silly christmas map
+//
+//============================================================================================================
+//============================================================================================================
+// BAD COP
+//============================================================================================================
+
+criterion "IsXmasMap" "map" "ez2_op_xmas*" required weight 5
+criterion "IsXmasMonth" "month" "12" required
+criterion "IsXmasDay" "day" "25" required
+criterion "IsXmasEveDay" "day" "24" required
+criterion "WeaponIsProtoAR2" "weapon" "weapon_ar2_proto" required
+
+response "XmasBadCopKilledEnemy"
+{
+	norepeat
+	speak "xmas_bc_filthyanimal" respeakdelay 30
+	speak "xmas_bc_happyholidays" respeakdelay 30
+	speak "xmas_bc_hohoho" respeakdelay 30
+	speak "xmas_bc_naughtylist" respeakdelay 30
+	speak "xmas_bc_getcoal" respeakdelay 30
+	speak "xmas_bc_nightmarebeforechristmas" respeakdelay 30
+	speak "xmas_bc_welcometotheparty" respeakdelay 30
+	speak "xmas_bc_betterwatchout" respeakdelay 30
+	speak "xmas_bc_thirstyformore" respeakdelay 30
+}
+
+rule BadCopTauntRebel_Chapter2
+{
+	criteria		IsBadCop IsXmasMap ConceptEnemyDead EnemyVisible LastSpoke25OrMore
+	response		XmasBadCopKilledEnemy
+}
+
+response "XmasBadCopFoundProtoAR2"
+{
+	norepeat
+	speak "xmas_bc_machinegun" respeakdelay 30
+}
+
+rule BadCopPickupAR2_XMAS
+{
+	criteria		IsBadCop IsXmasMap ConceptNewWeapon WeaponIsProtoAR2
+	response		XmasBadCopFoundProtoAR2
+}
+
+response "XmasBadCopFoundPulsePistol"
+{
+	norepeat
+	speak "xmas_bc_comintotown" respeakdelay 30
+}
+
+rule BadCopPickupPulsePistol_XMAS
+{
+	criteria		IsBadCop IsXmasMap ConceptNewWeapon WeaponIsPulsePistol
+	response		XmasBadCopFoundPulsePistol
+}
+
+// Responses for Christmas day
+response "XmasDayBadCopKilledCreature"
+{
+	norepeat
+	speak "xmas_bc_filthyanimal" respeakdelay 30
+}
+
+rule XmasDayBadCopKilledCreature
+{
+	criteria		IsBadCop ConceptEnemyDead EnemyVisible EnemyIsNotHumanoid IsXmasMonth IsXmasDay
+	response		XmasDayBadCopKilledCreature
+}
+
+response "XmasDayBadCopKilledGeneric"
+{
+	norepeat
+	speak "xmas_bc_happyholidays" respeakdelay 30
+	speak "xmas_bc_hohoho" respeakdelay 30
+}
+
+rule XmasDayBadCopKilledGeneric
+{
+	criteria		IsBadCop ConceptEnemyDead EnemyVisible IsXmasMonth IsXmasDay
+	response		XmasDayBadCopKilledGeneric
+}
+
+response "XmasDayBadCopKilledRevenge"
+{
+	norepeat
+	speak "xmas_bc_naughtylist" respeakdelay 30
+}
+
+rule XmasDayBadCopKilledRevenge
+{
+	criteria		IsBadCop ConceptEnemyDead EnemyVisible EnemyIsNPC EnemyRevenge HaventRemarkedDamageRecently IsXmasMonth IsXmasDay
+
+	// Don't do revenge again for some time
+	applyContext "enemy_revenge:0:45"
+
+	response		XmasDayBadCopKilledRevenge
+}
+
+response "XmasDayBadCopKilledMobbed"
+{
+	norepeat
+	speak "xmas_bc_plentyofgifts" respeakdelay 30
+}
+
+rule XmasDayBadCopKilledMobbed
+{
+	criteria		IsBadCop ConceptManyEnemies EnemyVisible JustStartedCombat HaventRemarkedDamageRecently IsXmasMonth IsXmasDay
+	response 		XmasDayBadCopKilledMobbed
+}

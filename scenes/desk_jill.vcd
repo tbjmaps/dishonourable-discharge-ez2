@@ -1,0 +1,79 @@
+// Choreo version 1
+actor "jill"
+{
+  channel "chan"
+  {
+    event speak "dd_intro.deskseq_jill_pleasehelp"
+    {
+      time 0.013333 7.902312
+      param "dd_intro.deskseq_jill_pleasehelp"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.deskseq_jill_dontjustdisappear"
+    {
+      time 10.713333 14.710068
+      param "dd_intro.deskseq_jill_dontjustdisappear"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "g_plead_01"
+    {
+      time 10.766667 13.253333
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.218175
+        "accent" 0.354535
+        "loop" 0.545438
+        "end" 0.681797
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+actor "deskcop"
+{
+  channel "chan"
+  {
+    event speak "dd_intro.deskseq_cop_noinfo"
+    {
+      time 7.893333 10.662313
+      param "dd_intro.deskseq_cop_noinfo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dd_intro.deskseq_cop_leavebefore"
+    {
+      time 14.753333 17.204762
+      param "dd_intro.deskseq_cop_leavebefore"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    active "0"
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

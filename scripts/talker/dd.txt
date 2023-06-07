@@ -1,0 +1,14 @@
+criterion "IsBenchCop" "classname" "dd_bench_cop" required
+
+response "BenchCopResponse"
+{
+	scene "scenes/benchcop_bloodsugarresponse.vcd"
+}
+
+
+rule BenchCop_Use
+{
+	criteria		IsBenchCop ConceptTalkUse
+	response		BenchCopResponse
+}
+
