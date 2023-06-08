@@ -1,4 +1,7 @@
 criterion "IsBenchCop" "classname" "dd_bench_cop" required
+criterion "IsMuteCop" "classname" "dd_mute_cop" required
+criterion "IsCellCit1" "classname" "dd_cell1_cit" required
+
 
 response "BenchCopResponse"
 {
@@ -12,3 +15,27 @@ rule BenchCop_Use
 	response		BenchCopResponse
 }
 
+response "NoResponse"
+{
+
+}
+
+rule MuteCop_All
+{
+	criteria		IsMuteCop
+	response 		NoResponse
+}
+
+response "Cell1CitHarass"
+{
+	sequential
+	norepeat
+	scene "scenes/cell1cit_response1.vcd"
+	scene "scenes/cell1cit_response2.vcd"
+}
+
+rule CellCit1_Use
+{
+	criteria IsCellCit1 ConceptTalkUse
+	response Cell1CitHarass
+}
