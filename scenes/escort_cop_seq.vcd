@@ -1,5 +1,5 @@
 // Choreo version 1
-actor "cop_escort_1"
+actor "cop_escort1"
 {
   channel "chan"
   {
@@ -64,6 +64,11 @@ actor "cit_escort"
         "extreme" 0.416667
         "end" 0.625000
       }
+    }
+    event firetrigger "jill_fuckoff"
+    {
+      time 1.553333 -1.000000
+      param "1"
     }
   }
 }
