@@ -1,0 +1,85 @@
+// stunstick
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HL2_StunBaton"
+	"viewmodel"				"models/weapons/ez1/v_stunbaton.mdl"
+	"playermodel"			"models/weapons/w_stunbaton.mdl"
+	"anim_prefix"			"stunbaton"
+	"bucket"				"0"
+	"bucket_position"		"3"
+	"bucket_360"				"2"
+	"bucket_position_360"		"0"
+
+	"clip_size"				"-1"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"weight"				"0"
+	"item_flags"			"0"
+
+	"MeleeWeapon"			"1"
+
+	"BuiltRightHanded" "1"
+	"AllowFlipping" "1"
+
+	"AlwaysFirstDraw" "0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+
+		"single_shot"		"Weapon_StunStick.Swing"
+		"melee_miss"		"Weapon_StunStick.Melee_Miss"
+		"melee_hit"			"Weapon_StunStick.Melee_Hit"
+		"melee_hit_world"	"Weapon_StunStick.Melee_HitWorld"
+		"special1"			"Weapon_StunStick.Charge"
+		"special2"			"Weapon_StunStick.Charged_Hit"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"ez2_WeaponIcons" [!$DECK]
+				"font"		"ez2_WeaponIcons_Deck" [$DECK]
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"ez2_WeaponIconsSelected" [!$DECK]
+				"font"		"ez2_WeaponIconsSelected_Deck" [$DECK]
+				"character"	"a"
+		}
+		"weapon_small"
+		{
+				"font"		"ez2_WeaponIconsSmall" [!$DECK]
+				"font"		"ez2_WeaponIconsSmall_Deck" [$DECK]
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons" [!$DECK]
+				"font"		"WeaponIcons_Deck" [$DECK]
+				"character"	"n"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"192"
+				"y"			"0"
+				"width"		"64"
+				"height"	"64"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"192"
+				"y"			"0"
+				"width"		"64"
+				"height"	"64"
+		}
+	}
+}
