@@ -1,0 +1,55 @@
+"dd00b.RainyTown"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"d1_trainstation.QuietCourtyard"
+		"volume"	"0.6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"*ambient/water/water_flow_loop1.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+}
+
+"dd00b.RainyTownCovered"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"d1_trainstation.QuietCourtyard"
+		"volume"	"0.6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"*ambient/water/water_run1.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"5, 10"
+		"volume"	"0.6"
+		"pitch"		"90,105"
+		"position"	"random"	
+		"rndwave"
+		{
+			"wave"	"ambient/water/distant_drip1.wav"
+			"wave"	"ambient/water/distant_drip2.wav"
+			"wave"	"ambient/water/distant_drip3.wav"
+			"wave"	"ambient/water/distant_drip4.wav"
+		}
+		
+	}
+}
