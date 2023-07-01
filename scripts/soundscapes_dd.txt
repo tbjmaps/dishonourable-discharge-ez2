@@ -53,3 +53,77 @@
 		
 	}
 }
+
+"dd00b.RainyInside"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"eli_01_lower_corridor_1"
+		"volume"	"0.6"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"*ambient/water/water_run1.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"5, 10"
+		"volume"	"0.4"
+		"pitch"		"90,105"
+		"position"	"random"	
+		"rndwave"
+		{
+			"wave"	"ambient/water/distant_drip1.wav"
+			"wave"	"ambient/water/distant_drip2.wav"
+			"wave"	"ambient/water/distant_drip3.wav"
+			"wave"	"ambient/water/distant_drip4.wav"
+		}
+		
+	}
+}
+
+"dd00b.RainyPipe"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.spooky_infested_pipe"
+		"volume"	"0.6"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"*ambient/water/water_run1.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"5, 10"
+		"volume"	"0.4"
+		"pitch"		"90,105"
+		"position"	"random"	
+		"rndwave"
+		{
+			"wave"	"ambient/water/distant_drip1.wav"
+			"wave"	"ambient/water/distant_drip2.wav"
+			"wave"	"ambient/water/distant_drip3.wav"
+			"wave"	"ambient/water/distant_drip4.wav"
+		}
+		
+	}
+}
