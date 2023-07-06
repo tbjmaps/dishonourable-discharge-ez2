@@ -1,0 +1,37 @@
+// Choreo version 1
+actor "intro_captcop"
+{
+  channel "voice"
+  {
+    event speak "dd00.captcop_insub"
+    {
+      time 0.053333 9.501565
+      param "dd00.captcop_insub"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at !player"
+    {
+      time 0.006666 9.526667
+      param "!player"
+    }
+    event sequence "LineIdle02"
+    {
+      time -0.000000 9.520000
+      param "LineIdle02"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

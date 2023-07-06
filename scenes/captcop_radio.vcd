@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "intro_captcop"
+{
+  channel "voice"
+  {
+    event speak "dd00.captcop_radio"
+    {
+      time 0.026667 5.810000
+      param "dd00.captcop_radio"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
