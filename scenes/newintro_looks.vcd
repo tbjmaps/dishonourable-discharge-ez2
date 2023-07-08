@@ -1,0 +1,173 @@
+// Choreo version 1
+actor "police_puppet"
+{
+  channel "choreo"
+  {
+    event lookat "lookattv"
+    {
+      time 0.026667 6.006668
+      param "!target1"
+    }
+    event lookat "Look at police_john"
+    {
+      time 6.026667 35.334110
+      param "police_john"
+    }
+    event sequence "sit"
+    {
+      time -0.045455 62.201294
+      param "d1_t01_BreakRoom_Sit02"
+    }
+    event speak "intro.58_samedream"
+    {
+      time 20.500002 25.945082
+      param "intro.58_samedream"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "hg_nod_yes"
+    {
+      time 20.424244 22.724245
+      param "hg_nod_yes"
+      absolutetags playback_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      sequenceduration 2.300000
+    }
+    event firetrigger "dreamseq"
+    {
+      time 23.469698 -1.000000
+      param "1"
+    }
+    event speak "intro.58_samedream2"
+    {
+      time 29.255409 33.527882
+      param "intro.58_samedream2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_whatifitwasme"
+    {
+      time 38.941559 43.086319
+      param "intro.58_whatifitwasme"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at !target2"
+    {
+      time 35.348488 39.000000
+      param "!target2"
+    }
+    event lookat "Look at police_john"
+    {
+      time 39.061302 61.249706
+      param "police_john"
+    }
+    event speak "intro.58_justsoangry"
+    {
+      time 54.333336 60.231205
+      param "intro.58_justsoangry"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "hg_headshake"
+    {
+      time 54.880959 58.704765
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.088989
+        "loop" 0.115686
+        "extreme" 0.177979
+        "end" 0.266968
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event speak "intro.58_shittyjob"
+    {
+      time 60.404762 63.845829
+      param "intro.58_shittyjob"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "dreamseq_pullaway"
+    {
+      time 30.238096 -1.000000
+      param "2"
+    }
+  }
+}
+
+actor "police_john"
+{
+  channel "voice"
+  {
+    event speak "intro.john_58wantedtoseeme"
+    {
+      time 18.000002 19.933064
+      param "intro.john_58wantedtoseeme"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.john_imsorry"
+    {
+      time 35.173164 36.975613
+      param "intro.john_imsorry"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.john_notyourfault"
+    {
+      time 43.214287 54.107349
+      param "intro.john_notyourfault"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.john_gotowork"
+    {
+      time 65.142860 67.650612
+      param "intro.john_gotowork"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
