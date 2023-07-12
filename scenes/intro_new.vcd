@@ -1,0 +1,184 @@
+// Choreo version 1
+actor "interrogationcop"
+{
+  channel "voice"
+  {
+    event speak "intro.cop_pleasestate"
+    {
+      time 2.186666 5.611609
+      param "intro.cop_pleasestate"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.cop_dontremember"
+    {
+      time 13.728335 17.218834
+      param "intro.cop_dontremember"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.cop_howdoyoufeelnow"
+    {
+      time 27.990000 29.605669
+      param "intro.cop_howdoyoufeelnow"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.cop_historyof"
+    {
+      time 37.344166 40.996410
+      param "intro.cop_historyof"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "looks"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 0.166667 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 6.833333 -1.000000
+      param "2"
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 21.541666 -1.000000
+      param "3"
+    }
+    event firetrigger "Firetrigger 4"
+    {
+      time 48.666668 -1.000000
+      param "4"
+    }
+    event firetrigger "Firetrigger 5"
+    {
+      time 56.291672 -1.000000
+      param "5"
+    }
+  }
+  channel "actions"
+  {
+    event lookat "Look at 58cop"
+    {
+      time 0.250000 18.541666
+      param "58cop"
+    }
+    event lookat "Look at !target1"
+    {
+      time 18.583334 38.916668
+      param "!target1"
+    }
+    event lookat "Look at 58cop"
+    {
+      time 39.125000 58.958336
+      param "58cop"
+    }
+  }
+}
+
+actor "58cop"
+{
+  channel "chan"
+  {
+    event speak "intro.58_badgerank"
+    {
+      time 6.654167 9.338385
+      param "intro.58_badgerank"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_notmuch"
+    {
+      time 20.720001 24.551294
+      param "intro.58_notmuch"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_angry"
+    {
+      time 32.949997 33.614532
+      param "intro.58_angry"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_introuble"
+    {
+      time 41.960831 44.677769
+      param "intro.58_introuble"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_monologue1"
+    {
+      time 49.960835 54.802197
+      param "intro.58_monologue1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_monologue2"
+    {
+      time 55.197510 56.497826
+      param "intro.58_monologue2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_monologue3"
+    {
+      time 58.114170 60.401337
+      param "intro.58_monologue3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.58_monologue4"
+    {
+      time 61.479168 64.172684
+      param "intro.58_monologue4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "seq"
+  {
+    event sequence "d1_t01_BreakRoom_Sit02"
+    {
+      time 0.100000 58.533337
+      param "d1_t01_BreakRoom_Sit02"
+    }
+  }
+  channel "looks"
+  {
+    event lookat "Look at interrogationcop"
+    {
+      time -0.166666 58.500000
+      param "interrogationcop"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "16"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

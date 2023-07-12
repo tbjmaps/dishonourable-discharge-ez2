@@ -127,3 +127,40 @@
 		
 	}
 }
+
+
+"intro.Atmospherics"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"d1_trainstation.Turnstyle"
+		"volume"	"0.25"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"		"*ambient/atmosphere/drone1lp.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"5, 10"
+		"volume"	"0.4"
+		"pitch"		"90,105"
+		"position"	"random"	
+		"rndwave"
+		{
+			"wave"	"*vaguevoices\short_whisper_01.wav"
+			"wave"	"*vaguevoices\short_whisper_02.wav"
+			"wave"	"*vaguevoices\short_whisper_03.wav"
+		}
+		
+	}
+}
