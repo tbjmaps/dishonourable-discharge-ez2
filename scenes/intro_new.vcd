@@ -120,7 +120,7 @@ actor "interrogationcop"
     }
     event sequence "d1_t01_BreakRoom_Sit02"
     {
-      time 44.642860 69.317451
+      time 44.642860 65.470222
       param "d1_t01_BreakRoom_Sit02"
     }
     event firetrigger "Firetrigger 5"
@@ -210,18 +210,38 @@ actor "58cop"
     }
     event lookat "Look at !target2"
     {
-      time 36.616669 60.338890
+      time 36.616669 53.443054
       param "!target2"
     }
     event sequence "adoorkick"
     {
-      time 65.081345 65.581345
+      time 66.581352 67.081352
       param "adoorkick"
     }
     event firetrigger "Firetrigger 7"
     {
-      time 64.658737 -1.000000
+      time 66.617073 -1.000000
       param "7"
+    }
+    event lookat "Look at !target5"
+    {
+      time 62.908875 67.735252
+      param "!target5"
+    }
+    event lookat "Look at interrogationcop"
+    {
+      time 53.536266 62.619598
+      param "interrogationcop"
+    }
+    event moveto "Moveto !target6"
+    {
+      time 67.723755 78.036255
+      param "!target6"
+    }
+    event firetrigger "Firetrigger 8"
+    {
+      time 71.119606 -1.000000
+      param "8"
     }
   }
   channel "seq"
@@ -236,7 +256,7 @@ actor "58cop"
   {
     event lookat "Look at interrogationcop"
     {
-      time -0.166666 58.500000
+      time -0.166666 36.458336
       param "interrogationcop"
     }
   }
@@ -248,7 +268,7 @@ scalesettings
   "ExpressionTool" "100"
   "RampTool" "100"
   "SceneRampTool" "100"
-  "CChoreoView" "28"
+  "CChoreoView" "32"
 }
 fps 60
 snap off
