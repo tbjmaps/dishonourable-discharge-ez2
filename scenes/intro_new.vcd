@@ -1,4 +1,9 @@
 // Choreo version 1
+event section "pausemove"
+{
+  time 32.666668 -1.000000
+  param "noaction"
+}
 actor "interrogationcop"
 {
   channel "voice"
@@ -13,7 +18,7 @@ actor "interrogationcop"
     }
     event speak "intro.cop_dontremember"
     {
-      time 13.728335 17.218834
+      time 11.006113 14.496612
       param "intro.cop_dontremember"
       fixedlength
       cctype "cc_master"
@@ -21,7 +26,7 @@ actor "interrogationcop"
     }
     event speak "intro.cop_howdoyoufeelnow"
     {
-      time 27.990000 29.605669
+      time 21.378889 22.994558
       param "intro.cop_howdoyoufeelnow"
       fixedlength
       cctype "cc_master"
@@ -29,8 +34,40 @@ actor "interrogationcop"
     }
     event speak "intro.cop_historyof"
     {
-      time 37.344166 40.996410
+      time 26.733057 30.385302
       param "intro.cop_historyof"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.cop_theculprits"
+    {
+      time 43.555553 49.465031
+      param "intro.cop_theculprits"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.cop_sorryforloss"
+    {
+      time 59.555569 61.154095
+      param "intro.cop_sorryforloss"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.cop_areyouok"
+    {
+      time 63.722214 66.810333
+      param "intro.cop_areyouok"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro.cop_everseen"
+    {
+      time 36.888893 39.952591
+      param "intro.cop_everseen"
       fixedlength
       cctype "cc_master"
       cctoken ""
@@ -50,35 +87,78 @@ actor "interrogationcop"
     }
     event firetrigger "Firetrigger 3"
     {
-      time 21.541666 -1.000000
+      time 16.375000 -1.000000
       param "3"
+    }
+    event moveto "Moveto !target3"
+    {
+      time 33.250000 34.130962
+      param "!target3"
+      param2 "Walk"
+      resumecondition
+    }
+    event sequence "buttonfront"
+    {
+      time 34.444447 37.055561
+      param "buttonfront"
+    }
+    event sequence "d1_t01_BreakRoom_Sit02"
+    {
+      time 0.087300 32.428570
+      param "d1_t01_BreakRoom_Sit02"
     }
     event firetrigger "Firetrigger 4"
     {
-      time 48.666668 -1.000000
+      time 37.222221 -1.000000
       param "4"
+    }
+    event moveto "Moveto !target4"
+    {
+      time 42.844444 44.011112
+      param "!target4"
+      resumecondition
+    }
+    event sequence "d1_t01_BreakRoom_Sit02"
+    {
+      time 44.642860 69.317451
+      param "d1_t01_BreakRoom_Sit02"
     }
     event firetrigger "Firetrigger 5"
     {
-      time 56.291672 -1.000000
+      time 43.500000 -1.000000
       param "5"
+    }
+    event firetrigger "Firetrigger 6"
+    {
+      time 53.472221 -1.000000
+      param "6"
     }
   }
   channel "actions"
   {
     event lookat "Look at 58cop"
     {
-      time 0.250000 18.541666
+      time 0.250000 25.624998
       param "58cop"
     }
     event lookat "Look at !target1"
     {
-      time 18.583334 38.916668
+      time 25.625000 29.750000
       param "!target1"
+    }
+    event lookat "Look at !target2"
+    {
+      time 32.708336 43.513878
+      param "!target2"
     }
     event lookat "Look at 58cop"
     {
-      time 39.125000 58.958336
+      time 29.916670 32.513889
+      param "58cop"
+    }
+    event lookat "Look at 58cop"
+    {
+      time 43.583332 81.125000
       param "58cop"
     }
   }
@@ -98,7 +178,7 @@ actor "58cop"
     }
     event speak "intro.58_notmuch"
     {
-      time 20.720001 24.551294
+      time 16.664444 19.059546
       param "intro.58_notmuch"
       fixedlength
       cctype "cc_master"
@@ -106,7 +186,7 @@ actor "58cop"
     }
     event speak "intro.58_angry"
     {
-      time 32.949997 33.614532
+      time 25.061106 25.725641
       param "intro.58_angry"
       fixedlength
       cctype "cc_master"
@@ -114,50 +194,41 @@ actor "58cop"
     }
     event speak "intro.58_introuble"
     {
-      time 41.960831 44.677769
+      time 31.071943 31.733711
       param "intro.58_introuble"
       fixedlength
       cctype "cc_master"
       cctoken ""
     }
-    event speak "intro.58_monologue1"
+    event speak "intro.58_noinever"
     {
-      time 49.960835 54.802197
-      param "intro.58_monologue1"
+      time 40.555557 42.413155
+      param "intro.58_noinever"
       fixedlength
       cctype "cc_master"
       cctoken ""
     }
-    event speak "intro.58_monologue2"
+    event lookat "Look at !target2"
     {
-      time 55.197510 56.497826
-      param "intro.58_monologue2"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
+      time 36.616669 60.338890
+      param "!target2"
     }
-    event speak "intro.58_monologue3"
+    event sequence "adoorkick"
     {
-      time 58.114170 60.401337
-      param "intro.58_monologue3"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
+      time 65.081345 65.581345
+      param "adoorkick"
     }
-    event speak "intro.58_monologue4"
+    event firetrigger "Firetrigger 7"
     {
-      time 61.479168 64.172684
-      param "intro.58_monologue4"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
+      time 64.658737 -1.000000
+      param "7"
     }
   }
   channel "seq"
   {
     event sequence "d1_t01_BreakRoom_Sit02"
     {
-      time 0.100000 58.533337
+      time 0.280553 63.311104
       param "d1_t01_BreakRoom_Sit02"
     }
   }
@@ -173,11 +244,11 @@ actor "58cop"
 
 scalesettings
 {
-  "CChoreoView" "16"
-  "SceneRampTool" "100"
-  "RampTool" "100"
-  "ExpressionTool" "100"
   "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "CChoreoView" "28"
 }
 fps 60
 snap off

@@ -143,7 +143,7 @@
 
 	"playlooping"
 	{
-		"volume"	"1.0"
+		"volume"	"0.4"
 		"wave"		"*ambient/atmosphere/drone1lp.wav"
 		"pitch"		"100"
 		"attenuation"	"0"
@@ -163,4 +163,26 @@
 		}
 		
 	}
+}
+
+"intro.Heartbeats"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"intro.Atmospherics"
+		"volume"	"0.25"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"		"*player/heartbeat1.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
 }
