@@ -186,3 +186,44 @@
 	}
 
 }
+
+"intro.Truck"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"*ambient\machines\diesel_engine_idle1.wav"
+		"pitch"		"125"
+		"attenuation"	"0"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"*ambient/levels/outland/ol04_gearloop.wav"
+		"pitch"		"125"
+		"attenuation"	"0"
+	}
+
+
+
+
+	"playrandom"
+	{
+		"time"		"5, 10"
+		"volume"	"1.0"
+		"pitch"		"90,105"
+		"position"	"random"	
+		"rndwave"
+		{
+			"wave"	"*ambient\levels\citadel\stalk_stalkertrainxtrabump02.wav"
+			"wave"	"*ambient\levels\citadel\stalk_stalkertrainxtrabump03.wav"
+		}
+		
+	}
+}
