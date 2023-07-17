@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "1052"
+	"mapversion" "1061"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -78,7 +78,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "1052"
+	"mapversion" "1061"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -44910,7 +44910,7 @@ entity
 	"spawnflags" "1"
 	connections
 	{
-		"OnMapSpawn" "relay_raidstart,Trigger,,0,-1"
+		"OnMapSpawn" "apc_ride_start_relay,Trigger,,0,-1"
 	}
 	"origin" "-3148 -728 144"
 	editor
@@ -53170,6 +53170,7 @@ entity
 		"OnTrigger" "fade_raidstart,Fade,,5.1,-1"
 		"OnTrigger" "cam_puppet_truckride,SetParentAttachment,eyes,5.05,-1"
 		"OnTrigger" "ag_truckidle,FadeOut,2,0,-1"
+		"OnTrigger" "ag_truckidle,FadeOut,3,5,-1"
 	}
 	"origin" "-3356 -231 8"
 	editor
@@ -54702,7 +54703,24 @@ entity
 entity
 {
 	"id" "38050"
-	"classname" "func_detail"
+	"classname" "func_brush"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"EFlags" "0"
+	"excludednpc" "npc_metropolice"
+	"InputFilter" "0"
+	"invert_exclusion" "0"
+	"origin" "-7100 -104 54"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"solidbsp" "0"
+	"Solidity" "1"
+	"spawnflags" "2"
+	"StartDisabled" "0"
+	"viewhideflags" "0"
+	"vrad_brush_cast_shadows" "0"
 	solid
 	{
 		"id" "38051"
@@ -54816,7 +54834,7 @@ entity
 		}
 		editor
 		{
-			"color" "0 180 0"
+			"color" "220 30 220"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -54934,14 +54952,14 @@ entity
 		}
 		editor
 		{
-			"color" "0 180 0"
+			"color" "220 30 220"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
 	}
 	editor
 	{
-		"color" "0 180 0"
+		"color" "220 30 220"
 		"visgroupid" "29"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
@@ -68369,6 +68387,155 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 -8268]"
+	}
+}
+entity
+{
+	"id" "38536"
+	"classname" "info_node_hint"
+	"angles" "0 0 0"
+	"hintactivity" "DD_Truck_Sit2"
+	"hintweight" "1.0"
+	"IgnoreFacing" "2"
+	"MaximumState" "3"
+	"MinimumState" "1"
+	"nodeFOV" "180"
+	"nodeid" "57"
+	"targetname" "hint_58_sittruck"
+	"TargetNode" "-1"
+	"origin" "-7132 -74 40"
+	editor
+	{
+		"color" "232 219 8"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -7268]"
+	}
+}
+entity
+{
+	"id" "38544"
+	"classname" "info_node_hint"
+	"angles" "0 180 0"
+	"hintactivity" "DD_Truck_Sit2"
+	"hintweight" "1.0"
+	"IgnoreFacing" "2"
+	"MaximumState" "3"
+	"MinimumState" "1"
+	"nodeFOV" "180"
+	"nodeid" "58"
+	"targetname" "hint_truckcop1"
+	"TargetNode" "-1"
+	"origin" "-7068 -110 40"
+	editor
+	{
+		"color" "232 219 8"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -7268]"
+	}
+}
+entity
+{
+	"id" "38548"
+	"classname" "info_node_hint"
+	"angles" "0 180 0"
+	"hintactivity" "DD_Truck_Sit2"
+	"hintweight" "1.0"
+	"IgnoreFacing" "2"
+	"MaximumState" "3"
+	"MinimumState" "1"
+	"nodeFOV" "180"
+	"nodeid" "59"
+	"targetname" "hint_truckcop2"
+	"TargetNode" "-1"
+	"origin" "-7068 -148 40"
+	editor
+	{
+		"color" "232 219 8"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -7268]"
+	}
+}
+entity
+{
+	"id" "38553"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "raid_actbusy,ForceNPCToActBusy,58cop_truck hint_58_sittruck,0,-1"
+		"OnMapSpawn" "raid_actbusy,ForceNPCToActBusy,truckcop1 hint_truckcop1,0,-1"
+		"OnMapSpawn" "raid_actbusy,ForceNPCToActBusy,truckcop2 hint_truckcop2,0,-1"
+	}
+	"origin" "-7117 -113 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -6768]"
+	}
+}
+entity
+{
+	"id" "38560"
+	"classname" "npc_metropolice"
+	"additionalequipment" "0"
+	"angles" "0 181.5 0"
+	"BaseSpeedModifier" "1.0"
+	"FriendlyFireOverride" "2"
+	"model" "models/police.mdl"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"ResponseContext" "classname:mutecop"
+	"SetDynamicInteractions" "2"
+	"SetGrenadeCapabilities" "None"
+	"SetGrenadeDropCapabilities" "7"
+	"SetProficiencyOverride" "-1"
+	"skin" "1"
+	"spawnflags" "516"
+	"targetname" "truckcop1"
+	"waitingtorappel" "No"
+	"origin" "-7072 -108 40"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -14768]"
+	}
+}
+entity
+{
+	"id" "38565"
+	"classname" "npc_metropolice"
+	"additionalequipment" "0"
+	"angles" "0 181.5 0"
+	"BaseSpeedModifier" "1.0"
+	"FriendlyFireOverride" "2"
+	"model" "models/police.mdl"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"ResponseContext" "classname:mutecop"
+	"SetDynamicInteractions" "2"
+	"SetGrenadeCapabilities" "None"
+	"SetGrenadeDropCapabilities" "7"
+	"SetProficiencyOverride" "-1"
+	"skin" "1"
+	"spawnflags" "516"
+	"targetname" "truckcop2"
+	"waitingtorappel" "No"
+	"origin" "-7072 -148 40"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -14768]"
 	}
 }
 cameras

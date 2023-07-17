@@ -1,12 +1,12 @@
 // Choreo version 1
-actor "interrogationcop"
+actor "58cop_truck"
 {
-  channel "actions"
+  channel "chan"
   {
-    event lookat "Look at 58cop"
+    event lookat "Look at !target1"
     {
-      time 0.250000 25.624998
-      param "58cop"
+      time -0.009259 6.787037
+      param "!target1"
     }
   }
 }

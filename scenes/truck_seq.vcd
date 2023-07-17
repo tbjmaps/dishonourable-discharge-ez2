@@ -1,0 +1,92 @@
+// Choreo version 1
+actor "58cop_truck"
+{
+  channel "chan"
+  {
+    event speak "intro.58_truck_promotion"
+    {
+      time 10.177778 12.746237
+      param "intro.58_truck_promotion"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at !target1"
+    {
+      time -0.009259 6.787037
+      param "!target1"
+    }
+    event lookat "Look at !target2"
+    {
+      time 6.814815 12.805556
+      param "!target2"
+    }
+    event lookat "Look at !target1"
+    {
+      time 12.842593 24.074076
+      param "!target1"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 22.259262 -1.000000
+      param "1"
+    }
+  }
+}
+
+actor "truckcop1"
+{
+  channel "chan"
+  {
+    event speak "intro.truck_howdoyoulike"
+    {
+      time 6.808518 9.441194
+      param "intro.truck_howdoyoulike"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "truckcop2"
+{
+  channel "chan"
+  {
+    event speak "intro.truck_wishtheywould"
+    {
+      time 15.591112 18.144400
+      param "intro.truck_wishtheywould"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "truckdriver"
+{
+  channel "chan"
+  {
+    event speak "intro.truck_driveralarm"
+    {
+      time 20.076851 20.531137
+      param "intro.truck_driveralarm"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "72"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
