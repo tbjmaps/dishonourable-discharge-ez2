@@ -46,6 +46,31 @@ actor "truckcop1"
       cctype "cc_master"
       cctoken ""
     }
+    event lookat "Look at !target3"
+    {
+      time 10.991025 16.512819
+      param "!target3"
+    }
+    event lookat "Look at 58cop_truck"
+    {
+      time 6.871794 10.987179
+      param "58cop_truck"
+    }
+    event lookat "Look at !target3"
+    {
+      time 0.012820 6.794871
+      param "!target3"
+    }
+    event lookat "Look at truckcop2"
+    {
+      time 16.483335 18.816668
+      param "truckcop2"
+    }
+    event lookat "Look at !target3"
+    {
+      time 18.957691 24.479485
+      param "!target3"
+    }
   }
 }
 
@@ -55,11 +80,16 @@ actor "truckcop2"
   {
     event speak "intro.truck_wishtheywould"
     {
-      time 15.591112 18.144400
+      time 15.787038 18.340326
       param "intro.truck_wishtheywould"
       fixedlength
       cctype "cc_master"
       cctoken ""
+    }
+    event lookat "Look at !target3"
+    {
+      time 0.216667 24.500002
+      param "!target3"
     }
   }
 }
@@ -81,7 +111,7 @@ actor "truckdriver"
 
 scalesettings
 {
-  "CChoreoView" "72"
+  "CChoreoView" "40"
   "RampTool" "100"
   "ExpressionTool" "100"
   "GestureTool" "100"
