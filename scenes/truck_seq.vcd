@@ -23,34 +23,41 @@ actor "58cop_truck"
     }
     event lookat "Look at !target1"
     {
-      time 12.842593 33.669312
+      time 12.866403 25.907410
       param "!target1"
     }
-    event firetrigger "Firetrigger 1"
+    event sequence "d1_t01_BreakRoom_Sit02"
     {
-      time 22.259262 -1.000000
-      param "1"
+      time 0.095238 40.785713
+      param "d1_t01_BreakRoom_Sit02"
     }
     event sequence "cover_noise"
     {
-      time 0.016667 9.316667
+      time 0.119048 9.419048
       param "cover_noise"
-      playoverscript
       fixedlength
     }
     event sequence "cover_noise"
     {
-      time 9.316667 18.616667
+      time 9.547619 18.847618
       param "cover_noise"
-      playoverscript
       fixedlength
     }
     event sequence "cover_noise"
     {
-      time 18.616669 27.916668
+      time 18.904762 28.204762
       param "cover_noise"
-      playoverscript
       fixedlength
+    }
+    event lookat "Look at !target2"
+    {
+      time 26.005291 29.662699
+      param "!target2"
+    }
+    event lookat "Look at !target1"
+    {
+      time 29.818783 40.859787
+      param "!target1"
     }
   }
 }
@@ -110,6 +117,11 @@ actor "truckcop1"
       param "cover_noise"
       fixedlength
     }
+    event sequence "d1_t01_BreakRoom_Sit02"
+    {
+      time 0.095238 28.166668
+      param "d1_t01_BreakRoom_Sit02"
+    }
   }
 }
 
@@ -130,6 +142,11 @@ actor "truckcop2"
       time 0.216667 24.500002
       param "!target3"
     }
+    event sequence "d1_t01_BreakRoom_Sit01_Idle"
+    {
+      time 0.095238 28.357141
+      param "d1_t01_BreakRoom_Sit01_Idle"
+    }
   }
 }
 
@@ -137,16 +154,34 @@ actor "truckdriver"
 {
   channel "chan"
   {
+    event speak "intro.truck_driveralarm"
+    {
+      time 28.023809 28.478096
+      param "intro.truck_driveralarm"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "d1_t01_TrainRide_Sit_Idle"
+    {
+      time 0.071428 33.666664
+      param "d1_t01_BreakRoom_Sit02"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 27.047619 -1.000000
+      param "1"
+    }
   }
 }
 
 scalesettings
 {
-  "CChoreoView" "28"
-  "RampTool" "100"
-  "ExpressionTool" "100"
-  "GestureTool" "100"
   "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "28"
 }
 fps 60
 snap off
