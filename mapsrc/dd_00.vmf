@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "1132"
+	"mapversion" "1134"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -84,7 +84,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "1132"
+	"mapversion" "1134"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -28189,6 +28189,10 @@ entity
 	"target2" "truck_target2"
 	"target3" "truck_target3"
 	"targetname" "scene_truck"
+	connections
+	{
+		"OnTrigger1" "relay_setupcrash,Enable,,0,-1"
+	}
 	"origin" "-7100.7 1142.36 48"
 	editor
 	{
@@ -67669,6 +67673,10 @@ entity
 	"spawnflags" "0"
 	"target" "pt_treadmill"
 	"targetname" "pt_treadmill1"
+	connections
+	{
+		"OnPass" "relay_setupcrash,Trigger,,0,-1"
+	}
 	"origin" "-7104 -3072 16"
 	editor
 	{
@@ -97783,6 +97791,23 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1000 -768]"
+	}
+}
+entity
+{
+	"id" "44729"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "1"
+	"targetname" "relay_setupcrash"
+	"origin" "-6888 3424 40.9609"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Relay is enabled when the choreo_scene finishes; triggered every time the treadmill teleports back. Will spawn the truck for the crash scene"
+		"logicalpos" "[1500 1500]"
 	}
 }
 cameras
