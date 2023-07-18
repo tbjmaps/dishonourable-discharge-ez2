@@ -1,0 +1,136 @@
+// Choreo version 1
+actor "58"
+{
+  channel "chan"
+  {
+    event speak "silly.skit"
+    {
+      time 0.705000 54.790871
+      param "silly.skit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "d1_t01_BreakRoom_Sit01_Idle"
+    {
+      time 0.033333 70.903336
+      param "d1_t01_BreakRoom_Sit02"
+    }
+    event sequence "cover_noise"
+    {
+      time 0.208334 9.508334
+      param "cover_noise"
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 9.666668 18.966667
+      param "cover_noise"
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 19.333332 28.633331
+      param "cover_noise"
+      fixedlength
+    }
+    event lookat "Look at !player"
+    {
+      time 0.083334 70.916656
+      param "!player"
+    }
+    event gesture "g_wave"
+    {
+      time 7.083334 9.383334
+      param "g_palm_out_high_r"
+      absolutetags playback_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "in" 0.352941
+        "loop" 0.779412
+        "end" 0.794118
+        "out" 0.808824
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "in" 0.352941
+        "loop" 0.390244
+        "end" 0.780488
+        "out" 0.808824
+      }
+      sequenceduration 2.766667
+    }
+    event gesture "hg_nod_left"
+    {
+      time 18.791666 20.091665
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+    }
+    event gesture "g_thumbsup"
+    {
+      time 52.125004 57.175003
+      param "g_thumbsup"
+      absolutetags playback_time
+      {
+        "apex" 0.120860
+        "accent" 0.228292
+        "loop" 0.235006
+        "end" 0.268579
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.310345
+        "accent" 0.586207
+        "loop" 0.603448
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+    event sequence "cover_noise"
+    {
+      time 28.916664 38.216663
+      param "cover_noise"
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 38.458328 47.758327
+      param "cover_noise"
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 47.791664 57.091663
+      param "cover_noise"
+      fixedlength
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "16"
+}
+fps 60
+snap off
+ignorePhonemes off

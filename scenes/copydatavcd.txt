@@ -1,12 +1,13 @@
 // Choreo version 1
-actor "58cop_truck"
+actor "58"
 {
   channel "chan"
   {
-    event lookat "Look at !target1"
+    event sequence "cover_noise"
     {
-      time 12.866403 25.907410
-      param "!target1"
+      time 19.333332 28.633331
+      param "cover_noise"
+      fixedlength
     }
   }
 }
