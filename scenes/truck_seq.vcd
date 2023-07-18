@@ -23,13 +23,34 @@ actor "58cop_truck"
     }
     event lookat "Look at !target1"
     {
-      time 12.842593 24.074076
+      time 12.842593 33.669312
       param "!target1"
     }
     event firetrigger "Firetrigger 1"
     {
       time 22.259262 -1.000000
       param "1"
+    }
+    event sequence "cover_noise"
+    {
+      time 0.016667 9.316667
+      param "cover_noise"
+      playoverscript
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 9.316667 18.616667
+      param "cover_noise"
+      playoverscript
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 18.616669 27.916668
+      param "cover_noise"
+      playoverscript
+      fixedlength
     }
   }
 }
@@ -71,6 +92,24 @@ actor "truckcop1"
       time 18.957691 24.479485
       param "!target3"
     }
+    event sequence "cover_noise"
+    {
+      time 9.465278 18.765278
+      param "cover_noise"
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 0.000000 9.300000
+      param "cover_noise"
+      fixedlength
+    }
+    event sequence "cover_noise"
+    {
+      time 18.909721 28.209721
+      param "cover_noise"
+      fixedlength
+    }
   }
 }
 
@@ -103,7 +142,7 @@ actor "truckdriver"
 
 scalesettings
 {
-  "CChoreoView" "40"
+  "CChoreoView" "28"
   "RampTool" "100"
   "ExpressionTool" "100"
   "GestureTool" "100"

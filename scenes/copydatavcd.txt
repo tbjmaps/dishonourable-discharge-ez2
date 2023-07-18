@@ -3,10 +3,11 @@ actor "truckcop1"
 {
   channel "chan"
   {
-    event lookat "Look at !target3"
+    event sequence "cover_noise"
     {
-      time 10.991025 16.512819
-      param "!target3"
+      time 9.465278 18.765278
+      param "cover_noise"
+      fixedlength
     }
   }
 }
