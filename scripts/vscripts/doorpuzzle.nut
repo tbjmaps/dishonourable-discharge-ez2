@@ -1,5 +1,8 @@
 const stuckThreshold = 0.01;
 
+const rotSpeedOpening = 90;
+const rotSpeedClosing = 720;
+
 stuckCounter <- 0;
 outpos <- 0.0;
 lastoutpos <- 0.0;
@@ -12,13 +15,16 @@ isLowSpeed <- false;
 // If the wheel is supposed to be turning (isMoving == true) but isn't (outpos hasn't changed significantly since last update), lock the wheel in place and fire User3 (effects + lock blocking prop in place) BUT ONLY if above 50% opening (don't want the player to get stuck)
 function Update() {
 
-/*
-	if (isMoving && (outpos>=0.5) && (isMovingDir == 1) && !isLowSpeed) {
-		// slow down the door during the last 50% of travel
-		EntFire("DoorPuz_Winch", "AddOutput", "speed 90", 0, self, self);
-		EntFire("DoorPuz_Winch", "SetPosition", 1, 0.1, self, self);
+	/* Not used anymore
 
-	} */
+		if (isMoving && (outpos>=0.5) && (isMovingDir == 1) && !isLowSpeed) {
+			// slow down the door during the last 50% of travel
+			EntFire("DoorPuz_Winch", "AddOutput", "speed 90", 0, self, self);
+			EntFire("DoorPuz_Winch", "SetPosition", 1, 0.1, self, self);
+
+		}
+
+	*/
 
 	if (isMoving && (outpos>=0.5)) {
 		printl("Lastpos " + lastoutpos + " Pos " + outpos);
@@ -45,7 +51,7 @@ function StartMove() {
 	if (!isLocked) {
 		isMoving = true;
 		isMovingDir = 1; // forward
-		EntFire("DoorPuz_Winch", "AddOutput", "speed 360", 0, self, self);
+		EntFire("DoorPuz_Winch", "AddOutput", "speed " + rotSpeedOpening, 0, self, self);
 		EntFire("DoorPuz_Winch", "SetPosition", 1, 0.1, self, self);
 
 		EntFire("doorpuz_sound_move", "PlaySound", null, 0, self, self);
@@ -104,7 +110,7 @@ function OnReachedPosition() {
 
 		!self.EmitSound("outland_04.gear_engage_lever");
 
-		EntFire("DoorPuz_Winch", "AddOutput", "speed 720", 0, self, self);
+		EntFire("DoorPuz_Winch", "AddOutput", "speed " + rotSpeedClosing, 0, self, self);
 		EntFire("DoorPuz_Winch", "SetPosition", 0, 0.1, self, self);
 		isMovingDir = 0; // backwards
 		return;
