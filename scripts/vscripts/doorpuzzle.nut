@@ -24,7 +24,7 @@ function Update() {
 
 		}
 
-	*/
+*/
 
 	if (isMoving && (outpos>=0.5)) {
 		printl("Lastpos " + lastoutpos + " Pos " + outpos);
@@ -54,7 +54,7 @@ function StartMove() {
 		EntFire("DoorPuz_Winch", "AddOutput", "speed " + rotSpeedOpening, 0, self, self);
 		EntFire("DoorPuz_Winch", "SetPosition", 1, 0.1, self, self);
 
-		EntFire("doorpuz_sound_move", "PlaySound", null, 0, self, self);
+		EntFire("rot_winch*", "StartForward", 0, 0, self, self);
 
 	}
 }
@@ -65,7 +65,8 @@ function LockPosition() {
 	printl("Door is now locked in place");
 	if (isLocked==false) {	
 
-		EntFire("doorpuz_sound_move", "StopSound"); // stop sound
+
+		EntFire("rot_winch*", "Stop", 0, 0, self, self);
 
 		EntFire("DoorPuz_Winch", "AddOutput", "speed 0", 0, self, self);
 		EntFire("DoorPuz_Winch", "SetPosition", outpos, 0.1, self, self);
@@ -86,7 +87,7 @@ function OnPosition() {
 	// Figure out output from X-angle
 	local angle = self.GetLocalAngles().x;
 	local maxangle = 720.0;
-	outpos = angle / maxangle;
+	outpos = (-angle) / maxangle; // flip 
 
 	// Clamp
 	if (outpos > 1) outpos=1;
@@ -106,13 +107,16 @@ function OnReachedPosition() {
 	if (isMoving && (isMovingDir == 1)) {
 		// We have reached full open, now move backwards again FAST 
 
-		EntFire("doorpuz_sound_move", "StopSound"); // stop sound
+		EntFire("rot_winch*", "Stop", 0, 0, self, self);
 
 		!self.EmitSound("outland_04.gear_engage_lever");
 
 		EntFire("DoorPuz_Winch", "AddOutput", "speed " + rotSpeedClosing, 0, self, self);
 		EntFire("DoorPuz_Winch", "SetPosition", 0, 0.1, self, self);
 		isMovingDir = 0; // backwards
+
+		EntFire("rot_winch*", "StartForward", 200, 0, self, self);
+
 		return;
 
 	}
@@ -120,6 +124,8 @@ function OnReachedPosition() {
 	if (isMoving && (isMovingDir == 0)) {
 		// We have reached full close, stop.
 		isMoving = false;
+		EntFire("rot_winch*", "Stop", 0, 0, self, self);
+
 		return;
 	}
 
