@@ -1,6 +1,6 @@
 const stuckThreshold = 0.01;
 
-const rotSpeedOpening = 90;
+const rotSpeedOpening = 180;
 const rotSpeedClosing = 720;
 
 stuckCounter <- 0;
@@ -85,9 +85,12 @@ function LockPosition() {
 function OnPosition() {
 	
 	// Figure out output from X-angle
-	local angle = self.GetLocalAngles().x;
+	local angle = self.GetLocalAngles().z;
+printl(angle);
 	local maxangle = 720.0;
 	outpos = (-angle) / maxangle; // flip 
+
+	printl(outpos);
 
 	// Clamp
 	if (outpos > 1) outpos=1;
