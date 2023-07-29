@@ -37962,3 +37962,2301 @@ Level flags = 0
 Total triangle count: 6003
 Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
 2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 224 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (196440 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 912 texinfos to 586
+Reduced 105 texdatas to 96 (2716 bytes to 2355)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 199 portalclusters
+ 479 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2204 visible clusters (10.04%)
+Total clusters visible: 21945
+Average clusters visible: 110
+Building PAS...
+Average clusters audible: 158
+visdatasize:10422  compressed from 12736
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2260 faces
+3 degenerate faces
+184898 square feet [26625446.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2257 patches before subdivision
+27093 patches after subdivision
+37 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2394943, max 470
+transfer lists:  18.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25605, 22715, 18403)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3518, 3330, 2590)
+Build Patch/Sample Hash Table(s).....Done<0.0048 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  15/1024          720/49152    ( 1.5%) 
+brushes                530/8192         6360/98304    ( 6.5%) 
+brushsides            5154/65536       41232/524288   ( 7.9%) 
+planes                5338/65536      106760/1310720  ( 8.1%) 
+vertexes              3460/65536       41520/786432   ( 5.3%) 
+nodes                  690/65536       22080/2097152  ( 1.1%) 
+texinfos               586/12288       42192/884736   ( 4.8%) 
+texdata                 96/2048         3072/65536    ( 4.7%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2260/65536      126560/3670016  ( 3.4%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1747/65536       97832/3670016  ( 2.7%) 
+leaves                 706/65536       22592/2097152  ( 1.1%) 
+leaffaces             2671/65536        5342/131072   ( 4.1%) 
+leafbrushes           1033/65536        2066/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17750/512000      71000/2048000  ( 3.5%) 
+edges                10427/256000      41708/1024000  ( 4.1%) 
+LDR worldlights         37/65536        3256/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            219/32768        2190/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4182/65536        8364/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                13/8192         4576/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1395360/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10422/16777216 ( 0.1%) 
+entdata               [variable]       57381/393216   (14.6%) 
+LDR ambient table      706/65536        2824/262144   ( 1.1%) 
+HDR ambient table      706/65536        2824/262144   ( 1.1%) 
+LDR leaf ambient      1576/65536       44128/1835008  ( 2.4%) 
+HDR leaf ambient       706/65536       19768/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/15966    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      196440/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6312
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...10**** leaked ****
+Entity prop_static (2070.77 2458.13 33.36) leaked!
+--- MAP LEAKED ---
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+LoadPortals: couldn't read d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...10**** leaked ****
+Entity prop_static (2070.77 2458.13 33.36) leaked!
+--- MAP LEAKED ---
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+LoadPortals: couldn't read d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...10**** leaked ****
+Entity prop_static (2070.77 2458.13 33.36) leaked!
+--- MAP LEAKED ---
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+LoadPortals: couldn't read d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (197728 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 921 texinfos to 590
+Reduced 106 texdatas to 97 (2738 bytes to 2377)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 203 portalclusters
+ 486 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2379 visible clusters (10.50%)
+Total clusters visible: 22656
+Average clusters visible: 111
+Building PAS...
+Average clusters audible: 161
+visdatasize:10973  compressed from 12992
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2280 faces
+3 degenerate faces
+186413 square feet [26843488.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2277 patches before subdivision
+27277 patches after subdivision
+38 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2394544, max 470
+transfer lists:  18.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(26525, 23587, 18367)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3622, 3430, 2584)
+Build Patch/Sample Hash Table(s).....Done<0.0046 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  15/1024          720/49152    ( 1.5%) 
+brushes                533/8192         6396/98304    ( 6.5%) 
+brushsides            5174/65536       41392/524288   ( 7.9%) 
+planes                5350/65536      107000/1310720  ( 8.2%) 
+vertexes              3492/65536       41904/786432   ( 5.3%) 
+nodes                  695/65536       22240/2097152  ( 1.1%) 
+texinfos               590/12288       42480/884736   ( 4.8%) 
+texdata                 97/2048         3104/65536    ( 4.7%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2280/65536      127680/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1755/65536       98280/3670016  ( 2.7%) 
+leaves                 711/65536       22752/2097152  ( 1.1%) 
+leaffaces             2695/65536        5390/131072   ( 4.1%) 
+leafbrushes           1037/65536        2074/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17891/512000      71564/2048000  ( 3.5%) 
+edges                10509/256000      42036/1024000  ( 4.1%) 
+LDR worldlights         38/65536        3344/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            222/32768        2220/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4233/65536        8466/131072   ( 6.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                14/8192         4928/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1400156/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10973/16777216 ( 0.1%) 
+entdata               [variable]       58949/393216   (15.0%) 
+LDR ambient table      711/65536        2844/262144   ( 1.1%) 
+HDR ambient table      711/65536        2844/262144   ( 1.1%) 
+LDR leaf ambient      1631/65536       45668/1835008  ( 2.5%) 
+HDR leaf ambient       711/65536       19908/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17002    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      197728/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6381
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (197728 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 921 texinfos to 590
+Reduced 106 texdatas to 97 (2738 bytes to 2377)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 203 portalclusters
+ 486 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2379 visible clusters (10.50%)
+Total clusters visible: 22656
+Average clusters visible: 111
+Building PAS...
+Average clusters audible: 161
+visdatasize:10973  compressed from 12992
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2280 faces
+3 degenerate faces
+186413 square feet [26843488.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2277 patches before subdivision
+27277 patches after subdivision
+38 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2394544, max 470
+transfer lists:  18.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(26525, 23587, 18367)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3622, 3430, 2584)
+Build Patch/Sample Hash Table(s).....Done<0.0049 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  15/1024          720/49152    ( 1.5%) 
+brushes                533/8192         6396/98304    ( 6.5%) 
+brushsides            5174/65536       41392/524288   ( 7.9%) 
+planes                5350/65536      107000/1310720  ( 8.2%) 
+vertexes              3492/65536       41904/786432   ( 5.3%) 
+nodes                  695/65536       22240/2097152  ( 1.1%) 
+texinfos               590/12288       42480/884736   ( 4.8%) 
+texdata                 97/2048         3104/65536    ( 4.7%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2280/65536      127680/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1755/65536       98280/3670016  ( 2.7%) 
+leaves                 711/65536       22752/2097152  ( 1.1%) 
+leaffaces             2695/65536        5390/131072   ( 4.1%) 
+leafbrushes           1037/65536        2074/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17891/512000      71564/2048000  ( 3.5%) 
+edges                10509/256000      42036/1024000  ( 4.1%) 
+LDR worldlights         38/65536        3344/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            222/32768        2220/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4233/65536        8466/131072   ( 6.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                14/8192         4928/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1400156/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10973/16777216 ( 0.1%) 
+entdata               [variable]       58949/393216   (15.0%) 
+LDR ambient table      711/65536        2844/262144   ( 1.1%) 
+HDR ambient table      711/65536        2844/262144   ( 1.1%) 
+LDR leaf ambient      1631/65536       45668/1835008  ( 2.5%) 
+HDR leaf ambient       711/65536       19908/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17002    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      197728/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6381
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (197728 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 922 texinfos to 591
+Reduced 107 texdatas to 98 (2760 bytes to 2399)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 203 portalclusters
+ 486 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2379 visible clusters (10.50%)
+Total clusters visible: 22656
+Average clusters visible: 111
+Building PAS...
+Average clusters audible: 161
+visdatasize:10973  compressed from 12992
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2280 faces
+3 degenerate faces
+186413 square feet [26843488.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2277 patches before subdivision
+27277 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2394502, max 470
+transfer lists:  18.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(26111, 23114, 18264)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3569, 3369, 2570)
+Build Patch/Sample Hash Table(s).....Done<0.0048 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  15/1024          720/49152    ( 1.5%) 
+brushes                533/8192         6396/98304    ( 6.5%) 
+brushsides            5174/65536       41392/524288   ( 7.9%) 
+planes                5350/65536      107000/1310720  ( 8.2%) 
+vertexes              3492/65536       41904/786432   ( 5.3%) 
+nodes                  695/65536       22240/2097152  ( 1.1%) 
+texinfos               591/12288       42552/884736   ( 4.8%) 
+texdata                 98/2048         3136/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2280/65536      127680/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1755/65536       98280/3670016  ( 2.7%) 
+leaves                 711/65536       22752/2097152  ( 1.1%) 
+leaffaces             2695/65536        5390/131072   ( 4.1%) 
+leafbrushes           1037/65536        2074/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17891/512000      71564/2048000  ( 3.5%) 
+edges                10509/256000      42036/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            222/32768        2220/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4233/65536        8466/131072   ( 6.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1400156/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10973/16777216 ( 0.1%) 
+entdata               [variable]       59533/393216   (15.1%) 
+LDR ambient table      711/65536        2844/262144   ( 1.1%) 
+HDR ambient table      711/65536        2844/262144   ( 1.1%) 
+LDR leaf ambient      1636/65536       45808/1835008  ( 2.5%) 
+HDR leaf ambient       711/65536       19908/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17196    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      197728/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6381
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (197728 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 922 texinfos to 591
+Reduced 107 texdatas to 98 (2760 bytes to 2399)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 203 portalclusters
+ 486 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2379 visible clusters (10.50%)
+Total clusters visible: 22656
+Average clusters visible: 111
+Building PAS...
+Average clusters audible: 161
+visdatasize:10973  compressed from 12992
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2280 faces
+3 degenerate faces
+186413 square feet [26843488.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2277 patches before subdivision
+27277 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2394448, max 470
+transfer lists:  18.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25825, 22844, 18190)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3547, 3350, 2567)
+Build Patch/Sample Hash Table(s).....Done<0.0048 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  15/1024          720/49152    ( 1.5%) 
+brushes                533/8192         6396/98304    ( 6.5%) 
+brushsides            5174/65536       41392/524288   ( 7.9%) 
+planes                5350/65536      107000/1310720  ( 8.2%) 
+vertexes              3492/65536       41904/786432   ( 5.3%) 
+nodes                  695/65536       22240/2097152  ( 1.1%) 
+texinfos               591/12288       42552/884736   ( 4.8%) 
+texdata                 98/2048         3136/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2280/65536      127680/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1755/65536       98280/3670016  ( 2.7%) 
+leaves                 711/65536       22752/2097152  ( 1.1%) 
+leaffaces             2695/65536        5390/131072   ( 4.1%) 
+leafbrushes           1037/65536        2074/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17891/512000      71564/2048000  ( 3.5%) 
+edges                10509/256000      42036/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            222/32768        2220/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4233/65536        8466/131072   ( 6.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1400156/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10973/16777216 ( 0.1%) 
+entdata               [variable]       59795/393216   (15.2%) 
+LDR ambient table      711/65536        2844/262144   ( 1.1%) 
+HDR ambient table      711/65536        2844/262144   ( 1.1%) 
+LDR leaf ambient      1634/65536       45752/1835008  ( 2.5%) 
+HDR leaf ambient       711/65536       19908/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17196    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      197728/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6381
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (197728 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 922 texinfos to 591
+Reduced 107 texdatas to 98 (2760 bytes to 2399)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 203 portalclusters
+ 486 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2379 visible clusters (10.50%)
+Total clusters visible: 22656
+Average clusters visible: 111
+Building PAS...
+Average clusters audible: 161
+visdatasize:10973  compressed from 12992
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2280 faces
+3 degenerate faces
+186413 square feet [26843488.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2277 patches before subdivision
+27277 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2394448, max 470
+transfer lists:  18.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25825, 22844, 18190)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3547, 3350, 2567)
+Build Patch/Sample Hash Table(s).....Done<0.0046 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  15/1024          720/49152    ( 1.5%) 
+brushes                533/8192         6396/98304    ( 6.5%) 
+brushsides            5174/65536       41392/524288   ( 7.9%) 
+planes                5350/65536      107000/1310720  ( 8.2%) 
+vertexes              3492/65536       41904/786432   ( 5.3%) 
+nodes                  695/65536       22240/2097152  ( 1.1%) 
+texinfos               591/12288       42552/884736   ( 4.8%) 
+texdata                 98/2048         3136/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2280/65536      127680/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1755/65536       98280/3670016  ( 2.7%) 
+leaves                 711/65536       22752/2097152  ( 1.1%) 
+leaffaces             2695/65536        5390/131072   ( 4.1%) 
+leafbrushes           1037/65536        2074/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17891/512000      71564/2048000  ( 3.5%) 
+edges                10509/256000      42036/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            222/32768        2220/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4233/65536        8466/131072   ( 6.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1400156/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10973/16777216 ( 0.1%) 
+entdata               [variable]       59797/393216   (15.2%) 
+LDR ambient table      711/65536        2844/262144   ( 1.1%) 
+HDR ambient table      711/65536        2844/262144   ( 1.1%) 
+LDR leaf ambient      1634/65536       45752/1835008  ( 2.5%) 
+HDR leaf ambient       711/65536       19908/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17196    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      197728/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6381
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (197728 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 922 texinfos to 591
+Reduced 107 texdatas to 98 (2760 bytes to 2399)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 203 portalclusters
+ 486 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2379 visible clusters (10.50%)
+Total clusters visible: 22656
+Average clusters visible: 111
+Building PAS...
+Average clusters audible: 161
+visdatasize:10973  compressed from 12992
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2280 faces
+3 degenerate faces
+186413 square feet [26843488.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2277 patches before subdivision
+27277 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2394448, max 470
+transfer lists:  18.3 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25895, 22865, 18190)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3557, 3353, 2566)
+Build Patch/Sample Hash Table(s).....Done<0.0046 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  15/1024          720/49152    ( 1.5%) 
+brushes                533/8192         6396/98304    ( 6.5%) 
+brushsides            5174/65536       41392/524288   ( 7.9%) 
+planes                5350/65536      107000/1310720  ( 8.2%) 
+vertexes              3492/65536       41904/786432   ( 5.3%) 
+nodes                  695/65536       22240/2097152  ( 1.1%) 
+texinfos               591/12288       42552/884736   ( 4.8%) 
+texdata                 98/2048         3136/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2280/65536      127680/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1755/65536       98280/3670016  ( 2.7%) 
+leaves                 711/65536       22752/2097152  ( 1.1%) 
+leaffaces             2695/65536        5390/131072   ( 4.1%) 
+leafbrushes           1037/65536        2074/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17891/512000      71564/2048000  ( 3.5%) 
+edges                10509/256000      42036/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            222/32768        2220/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4233/65536        8466/131072   ( 6.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1400156/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10973/16777216 ( 0.1%) 
+entdata               [variable]       59815/393216   (15.2%) 
+LDR ambient table      711/65536        2844/262144   ( 1.1%) 
+HDR ambient table      711/65536        2844/262144   ( 1.1%) 
+LDR leaf ambient      1634/65536       45752/1835008  ( 2.5%) 
+HDR leaf ambient       711/65536       19908/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17196    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      197728/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6381
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0048 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       61211/393216   (15.6%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0050 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       61233/393216   (15.6%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0051 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       61233/393216   (15.6%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0055 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       61256/393216   (15.6%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0051 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       61829/393216   (15.7%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0048 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       61829/393216   (15.7%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0050 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       63069/393216   (16.0%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 222 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (198691 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 930 texinfos to 595
+Reduced 108 texdatas to 99 (2779 bytes to 2418)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+1 second elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 205 portalclusters
+ 488 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2409 visible clusters (10.46%)
+Total clusters visible: 23038
+Average clusters visible: 112
+Building PAS...
+Average clusters audible: 163
+visdatasize:10974  compressed from 13120
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2297 faces
+3 degenerate faces
+187410 square feet [26987168.00 square inches]
+46 Displacements
+44928 Square Feet [6469765.50 Square Inches]
+2294 patches before subdivision
+27118 patches after subdivision
+39 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2376856, max 470
+transfer lists:  18.1 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(25687, 22672, 18137)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3537, 3336, 2563)
+Build Patch/Sample Hash Table(s).....Done<0.0048 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                535/8192         6420/98304    ( 6.5%) 
+brushsides            5186/65536       41488/524288   ( 7.9%) 
+planes                5366/65536      107320/1310720  ( 8.2%) 
+vertexes              3521/65536       42252/786432   ( 5.4%) 
+nodes                  708/65536       22656/2097152  ( 1.1%) 
+texinfos               595/12288       42840/884736   ( 4.8%) 
+texdata                 99/2048         3168/65536    ( 4.8%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       49416/0           49416/0        ( 0.0%) 
+faces                 2297/65536      128632/3670016  ( 3.5%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1763/65536       98728/3670016  ( 2.7%) 
+leaves                 725/65536       23200/2097152  ( 1.1%) 
+leaffaces             2716/65536        5432/131072   ( 4.1%) 
+leafbrushes           1047/65536        2094/131072   ( 1.6%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            17999/512000      71996/2048000  ( 3.5%) 
+edges                10568/256000      42272/1024000  ( 4.1%) 
+LDR worldlights         39/65536        3432/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            221/32768        2210/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4215/65536        8430/131072   ( 6.4%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1401860/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       10974/16777216 ( 0.1%) 
+entdata               [variable]       63926/393216   (16.3%) 
+LDR ambient table      725/65536        2900/262144   ( 1.1%) 
+HDR ambient table      725/65536        2900/262144   ( 1.1%) 
+LDR leaf ambient      1680/65536       47040/1835008  ( 2.6%) 
+HDR leaf ambient       725/65536       20300/1835008  ( 1.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17198    ( 0.0%) 
+pakfile               [variable]        2644/0        ( 0.0%) 
+physics               [variable]      198691/4194304  ( 4.7%) 
+physics terrain       [variable]        6570/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 6423
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/dd_01/concrete/blendbunk_conc01_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend3_wvt_patch
+Patching WVT material: maps/dd_01/xen/ez2_xenwall_1_blend_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 302 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (230475 bytes)
+Placing static props...
+Error! To use model "models/tanker/tanker1.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker1.mdl"!
+Error! To use model "models/tanker/tanker2.mdl"
+      with prop_static, it must be compiled with $staticprop!
+Error loading studio model "models/tanker/tanker2.mdl"!
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 1129 texinfos to 689
+Reduced 114 texdatas to 104 (2955 bytes to 2549)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.prt
+ 228 portalclusters
+ 534 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 2605 visible clusters (9.71%)
+Total clusters visible: 26831
+Average clusters visible: 117
+Building PAS...
+Average clusters audible: 178
+visdatasize:13467  compressed from 14592
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+Error! Unable to load file "models/props_vehicles/deliveryvan.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/deliveryvan_glass.dx80.vtx"
+Error! Unable to load file "models/props_vehicles/longnose_truck.dx80.vtx"
+2537 faces
+3 degenerate faces
+197234 square feet [28401798.00 square inches]
+46 Displacements
+44285 Square Feet [6377109.50 Square Inches]
+2534 patches before subdivision
+29552 patches after subdivision
+42 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 2588420, max 473
+transfer lists:  19.7 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(29631, 26421, 19172)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(4098, 3852, 2687)
+Build Patch/Sample Hash Table(s).....Done<0.0051 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  16/1024          768/49152    ( 1.6%) 
+brushes                633/8192         7596/98304    ( 7.7%) 
+brushsides            5867/65536       46936/524288   ( 9.0%) 
+planes                5618/65536      112360/1310720  ( 8.6%) 
+vertexes              4017/65536       48204/786432   ( 6.1%) 
+nodes                  767/65536       24544/2097152  ( 1.2%) 
+texinfos               689/12288       49608/884736   ( 5.6%) 
+texdata                104/2048         3328/65536    ( 5.1%) 
+dispinfos               46/0            8096/0        ( 0.0%) 
+disp_verts            3726/0           74520/0        ( 0.0%) 
+disp_tris             5888/0           11776/0        ( 0.0%) 
+disp_lmsamples       47976/0           47976/0        ( 0.0%) 
+faces                 2537/65536      142072/3670016  ( 3.9%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1974/65536      110544/3670016  ( 3.0%) 
+leaves                 784/65536       25088/2097152  ( 1.2%) 
+leaffaces             2954/65536        5908/131072   ( 4.5%) 
+leafbrushes           1170/65536        2340/131072   ( 1.8%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            20013/512000      80052/2048000  ( 3.9%) 
+edges                12035/256000      48140/1024000  ( 4.7%) 
+LDR worldlights         42/65536        3696/5767168  ( 0.1%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            251/32768        2510/327680   ( 0.8%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4908/65536        9816/131072   ( 7.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                15/8192         5280/2883584  ( 0.2%) 
+LDR lightdata         [variable]     1459832/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       13467/16777216 ( 0.1%) 
+entdata               [variable]       64294/393216   (16.4%) 
+LDR ambient table      784/65536        3136/262144   ( 1.2%) 
+HDR ambient table      784/65536        3136/262144   ( 1.2%) 
+LDR leaf ambient      1865/65536       52220/1835008  ( 2.8%) 
+HDR leaf ambient       784/65536       21952/1835008  ( 1.2%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/6020     ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/17914    ( 0.0%) 
+pakfile               [variable]        3150/0        ( 0.0%) 
+physics               [variable]      230475/4194304  ( 5.5%) 
+physics terrain       [variable]        6654/1048576  ( 0.6%) 
+
+Level flags = 0
+
+Total triangle count: 7121
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\dd_01.bsp
+2 seconds elapsed
