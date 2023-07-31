@@ -1,0 +1,88 @@
+// Choreo version 1
+event section "p1"
+{
+  time 2.019091 -1.000000
+  param "noaction"
+}
+actor "flashback_puppet"
+{
+  channel "chan"
+  {
+    event speak "flashback.58_whatthehell"
+    {
+      time 0.046667 4.922721
+      param "flashback.58_whatthehell"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event moveto "Moveto !target1"
+    {
+      time 2.125152 2.460303
+      param "!target1"
+      resumecondition
+    }
+    event sequence "helmet_reveal"
+    {
+      time 0.586667 1.086667
+      param "helmet_reveal"
+    }
+    event speak "flashback.58_impossible"
+    {
+      time 2.633333 6.358798
+      param "flashback.58_impossible"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at flashback_jess"
+    {
+      time 2.693333 6.320000
+      param "flashback_jess"
+    }
+  }
+}
+
+actor "flashback_jess"
+{
+  channel "chan"
+  {
+    event gesture "g_wave"
+    {
+      time 2.580000 4.880001
+      param "g_wave"
+      absolutetags playback_time
+      {
+        "in" 0.352941
+        "loop" 0.779412
+        "end" 0.794118
+        "out" 0.808824
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.352941
+        "loop" 0.779412
+        "end" 0.794118
+        "out" 0.808824
+      }
+      sequenceduration 2.300000
+    }
+    event lookat "Look at flashback_puppet"
+    {
+      time 2.446667 6.373334
+      param "flashback_puppet"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "88"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
