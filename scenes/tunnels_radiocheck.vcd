@@ -1,0 +1,43 @@
+// Choreo version 1
+actor "!player"
+{
+  channel "chan"
+  {
+    event speak "intro2.58_qz"
+    {
+      time 0.046667 2.273651
+      param "intro2.58_qz"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro2.58_radiofailure"
+    {
+      time 3.740000 8.866055
+      param "intro2.58_radiofailure"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "intro2.58_radio_damaged"
+    {
+      time 9.086666 12.338095
+      param "intro2.58_radio_damaged"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
