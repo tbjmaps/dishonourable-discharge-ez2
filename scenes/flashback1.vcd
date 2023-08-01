@@ -1,7 +1,7 @@
 // Choreo version 1
 event section "p1"
 {
-  time 2.019091 -1.000000
+  time 0.921869 -1.000000
   param "noaction"
 }
 actor "flashback_puppet"
@@ -16,17 +16,6 @@ actor "flashback_puppet"
       cctype "cc_master"
       cctoken ""
     }
-    event moveto "Moveto !target1"
-    {
-      time 2.125152 2.460303
-      param "!target1"
-      resumecondition
-    }
-    event sequence "helmet_reveal"
-    {
-      time 0.586667 1.086667
-      param "helmet_reveal"
-    }
     event speak "flashback.58_impossible"
     {
       time 2.633333 6.358798
@@ -37,8 +26,47 @@ actor "flashback_puppet"
     }
     event lookat "Look at flashback_jess"
     {
-      time 2.693333 6.320000
+      time 1.769722 6.306111
       param "flashback_jess"
+    }
+    event moveto "movetobed"
+    {
+      time 0.180556 1.750000
+      param "!target1"
+      param2 "Walk"
+      resumecondition
+    }
+    event face "Face flashback_jess"
+    {
+      time 0.902778 6.305556
+      param "flashback_jess"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 6.333334 -1.000000
+      param "1"
+    }
+    event lookat "Look at !target4"
+    {
+      time 6.326391 12.131947
+      param "!target4"
+    }
+    event face "Face !target4"
+    {
+      time 6.326389 12.152778
+      param "!target4"
+    }
+    event moveto "Moveto !target3"
+    {
+      time 12.187500 16.625000
+      param "!target3"
+      param2 "Run"
+      resumecondition
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 15.180557 -1.000000
+      param "2"
     }
   }
 }
@@ -47,41 +75,41 @@ actor "flashback_jess"
 {
   channel "chan"
   {
-    event gesture "g_wave"
-    {
-      time 2.580000 4.880001
-      param "g_wave"
-      absolutetags playback_time
-      {
-        "in" 0.352941
-        "loop" 0.779412
-        "end" 0.794118
-        "out" 0.808824
-      }
-      absolutetags shifted_time
-      {
-        "in" 0.352941
-        "loop" 0.779412
-        "end" 0.794118
-        "out" 0.808824
-      }
-      sequenceduration 2.300000
-    }
     event lookat "Look at flashback_puppet"
     {
-      time 2.446667 6.373334
+      time 2.446667 9.838613
       param "flashback_puppet"
     }
+    event flexanimation "smile"
+    {
+      time 2.416667 9.833334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "corner_puller" combo 
+        {
+          0.3558 0.6500
+        }
+        {
+          0.3558 0.5000
+        }
+        "smile" 
+        {
+          0.3558 0.0000
+        }
+      }
+    }
   }
+  faceposermodel "models\humans\group01\female_02.mdl"
 }
 
 scalesettings
 {
-  "CChoreoView" "88"
-  "RampTool" "100"
-  "SceneRampTool" "100"
-  "ExpressionTool" "100"
   "GestureTool" "100"
+  "ExpressionTool" "90"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "96"
 }
 fps 60
 snap off

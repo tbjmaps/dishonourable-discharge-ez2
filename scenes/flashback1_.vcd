@@ -1,0 +1,41 @@
+// Choreo version 1
+actor "flashback_puppet"
+{
+  channel "chan"
+  {
+    event speak "flashback.58_whatthehell"
+    {
+      time 0.046667 4.922721
+      param "flashback.58_whatthehell"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event moveto "movetobed"
+    {
+      time 0.180556 9.993055
+      param "!target1"
+      param2 "Walk"
+      resumecondition
+    }
+  }
+}
+
+actor "flashback_jess"
+{
+  channel "chan"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "96"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
