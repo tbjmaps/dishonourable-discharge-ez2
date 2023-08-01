@@ -4,6 +4,11 @@ event section "p1"
   time 0.921869 -1.000000
   param "noaction"
 }
+event section "pause_walkcopbed"
+{
+  time 21.633333 -1.000000
+  param "noaction"
+}
 actor "flashback_puppet"
 {
   channel "chan"
@@ -58,7 +63,7 @@ actor "flashback_puppet"
     }
     event moveto "Moveto !target3"
     {
-      time 12.187500 16.625000
+      time 12.187500 15.522827
       param "!target3"
       param2 "Run"
       resumecondition
@@ -67,6 +72,26 @@ actor "flashback_puppet"
     {
       time 15.180557 -1.000000
       param "2"
+    }
+    event sequence "injured1"
+    {
+      time 15.607846 51.784096
+      param "injured1"
+    }
+    event lookat "Look at !target5"
+    {
+      time 15.580158 20.624601
+      param "!target5"
+    }
+    event sequence "idlenoise"
+    {
+      time 15.646826 36.896828
+      param "idlenoise"
+    }
+    event lookat "Look at op_bedcop"
+    {
+      time 20.449999 36.838890
+      param "op_bedcop"
     }
   }
 }
@@ -103,13 +128,59 @@ actor "flashback_jess"
   faceposermodel "models\humans\group01\female_02.mdl"
 }
 
+actor "op_consolecop"
+{
+  channel "chan"
+  {
+    event sequence "busyidle2"
+    {
+      time 0.041272 36.735718
+      param "busyidle2"
+    }
+  }
+}
+
+actor "op_bedcop"
+{
+  channel "chan"
+  {
+    event moveto "Moveto !target6"
+    {
+      time 19.516668 24.516668
+      param "!target6"
+      param2 "Walk"
+      resumecondition
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 21.872225 -1.000000
+      param "3"
+    }
+  }
+}
+
+actor "!player"
+{
+  channel "chan"
+  {
+    event speak "flashback.58_backtobase"
+    {
+      time 28.583332 31.253672
+      param "flashback.58_backtobase"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
 scalesettings
 {
   "GestureTool" "100"
   "ExpressionTool" "90"
   "SceneRampTool" "100"
   "RampTool" "100"
-  "CChoreoView" "96"
+  "CChoreoView" "16"
 }
 fps 60
 snap off
