@@ -12,9 +12,6 @@ actor "flashback_jess"
     {
       time -0.526667 -0.026667
       param ""
-      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
-      {
-      }
     }
   }
   channel "voice"
@@ -48,10 +45,15 @@ actor "flashback_58"
 {
   channel "animation"
   {
-    event sequence "d1_t01_BreakRoom_Sit01_Idle"
+    event sequence "Sit_Chair"
     {
-      time 0.180000 10.060000
+      time 0.020000 10.040001
       param "Sit_Chair"
+    }
+    event lookat "Look at flashback_jess"
+    {
+      time 0.006667 11.426666
+      param "flashback_jess"
     }
   }
   channel "voice"
