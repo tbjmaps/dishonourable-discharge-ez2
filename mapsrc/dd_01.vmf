@@ -31812,34 +31812,31 @@ entity
 		"logicalpos" "[0 -9768]"
 	}
 }
-hidden
+entity
 {
-	entity
+	"id" "10651"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
 	{
-		"id" "10651"
-		"classname" "logic_auto"
-		"spawnflags" "1"
-		connections
-		{
-			"OnMapSpawn" "!player,SetHealth,15,0,-1"
-			"OnMapSpawn" "fade_start,Fade,,0,-1"
-			"OnMapSpawn" "gt_start,Display,,5,-1"
-			"OnMapSpawn" "gt_start2,Display,,10,-1"
-			"OnMapSpawn" "effect_start,StartEffect,25,0,-1"
-			"OnMapSpawn" "effect_start1,StartEffect,25,0,-1"
-			"OnMapSpawn" "warning,PlaySound,,5,-1"
-			"OnMapSpawn" "warning,PlaySound,,10,-1"
-			"OnMapSpawn" "effect_start,StopEffect,,25,-1"
-			"OnMapSpawn" "effect_start1,StopEffect,,25,-1"
-		}
-		"origin" "-824 974.5 8"
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-			"logicalpos" "[0 -4268]"
-		}
+		"OnMapSpawn" "!player,SetHealth,15,0,-1"
+		"OnMapSpawn" "fade_start,Fade,,0,-1"
+		"OnMapSpawn" "gt_start,Display,,5,-1"
+		"OnMapSpawn" "gt_start2,Display,,10,-1"
+		"OnMapSpawn" "effect_start,StartEffect,25,0,-1"
+		"OnMapSpawn" "effect_start1,StartEffect,25,0,-1"
+		"OnMapSpawn" "warning,PlaySound,,5,-1"
+		"OnMapSpawn" "warning,PlaySound,,10,-1"
+		"OnMapSpawn" "effect_start,StopEffect,,25,-1"
+		"OnMapSpawn" "effect_start1,StopEffect,,25,-1"
+	}
+	"origin" "-824 974.5 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -4268]"
 	}
 }
 entity
@@ -35520,8 +35517,4 @@ cameras
 cordons
 {
 	"active" "0"
-}
-quickhide
-{
-	"count" "2"
 }
