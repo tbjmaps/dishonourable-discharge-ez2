@@ -1,0 +1,97 @@
+// Choreo version 1
+actor "flashback_jess"
+{
+  channel "animation"
+  {
+    event sequence "Sit_Chair"
+    {
+      time 0.000000 11.640000
+      param "Sit_Chair"
+    }
+    event flexanimation "jess smile"
+    {
+      time -0.526667 -0.026667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+      }
+    }
+  }
+  channel "voice"
+  {
+    event flexanimation "smile"
+    {
+      time 0.060000 10.013333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2920 0.3260
+          3.7220 0.4732
+          7.5400 0.3908
+          9.9000 0.0656
+        }
+        {
+        }
+        "smile" 
+        {
+          0.0060 0.0114
+        }
+      }
+    }
+  }
+  faceposermodel "models\humans\group01\female_01.mdl"
+}
+
+actor "flashback_58"
+{
+  channel "animation"
+  {
+    event sequence "d1_t01_BreakRoom_Sit01_Idle"
+    {
+      time 0.180000 10.060000
+      param "Sit_Chair"
+    }
+  }
+  channel "voice"
+  {
+    event speak "flashback2.58_ohmyhead"
+    {
+      time 0.000000 2.874921
+      param "flashback2.58_ohmyhead"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback2.58_anotherhalluc"
+    {
+      time 4.273334 7.651837
+      param "flashback2.58_anotherhalluc"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback2.58_feelsdifferent"
+    {
+      time 9.160000 14.356031
+      param "flashback2.58_feelsdifferent"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\barney.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
