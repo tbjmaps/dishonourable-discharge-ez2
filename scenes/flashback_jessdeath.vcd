@@ -1,11 +1,16 @@
 // Choreo version 1
+event section "wait_for_cops"
+{
+  time 12.378788 -1.000000
+  param "noaction"
+}
 actor "flashback_jess"
 {
   channel "animation"
   {
     event sequence "Sit_Chair"
     {
-      time 0.000000 11.640000
+      time 0.000000 10.913333
       param "Sit_Chair"
     }
     event flexanimation "jess smile"
@@ -13,12 +18,67 @@ actor "flashback_jess"
       time -0.526667 -0.026667
       param ""
     }
+    event lookat "Look at !target5"
+    {
+      time -0.939394 -0.439394
+      param "!target5"
+    }
+    event lookat "Look at !target5"
+    {
+      time -1.621212 -1.121212
+      param "!target5"
+    }
+    event lookat "Look at !target5"
+    {
+      time 11.424241 14.924241
+      param "!target5"
+    }
+    event speak "flashback2.jess_scream"
+    {
+      time 10.937499 11.593781
+      param "flashback2.jess_scream"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "phonemes/aa"
+    {
+      time 10.895831 12.104163
+      param "phonemes"
+      param2 "aa"
+    }
+    event gesture "p_arrest_Upright"
+    {
+      time 15.208334 30.300001
+      param "p_arrest_Upright"
+      absolutetags playback_time
+      {
+        "apex" 0.204082
+        "accent" 0.294872
+        "loop" 0.461182
+        "end" 0.991275
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.204082
+        "accent" 0.294872
+        "loop" 0.408163
+        "end" 0.510204
+      }
+      sequenceduration 3.300000
+    }
+    event sequence "Fear_Reaction"
+    {
+      time 12.083334 12.750001
+      param "Fear_Reaction"
+      fixedlength
+    }
   }
   channel "voice"
   {
     event flexanimation "smile"
     {
-      time 0.060000 10.013333
+      time 0.060000 13.876970
       param ""
       flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
       {
@@ -47,13 +107,29 @@ actor "flashback_58"
   {
     event sequence "Sit_Chair"
     {
-      time 0.020000 10.040001
+      time 0.013590 10.856924
       param "Sit_Chair"
     }
     event lookat "Look at flashback_jess"
     {
-      time 0.006667 11.426666
+      time 5.577180 11.312331
       param "flashback_jess"
+    }
+    event lookat "Look at !target4"
+    {
+      time -0.023846 5.572308
+      param "!target4"
+    }
+    event lookat "Look at !target5"
+    {
+      time 11.348484 13.009468
+      param "!target5"
+    }
+    event lookat "Look at flashback_jess"
+    {
+      time 13.160513 29.874830
+      param "flashback_jess"
+      pitch "-17"
     }
   }
   channel "voice"
@@ -86,13 +162,70 @@ actor "flashback_58"
   faceposermodel "models\barney.mdl"
 }
 
+actor "flashback_cop1"
+{
+  channel "animation"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 10.938788 -1.000000
+      param "1"
+    }
+    event moveto "Moveto !target2"
+    {
+      time 12.162051 12.662051
+      param "!target2"
+      resumecondition
+    }
+    event face "Face flashback_jess"
+    {
+      time 12.833333 19.712120
+      param "flashback_jess"
+    }
+    event speak "flashback2.cop1_onthefloornow"
+    {
+      time 12.848486 14.745266
+      param "flashback2.cop1_onthefloornow"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "flashback_cop2"
+{
+  channel "animation"
+  {
+    event moveto "Moveto !target3"
+    {
+      time 12.149230 12.649230
+      param "!target3"
+      resumecondition
+    }
+    event face "Face flashback_58"
+    {
+      time 12.803029 19.666668
+      param "flashback_58"
+    }
+    event speak "flashback2.cop2_bothtargets"
+    {
+      time 16.875000 19.573503
+      param "flashback2.cop2_bothtargets"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
 scalesettings
 {
-  "CChoreoView" "100"
-  "RampTool" "100"
-  "ExpressionTool" "100"
-  "GestureTool" "100"
   "SceneRampTool" "100"
+  "GestureTool" "10"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "32"
 }
 fps 60
 snap off
