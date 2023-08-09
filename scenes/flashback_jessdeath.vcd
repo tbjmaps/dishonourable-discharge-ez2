@@ -52,6 +52,20 @@ actor "flashback_jess"
       time 12.604167 13.104167
       param "!target8"
     }
+    event flexanimation "flexsmile"
+    {
+      time 4.666667 15.479168
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "corner_puller" combo 
+        {
+          0.0559 0.2082
+        }
+        {
+        }
+      }
+    }
   }
   channel "voice"
   {
@@ -70,13 +84,8 @@ actor "flashback_58"
     }
     event lookat "Look at flashback_jess"
     {
-      time 5.577180 11.312331
+      time 4.583900 11.353998
       param "flashback_jess"
-    }
-    event lookat "Look at !target4"
-    {
-      time -0.023846 5.572308
-      param "!target4"
     }
     event lookat "Look at !target5"
     {
@@ -105,21 +114,20 @@ actor "flashback_58"
       time 12.625000 13.375001
       param "!target7"
     }
-    event face "Face !target4"
-    {
-      time 0.020833 5.624998
-      param "!target4"
-    }
     event face "Face flashback_jess"
     {
-      time 5.895833 11.166666
+      time 4.562500 11.266223
       param "flashback_jess"
     }
-    event moveto "Moveto flashback_cop1"
+    event face "Face !target4"
     {
-      time 21.125000 25.124998
-      param "flashback_cop1"
-      param2 "Run"
+      time 0.083334 4.520833
+      param "!target4"
+    }
+    event lookat "Look at !target4"
+    {
+      time 0.104167 4.604167
+      param "!target4"
     }
   }
   channel "voice"
@@ -139,7 +147,7 @@ actor "flashback_58"
     }
     event speak "flashback2.58_no"
     {
-      time 21.166664 22.119726
+      time 20.062494 21.015556
       param "flashback2.58_no"
       fixedlength
       cctype "cc_master"
@@ -174,7 +182,7 @@ actor "flashback_cop1"
     }
     event firetrigger "Firetrigger 3"
     {
-      time 19.104170 -1.000000
+      time 21.000002 -1.000000
       param "3"
     }
   }
@@ -203,11 +211,6 @@ actor "flashback_cop2"
       cctype "cc_master"
       cctoken ""
     }
-    event sequence "pistolangryidle2"
-    {
-      time 16.249998 30.270832
-      param "pistolangryidle2"
-    }
   }
 }
 
@@ -215,7 +218,7 @@ scalesettings
 {
   "SceneRampTool" "100"
   "GestureTool" "10"
-  "ExpressionTool" "100"
+  "ExpressionTool" "104"
   "RampTool" "100"
   "CChoreoView" "32"
 }
