@@ -1,7 +1,7 @@
 // Choreo version 1
-event section "wait_for_cops"
+event section "pause1"
 {
-  time 12.378788 -1.000000
+  time 15.041667 -1.000000
   param "noaction"
 }
 actor "flashback_jess"
@@ -35,42 +35,39 @@ actor "flashback_jess"
     }
     event speak "flashback2.jess_scream"
     {
-      time 10.937499 11.593781
+      time 13.208332 13.864614
       param "flashback2.jess_scream"
       fixedlength
       cctype "cc_master"
       cctoken ""
     }
-    event expression "phonemes/aa"
-    {
-      time 10.895831 12.104163
-      param "phonemes"
-      param2 "aa"
-    }
-    event gesture "p_arrest_Upright"
-    {
-      time 15.208334 30.300001
-      param "p_arrest_Upright"
-      absolutetags playback_time
-      {
-        "apex" 0.204082
-        "accent" 0.294872
-        "loop" 0.461182
-        "end" 0.991275
-      }
-      absolutetags shifted_time
-      {
-        "apex" 0.204082
-        "accent" 0.294872
-        "loop" 0.408163
-        "end" 0.510204
-      }
-      sequenceduration 3.300000
-    }
     event sequence "Fear_Reaction"
     {
-      time 12.083334 12.750001
+      time 12.750000 13.416667
       param "Fear_Reaction"
+      fixedlength
+    }
+    event sequence "Sit_Chair_to_Idle"
+    {
+      time 10.916666 12.650000
+      param "Sit_Chair_to_Idle"
+      fixedlength
+    }
+    event sequence "Fear_Reaction_Idle"
+    {
+      time 13.416669 15.041668
+      param "Fear_Reaction_Idle"
+    }
+    event sequence "arrest_act_floor_enter_panicked"
+    {
+      time 15.041668 18.108334
+      param "arrest_act_floor_enter_panicked"
+      fixedlength
+    }
+    event sequence "arrest_act_floor"
+    {
+      time 18.166666 28.166666
+      param "arrest_act_floor"
       fixedlength
     }
   }
@@ -127,9 +124,20 @@ actor "flashback_58"
     }
     event lookat "Look at flashback_jess"
     {
-      time 13.160513 29.874830
-      param "flashback_jess"
+      time 13.077180 29.874830
+      param "!target6"
       pitch "-17"
+    }
+    event sequence "Sit_Chair_to_Idle"
+    {
+      time 10.895833 12.629167
+      param "Sit_Chair_to_Idle"
+      fixedlength
+    }
+    event face "Face flashback_jess"
+    {
+      time 13.062501 13.562501
+      param "flashback_jess"
     }
   }
   channel "voice"
@@ -142,21 +150,10 @@ actor "flashback_58"
       cctype "cc_master"
       cctoken ""
     }
-    event speak "flashback2.58_anotherhalluc"
+    event firetrigger "Firetrigger 2"
     {
-      time 4.273334 7.651837
-      param "flashback2.58_anotherhalluc"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
-    }
-    event speak "flashback2.58_feelsdifferent"
-    {
-      time 9.160000 14.356031
-      param "flashback2.58_feelsdifferent"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
+      time 12.791667 -1.000000
+      param "2"
     }
   }
   faceposermodel "models\barney.mdl"
@@ -168,27 +165,32 @@ actor "flashback_cop1"
   {
     event firetrigger "Firetrigger 1"
     {
-      time 10.938788 -1.000000
+      time 10.855455 -1.000000
       param "1"
     }
     event moveto "Moveto !target2"
     {
-      time 12.162051 12.662051
+      time 13.807886 15.932885
       param "!target2"
       resumecondition
     }
     event face "Face flashback_jess"
     {
-      time 12.833333 19.712120
+      time 16.020832 30.107956
       param "flashback_jess"
     }
     event speak "flashback2.cop1_onthefloornow"
     {
-      time 12.848486 14.745266
+      time 13.890151 15.786931
       param "flashback2.cop1_onthefloornow"
       fixedlength
       cctype "cc_master"
       cctoken ""
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 20.770834 -1.000000
+      param "3"
     }
   }
 }
@@ -199,7 +201,7 @@ actor "flashback_cop2"
   {
     event moveto "Moveto !target3"
     {
-      time 12.149230 12.649230
+      time 12.565896 16.024229
       param "!target3"
       resumecondition
     }
@@ -221,11 +223,11 @@ actor "flashback_cop2"
 
 scalesettings
 {
-  "SceneRampTool" "100"
-  "GestureTool" "10"
-  "ExpressionTool" "100"
-  "RampTool" "100"
   "CChoreoView" "32"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "10"
+  "SceneRampTool" "100"
 }
 fps 60
 snap off
