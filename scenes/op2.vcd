@@ -1,0 +1,32 @@
+// Choreo version 1
+actor "op_puppet"
+{
+  channel "ch"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.019048 3.214287
+      param "!target1"
+      pitch "-72"
+    }
+    event lookat "Look at !target2"
+    {
+      time 3.223810 5.919047
+      param "!target2"
+      pitch "-50"
+    }
+  }
+  faceposermodel "models\barney.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "140"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
