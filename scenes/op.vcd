@@ -3,11 +3,26 @@ actor "op_puppet"
 {
   channel "ch"
   {
-    event lookat "Look at !target1"
+    event flexanimation "look_up"
     {
-      time 0.019048 8.319049
-      param "!target1"
-      pitch "-72"
+      time 0.000000 20.585716
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.0000 0.0200
+          1.9053 0.0400
+          10.2466 0.9800
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.0000 0.0200
+          1.8617 0.0200
+          10.2571 0.9800
+          15.5015 0.5200
+        }
+      }
     }
   }
   faceposermodel "models\barney.mdl"
@@ -15,9 +30,9 @@ actor "op_puppet"
 
 scalesettings
 {
-  "CChoreoView" "140"
+  "CChoreoView" "28"
   "RampTool" "100"
-  "ExpressionTool" "100"
+  "ExpressionTool" "14"
   "GestureTool" "100"
   "SceneRampTool" "100"
 }

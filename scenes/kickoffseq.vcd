@@ -1,0 +1,106 @@
+// Choreo version 1
+event section "pause_wait"
+{
+  time 3.540000 -1.000000
+  param "noaction"
+}
+actor "kickoff_barney"
+{
+  channel "chan"
+  {
+    event moveto "Moveto kickoff_58boss"
+    {
+      time 3.275000 3.775000
+      param "kickoff_58boss"
+      resumecondition
+      distancetotarget 110.00
+    }
+    event speak "flashback.kickoff_58_itwasyou"
+    {
+      time 6.181667 7.180125
+      param "flashback.kickoff_58_itwasyou"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback.kickoff_58_youknowexactly"
+    {
+      time 9.068334 13.139263
+      param "flashback.kickoff_58_youknowexactly"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 13.933333 -1.000000
+      param "1"
+    }
+    event lookat "Look at kickoff_58boss"
+    {
+      time 3.255000 16.551666
+      param "kickoff_58boss"
+    }
+    event face "Face kickoff_58boss"
+    {
+      time 3.258334 16.541668
+      param "kickoff_58boss"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 0.083333 -1.000000
+      param "2"
+    }
+    event speak "flashback.kickoff_58_whatjusthappened"
+    {
+      time 0.775000 3.224682
+      param "flashback.kickoff_58_whatjusthappened"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "kickoff_58boss"
+{
+  channel "chan"
+  {
+    event speak "flashback.kickoff_bosscop_58whatsup"
+    {
+      time 3.981667 6.118969
+      param "flashback.kickoff_bosscop_58whatsup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback.kickoff_bosscop_whatareyoutalking"
+    {
+      time 7.341666 8.944501
+      param "flashback.kickoff_bosscop_whatareyoutalking"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback.kickoff_bosscop_wecantalkabout"
+    {
+      time 13.181666 16.548265
+      param "flashback.kickoff_bosscop_wecantalkabout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "80"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

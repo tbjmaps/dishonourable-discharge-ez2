@@ -5,27 +5,112 @@ actor "op_puppet"
   {
     event lookat "Look at !target1"
     {
-      time 0.019048 3.214287
+      time 0.014286 12.140901
       param "!target1"
-      pitch "-72"
+      event_ramp
+      {
+        0.0000 0.9846
+        8.5167 1.0000
+      }
     }
     event lookat "Look at !target2"
     {
-      time 3.223810 5.919047
+      time 9.302241 18.203360
       param "!target2"
+      event_ramp
+      {
+        0.0000 0.0028
+        8.9011 0.9972
+      }
       pitch "-50"
+    }
+    event lookat "Look at op_cop2"
+    {
+      time 28.339287 33.422623
+      param "op_cop2"
+    }
+    event lookat "Look at op_cop1"
+    {
+      time 20.354166 28.291666
+      param "op_cop1"
     }
   }
   faceposermodel "models\barney.mdl"
 }
 
+actor "op_cop1"
+{
+  channel "chan"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 30.687500 -1.000000
+      param "1"
+    }
+    event speak "flashback.opcop_wontremember"
+    {
+      time 20.229168 24.367081
+      param "flashback.opcop_wontremember"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event face "Face !target3"
+    {
+      time 0.062500 15.812501
+      param "!target3"
+    }
+    event face "Face op_puppet"
+    {
+      time 16.437500 33.583332
+      param "op_puppet"
+    }
+    event moveto "Moveto op_puppet"
+    {
+      time 16.458334 16.958334
+      param "op_puppet"
+    }
+  }
+  channel "chanb"
+  {
+  }
+  channel "cha"
+  {
+  }
+}
+
+actor "op_cop2"
+{
+  channel "cha"
+  {
+    event face "Face op_puppet"
+    {
+      time 0.041670 33.645836
+      param "op_puppet"
+    }
+    event speak "flashback.opcop_wakingup"
+    {
+      time 13.270833 17.408747
+      param "flashback.opcop_wakingup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "g_Lhandease"
+    {
+      time 28.270834 33.541668
+      param "g_Lhandease"
+    }
+  }
+}
+
 scalesettings
 {
-  "CChoreoView" "140"
-  "RampTool" "100"
-  "ExpressionTool" "100"
-  "GestureTool" "100"
   "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "12"
+  "CChoreoView" "32"
 }
 fps 60
 snap off
