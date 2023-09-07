@@ -106585,25 +106585,22 @@ entity
 		"logicalpos" "[0 10000]"
 	}
 }
-hidden
+entity
 {
-	entity
+	"id" "3255"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
 	{
-		"id" "3255"
-		"classname" "logic_auto"
-		"spawnflags" "1"
-		connections
-		{
-			"OnMapSpawn" "master_relay,Trigger,,0,-1"
-		}
-		"origin" "-3148 -728 144"
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-			"logicalpos" "[0 9500]"
-		}
+		"OnMapSpawn" "master_relay,Trigger,,0,-1"
+	}
+	"origin" "-3148 -728 144"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9500]"
 	}
 }
 entity
@@ -131589,8 +131586,4 @@ cameras
 cordons
 {
 	"active" "0"
-}
-quickhide
-{
-	"count" "2"
 }
