@@ -1,0 +1,37 @@
+// Choreo version 1
+event section "pause_waitmove"
+{
+  time 1.800000 -1.000000
+  param "noaction"
+}
+actor "jess_ghost_1"
+{
+  channel "chan"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.013333 2.426667
+      param "!player"
+    }
+    event moveto "Moveto !player"
+    {
+      time 0.993333 2.453333
+      param "!player"
+      param2 "Walk"
+      resumecondition
+      distancetotarget 45.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
