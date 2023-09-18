@@ -1,0 +1,44 @@
+// Choreo version 1
+actor "flashback_jess"
+{
+  channel "chan"
+  {
+    event firetrigger "Door Knock"
+    {
+      time 0.040000 -1.000000
+      param "1"
+    }
+    event moveto "Moveto !target1"
+    {
+      time 0.960000 1.460000
+      param "!target1"
+      param2 "Walk"
+    }
+  }
+}
+
+actor "flashback_58"
+{
+  channel "chan"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 0.953334 1.453334
+      param "!target1"
+      param2 "Walk"
+      distancetotarget 80.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
