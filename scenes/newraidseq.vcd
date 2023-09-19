@@ -1,4 +1,9 @@
 // Choreo version 1
+event section "Wait for move to door"
+{
+  time 1.207826 -1.000000
+  param "noaction"
+}
 actor "flashback_jess"
 {
   channel "chan"
@@ -8,11 +13,48 @@ actor "flashback_jess"
       time 0.040000 -1.000000
       param "1"
     }
-    event moveto "Moveto !target1"
+    event moveto "Move to door"
     {
-      time 0.960000 1.460000
+      time 0.953333 1.453333
       param "!target1"
       param2 "Walk"
+      resumecondition
+    }
+    event firetrigger "Door kicked open"
+    {
+      time 1.384058 -1.000000
+      param "2"
+    }
+    event lookat "Look at door"
+    {
+      time 0.920000 8.493044
+      param "!target3"
+    }
+    event moveto "Back away from door"
+    {
+      time 1.805218 3.591885
+      param "!target4"
+      param2 "Walk"
+    }
+    event face "Face door"
+    {
+      time 1.260000 4.046667
+      param "!target3"
+    }
+    event gesture "Clench"
+    {
+      time 1.833334 8.500000
+      param "g_arrest_clench"
+    }
+    event gesture "Hands up"
+    {
+      time 2.572464 12.572464
+      param "arrest_act_standing_gesture"
+      event_ramp
+      {
+        0.0040 0.0250
+        1.9980 0.9639
+      }
     }
   }
 }
@@ -21,23 +63,84 @@ actor "flashback_58"
 {
   channel "chan"
   {
-    event moveto "Moveto !target1"
+    event moveto "Move to door (2)"
     {
-      time 0.953334 1.453334
-      param "!target1"
+      time 0.946667 1.446667
+      param "!target2"
       param2 "Walk"
       distancetotarget 80.00
     }
   }
 }
 
+actor "flashback_bob"
+{
+  channel "chan"
+  {
+    event moveto "Move to Jess"
+    {
+      time 3.376812 5.528986
+      param "flashback_jess"
+      param2 "Run"
+      resumecondition
+      distancetotarget 34.00
+    }
+    event face "Face flashback_jess"
+    {
+      time 0.159421 11.869566
+      param "flashback_jess"
+    }
+    event sequence "Idle_Pistol_Aim"
+    {
+      time 5.557971 12.971016
+      param "Idle_Pistol_Aim"
+    }
+    event lookat "Look at john"
+    {
+      time 6.478261 7.876812
+      param "flashback_john"
+    }
+    event gesture "Nod to john"
+    {
+      time 6.579710 8.000001
+      param "hg_nod_right"
+    }
+    event face "Face flashback_john"
+    {
+      time 6.344862 8.678196
+      param "flashback_john"
+      lockbodyfacing
+    }
+  }
+}
+
+actor "flashback_john"
+{
+  channel "chan"
+  {
+    event moveto "Move to 58"
+    {
+      time 7.366601 12.975298
+      param "flashback_58"
+      param2 "Walk"
+      distancetotarget 40.00
+    }
+    event sequence "Idle_Pistol_Aim"
+    {
+      time 10.062252 12.975296
+      param "Idle_Pistol_Aim"
+      playoverscript
+    }
+  }
+}
+
 scalesettings
 {
-  "CChoreoView" "100"
-  "ExpressionTool" "100"
-  "GestureTool" "100"
-  "RampTool" "100"
   "SceneRampTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "86"
+  "CChoreoView" "92"
 }
 fps 60
 snap off
