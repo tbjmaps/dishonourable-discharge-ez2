@@ -27,7 +27,7 @@ actor "flashback_jess"
     }
     event lookat "Look at door"
     {
-      time 0.920000 8.493044
+      time 0.920000 15.863415
       param "!target3"
     }
     event moveto "Back away from door"
@@ -38,7 +38,7 @@ actor "flashback_jess"
     }
     event face "Face door"
     {
-      time 1.260000 4.046667
+      time 1.260000 15.842964
       param "!target3"
     }
     event gesture "Clench"
@@ -70,6 +70,16 @@ actor "flashback_58"
       param2 "Walk"
       distancetotarget 80.00
     }
+    event lookat "Look at flashback_bob"
+    {
+      time 5.814815 16.064816
+      param "flashback_bob"
+    }
+    event face "Face flashback_bob"
+    {
+      time 5.833333 16.046295
+      param "flashback_bob"
+    }
   }
 }
 
@@ -79,11 +89,11 @@ actor "flashback_bob"
   {
     event moveto "Move to Jess"
     {
-      time 3.376812 5.528986
+      time 3.376812 16.028988
       param "flashback_jess"
       param2 "Run"
       resumecondition
-      distancetotarget 34.00
+      distancetotarget 64.00
     }
     event face "Face flashback_jess"
     {
@@ -92,7 +102,7 @@ actor "flashback_bob"
     }
     event sequence "Idle_Pistol_Aim"
     {
-      time 5.557971 12.971016
+      time 5.604267 8.859905
       param "Idle_Pistol_Aim"
     }
     event lookat "Look at john"
@@ -111,6 +121,12 @@ actor "flashback_bob"
       param "flashback_john"
       lockbodyfacing
     }
+    event sequence "Shoot gun"
+    {
+      time 8.898149 9.398149
+      param "shootp2"
+      fixedlength
+    }
   }
 }
 
@@ -120,14 +136,15 @@ actor "flashback_john"
   {
     event moveto "Move to 58"
     {
-      time 7.366601 12.975298
+      time 7.366601 15.854927
       param "flashback_58"
       param2 "Walk"
-      distancetotarget 40.00
+      resumecondition
+      distancetotarget 65.00
     }
     event sequence "Idle_Pistol_Aim"
     {
-      time 10.062252 12.975296
+      time 9.154845 15.808629
       param "Idle_Pistol_Aim"
       playoverscript
     }
@@ -140,7 +157,7 @@ scalesettings
   "RampTool" "100"
   "GestureTool" "100"
   "ExpressionTool" "86"
-  "CChoreoView" "92"
+  "CChoreoView" "72"
 }
 fps 60
 snap off
