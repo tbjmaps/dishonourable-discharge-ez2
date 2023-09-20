@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "63"
+	"mapversion" "64"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "63"
+	"mapversion" "64"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -4073,6 +4073,54 @@ world
 }
 entity
 {
+	"id" "1209"
+	"classname" "ai_relationship"
+	"disposition" "1"
+	"spawnflags" "3"
+	"subject" "flashback_bob"
+	"target" "flashback_jess"
+	"targetname" "airel_bobhatesjess"
+	"origin" "-233 898 7.99999"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "1207"
+	"classname" "info_node"
+	"angles" "0 0 0"
+	"nodeid" "9"
+	"origin" "-186 886 1.12057e-05"
+	editor
+	{
+		"color" "232 219 8"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "1205"
+	"classname" "info_node"
+	"angles" "0 0 0"
+	"nodeid" "8"
+	"origin" "-326 984 1.12057e-05"
+	editor
+	{
+		"color" "232 219 8"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
 	"id" "1038"
 	"classname" "info_target"
 	"angles" "0 0 0"
@@ -5175,50 +5223,21 @@ entity
 }
 entity
 {
-	"id" "1205"
-	"classname" "info_node"
-	"angles" "0 0 0"
-	"nodeid" "8"
-	"origin" "-326 984 1.12057e-05"
-	editor
-	{
-		"color" "232 219 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
-	}
-}
-entity
-{
-	"id" "1207"
-	"classname" "info_node"
-	"angles" "0 0 0"
-	"nodeid" "9"
-	"origin" "-186 886 1.12057e-05"
-	editor
-	{
-		"color" "232 219 8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
-	}
-}
-entity
-{
-	"id" "1209"
+	"id" "1285"
 	"classname" "ai_relationship"
-	"disposition" "1"
-	"spawnflags" "3"
-	"subject" "flashback_bob"
-	"target" "flashback_jess"
-	"targetname" "airel_bobhatesjess"
-	"origin" "-233 898 7.99999"
+	"disposition" "4"
+	"Reciprocal" "1"
+	"StartActive" "1"
+	"subject" "npc_citizen"
+	"target" "npc_barney"
+	"targetname" "airel_neutral_citizens"
+	"origin" "-259 815 8"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 5000]"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
