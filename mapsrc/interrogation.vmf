@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "90"
+	"mapversion" "94"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "90"
+	"mapversion" "94"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -2823,6 +2823,8 @@ entity
 	{
 		"OnTrigger" "intro_hit1,PlaySound,,0,-1"
 		"OnTrigger" "fade_in2,Fade,,0,-1"
+		"OnTrigger" "pc,Command,PlaySoundscape d1_trainstation.AppartmentCourtyard,0,-1"
+		"OnTrigger" "start_loop,StopSound,,0,-1"
 	}
 	"origin" "-80 72 8"
 	editor
@@ -3097,6 +3099,8 @@ entity
 		"OnMapSpawn" "keyboard_sound3,PlaySound,,11.5,-1"
 		"OnMapSpawn" "gt_prompt4,Display,,12.5,-1"
 		"OnMapSpawn" "processing_sound,PlaySound,,12.5,-1"
+		"OnMapSpawn" "relay_trigger,Trigger,,15,-1"
+		"OnMapSpawn" "gt_prompt*,Kill,,15.5,-1"
 	}
 	"origin" "-126 52 8"
 	editor
@@ -3337,6 +3341,20 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "1301"
+	"classname" "point_clientcommand"
+	"targetname" "pc"
+	"origin" "-98 170 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
 	}
 }
 cameras
