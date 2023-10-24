@@ -1,0 +1,107 @@
+// Choreo version 1
+event section "wait for left npc movement"
+{
+  time 0.886667 -1.000000
+  param "noaction"
+}
+event section "wait for completion"
+{
+  time 3.360000 -1.000000
+  param "noaction"
+}
+actor "intro_puppet"
+{
+  channel "chan"
+  {
+    event lookat "Look at player_looktarget1"
+    {
+      time 4.373333 5.513333
+      param "player_looktarget1"
+      event_ramp
+      {
+        0.0100 1.0000
+        1.1340 0.9944
+      }
+    }
+    event lookat "Look at player_looktarget2"
+    {
+      time 6.433334 8.533333
+      param "player_looktarget2"
+      event_ramp
+      {
+        0.0060 0.9889
+        2.0860 0.9806
+      }
+    }
+    event lookat "Look at player_looktarget2"
+    {
+      time 8.579999 9.693333
+      param "player_looktarget3"
+      event_ramp
+      {
+        0.0060 0.9889
+        1.0993 0.9806
+      }
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 4.093333 -1.000000
+      param "1"
+    }
+  }
+}
+
+actor "intro_hallway_npc1"
+{
+  channel "chan"
+  {
+    event moveto "Walk right"
+    {
+      time 0.026666 1.519999
+      param "target_hallR"
+      param2 "Walk"
+    }
+  }
+}
+
+actor "intro_hallway_npc2"
+{
+  channel "chan"
+  {
+    event moveto "Move to window"
+    {
+      time 0.033335 1.553334
+      param "target_hallWindow"
+      param2 "Walk"
+      resumecondition
+    }
+    event moveto "Moveto target_hallL"
+    {
+      time 2.873333 3.960000
+      param "target_hallL"
+      resumecondition
+    }
+    event lookat "Look at intro_puppet"
+    {
+      time 1.640000 2.399999
+      param "intro_puppet"
+    }
+    event face "Face intro_puppet"
+    {
+      time 1.613335 2.360001
+      param "intro_puppet"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
