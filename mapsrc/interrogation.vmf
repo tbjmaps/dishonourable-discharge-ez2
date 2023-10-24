@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "94"
+	"mapversion" "95"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "94"
+	"mapversion" "95"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -2703,7 +2703,7 @@ entity
 	"classname" "env_screeneffect"
 	"targetname" "effect_1"
 	"type" "1"
-	"origin" "-102 78 8"
+	"origin" "-76 48 40"
 	editor
 	{
 		"color" "220 30 220"
@@ -2745,7 +2745,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "49"
 	"targetname" "intro_hit2"
-	"origin" "-100 152 8"
+	"origin" "-96 48 20"
 	editor
 	{
 		"color" "220 30 220"
@@ -2764,7 +2764,7 @@ entity
 	"rendercolor" "255 255 255"
 	"spawnflags" "1"
 	"targetname" "fade_in2"
-	"origin" "-128 136 8"
+	"origin" "-120 48 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -2783,7 +2783,7 @@ entity
 	"rendercolor" "0 0 0"
 	"spawnflags" "8"
 	"targetname" "fade_in"
-	"origin" "-126 106 8"
+	"origin" "-120 48 24"
 	editor
 	{
 		"color" "220 30 220"
@@ -2803,7 +2803,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "49"
 	"targetname" "intro_hit1"
-	"origin" "-68 102 8"
+	"origin" "-96 48 28"
 	editor
 	{
 		"color" "220 30 220"
@@ -2826,7 +2826,7 @@ entity
 		"OnTrigger" "pc,Command,PlaySoundscape d1_trainstation.AppartmentCourtyard,0,-1"
 		"OnTrigger" "start_loop,StopSound,,0,-1"
 	}
-	"origin" "-80 72 8"
+	"origin" "-56 48 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -2841,7 +2841,7 @@ entity
 	"classname" "env_soundscape"
 	"radius" "128"
 	"soundscape" "d1_canals.floodgate_base_ambience"
-	"origin" "-82 122 8"
+	"origin" "-36 48 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -3022,7 +3022,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "49"
 	"targetname" "start_sound"
-	"origin" "-54 126 8"
+	"origin" "-96 48 36"
 	editor
 	{
 		"color" "220 30 220"
@@ -3042,7 +3042,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "17"
 	"targetname" "start_loop"
-	"origin" "-56 144 8"
+	"origin" "-96 48 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -3068,7 +3068,7 @@ entity
 	"OverlayTime8" "1.0"
 	"OverlayTime9" "1.0"
 	"targetname" "start_overlay"
-	"origin" "-58 86 8"
+	"origin" "-76 48 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -3102,7 +3102,7 @@ entity
 		"OnMapSpawn" "relay_trigger,Trigger,,15,-1"
 		"OnMapSpawn" "gt_prompt*,Kill,,15.5,-1"
 	}
-	"origin" "-126 52 8"
+	"origin" "-56 48 24"
 	editor
 	{
 		"color" "220 30 220"
@@ -3128,7 +3128,7 @@ entity
 	"OverlayTime8" "1.0"
 	"OverlayTime9" "1.0"
 	"targetname" "start_overlay"
-	"origin" "-40 104 8"
+	"origin" "-76 48 24"
 	editor
 	{
 		"color" "220 30 220"
@@ -3148,7 +3148,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "49"
 	"targetname" "keyboard_sound"
-	"origin" "-96 48 8"
+	"origin" "-96 48 44"
 	editor
 	{
 		"color" "220 30 220"
@@ -3174,7 +3174,7 @@ entity
 	"targetname" "gt_prompt1"
 	"x" "0.3"
 	"y" "-1"
-	"origin" "-58 164 8"
+	"origin" "-140 48 56"
 	editor
 	{
 		"color" "220 30 220"
@@ -3200,7 +3200,7 @@ entity
 	"targetname" "gt_prompt2"
 	"x" "0.3"
 	"y" "-1"
-	"origin" "-28 168 8"
+	"origin" "-140 48 40"
 	editor
 	{
 		"color" "220 30 220"
@@ -3222,7 +3222,7 @@ entity
 		"OnTimerHigh" "gt_prompt1,Display,,0,-1"
 		"OnTimerLow" "gt_prompt2,Display,,0,-1"
 	}
-	"origin" "-148 74 8"
+	"origin" "-56 48 40"
 	editor
 	{
 		"color" "220 30 220"
@@ -3248,7 +3248,7 @@ entity
 	"targetname" "gt_prompt3"
 	"x" "0.3"
 	"y" "-1"
-	"origin" "-44 184 8"
+	"origin" "-140 48 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -3268,7 +3268,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "49"
 	"targetname" "keyboard_sound2"
-	"origin" "-64 44 8"
+	"origin" "-96 48 52"
 	editor
 	{
 		"color" "220 30 220"
@@ -3288,7 +3288,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "49"
 	"targetname" "keyboard_sound3"
-	"origin" "-44 60 8"
+	"origin" "-96 48 60"
 	editor
 	{
 		"color" "220 30 220"
@@ -3314,7 +3314,7 @@ entity
 	"targetname" "gt_prompt4"
 	"x" "0.3"
 	"y" "0.6"
-	"origin" "-84 196 8"
+	"origin" "-140 48 24"
 	editor
 	{
 		"color" "220 30 220"
@@ -3334,7 +3334,7 @@ entity
 	"radius" "1250"
 	"spawnflags" "49"
 	"targetname" "processing_sound"
-	"origin" "-24 128 8"
+	"origin" "-96 48 68"
 	editor
 	{
 		"color" "220 30 220"
@@ -3348,7 +3348,7 @@ entity
 	"id" "1301"
 	"classname" "point_clientcommand"
 	"targetname" "pc"
-	"origin" "-98 170 8"
+	"origin" "-56 48 56"
 	editor
 	{
 		"color" "220 30 220"
