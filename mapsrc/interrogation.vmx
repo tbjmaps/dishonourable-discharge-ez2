@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "62"
+	"mapversion" "89"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "62"
+	"mapversion" "89"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -2337,58 +2337,6 @@ world
 }
 entity
 {
-	"id" "528"
-	"classname" "info_player_start"
-	"angles" "0 90 0"
-	"origin" "-12 80 1"
-	editor
-	{
-		"color" "0 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -10768]"
-	}
-}
-entity
-{
-	"id" "503"
-	"classname" "prop_static"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_vents/vent_cluster006.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "76 184 160"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -13768]"
-	}
-}
-entity
-{
-	"id" "540"
-	"classname" "prop_static"
-	"angles" "0 90 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_building_details/courtyard_template002c_bars.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-72 376 76"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -10268]"
-	}
-}
-entity
-{
 	"id" "618"
 	"classname" "prop_static"
 	"angles" "0 0 0"
@@ -2699,24 +2647,69 @@ entity
 }
 entity
 {
-	"id" "749"
-	"classname" "env_sprite"
-	"framerate" "10.0"
-	"GlowProxySize" "2.0"
-	"HDRColorScale" "1.0"
-	"model" "sprites/glow01.spr"
-	"renderamt" "255"
-	"rendercolor" "255 255 200"
-	"rendermode" "9"
-	"scale" "0.25"
-	"spawnflags" "1"
-	"origin" "0 272 128"
+	"id" "528"
+	"classname" "info_player_start"
+	"angles" "0 90 0"
+	"origin" "-12 80 1"
 	editor
 	{
-		"color" "20 140 20"
+		"color" "0 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 2000]"
+		"logicalpos" "[0 -10768]"
+	}
+}
+entity
+{
+	"id" "503"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_vents/vent_cluster006.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "76 184 160"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -13768]"
+	}
+}
+entity
+{
+	"id" "540"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_building_details/courtyard_template002c_bars.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-72 376 76"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -10268]"
+	}
+}
+entity
+{
+	"id" "957"
+	"classname" "env_screeneffect"
+	"targetname" "effect_1"
+	"type" "1"
+	"origin" "-102 78 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8000]"
 	}
 }
 entity
@@ -2733,6 +2726,237 @@ entity
 	"scale" "0.25"
 	"spawnflags" "1"
 	"origin" "0 236 128"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "933"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/combine_terminal_idle1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "intro_hit2"
+	"origin" "-100 152 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "923"
+	"classname" "env_fade"
+	"duration" "0.5"
+	"holdtime" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "1"
+	"targetname" "fade_in2"
+	"origin" "-128 136 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "845"
+	"classname" "env_fade"
+	"duration" "0"
+	"holdtime" "5"
+	"renderamt" "255"
+	"rendercolor" "0 0 0"
+	"spawnflags" "8"
+	"targetname" "fade_in"
+	"origin" "-126 106 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "912"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/levels/labs/machine_stop1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "intro_hit1"
+	"origin" "-68 102 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7000]"
+	}
+}
+entity
+{
+	"id" "813"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_trigger"
+	connections
+	{
+		"OnTrigger" "intro_hit1,PlaySound,,0,-1"
+		"OnTrigger" "fade_in2,Fade,,0,-1"
+	}
+	"origin" "-80 72 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "873"
+	"classname" "env_soundscape"
+	"radius" "128"
+	"soundscape" "d1_canals.floodgate_base_ambience"
+	"origin" "-82 122 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5500]"
+	}
+}
+entity
+{
+	"id" "798"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_combine/combine_intmonitor003.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-188 300 68"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "790"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_combine/combine_interface002.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-164 300 0"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "786"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_wasteland/controlroom_filecabinet002a.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "172 300 35.0007"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "782"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_wasteland/controlroom_filecabinet002a.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "172 324 35.0007"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "773"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_wasteland/controlroom_filecabinet002a.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "172 352 35.0007"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "767"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"renderamt" "255"
+	"rendercolor" "255 255 200"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "1"
+	"origin" "0 148 128"
 	editor
 	{
 		"color" "20 140 20"
@@ -2765,7 +2989,7 @@ entity
 }
 entity
 {
-	"id" "767"
+	"id" "749"
 	"classname" "env_sprite"
 	"framerate" "10.0"
 	"GlowProxySize" "2.0"
@@ -2776,7 +3000,7 @@ entity
 	"rendermode" "9"
 	"scale" "0.25"
 	"spawnflags" "1"
-	"origin" "0 148 128"
+	"origin" "0 272 128"
 	editor
 	{
 		"color" "20 140 20"
@@ -2787,254 +3011,332 @@ entity
 }
 entity
 {
-	"id" "773"
-	"classname" "prop_static"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_wasteland/controlroom_filecabinet002a.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "172 352 35.0007"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
-	}
-}
-entity
-{
-	"id" "782"
-	"classname" "prop_static"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_wasteland/controlroom_filecabinet002a.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "172 324 35.0007"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
-	}
-}
-entity
-{
-	"id" "786"
-	"classname" "prop_static"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_wasteland/controlroom_filecabinet002a.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "172 300 35.0007"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
-	}
-}
-entity
-{
-	"id" "790"
-	"classname" "prop_static"
-	"angles" "0 0 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_combine/combine_interface002.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-164 300 0"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3000]"
-	}
-}
-entity
-{
-	"id" "798"
-	"classname" "prop_static"
-	"angles" "0 0 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"model" "models/props_combine/combine_intmonitor003.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-188 300 68"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3000]"
-	}
-}
-entity
-{
-	"id" "873"
-	"classname" "env_soundscape"
-	"radius" "128"
-	"soundscape" "d1_canals.floodgate_base_ambience"
-	"origin" "-82 122 8"
+	"id" "1123"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/thumper_startup1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "start_sound"
+	"origin" "-54 126 8"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 5500]"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
 {
-	"id" "813"
+	"id" "1129"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/combine_shield_loop3.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "17"
+	"targetname" "start_loop"
+	"origin" "-56 144 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1137"
+	"classname" "env_screenoverlay"
+	"OverlayIndex" "-1"
+	"OverlayName1" "ezero/mask_nvmap"
+	"OverlayTime1" "1.0"
+	"OverlayTime10" "1.0"
+	"OverlayTime2" "1.0"
+	"OverlayTime3" "1.0"
+	"OverlayTime4" "1.0"
+	"OverlayTime5" "1.0"
+	"OverlayTime6" "1.0"
+	"OverlayTime7" "1.0"
+	"OverlayTime8" "1.0"
+	"OverlayTime9" "1.0"
+	"targetname" "start_overlay"
+	"origin" "-58 86 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1152"
 	"classname" "logic_auto"
 	"spawnflags" "1"
 	connections
 	{
+		"OnMapSpawn" "start_overlay,StartOverlays,,5,-1"
 		"OnMapSpawn" "fade_in,Fade,,0,-1"
-		"OnMapSpawn" "intro_hit1,PlaySound,,6,-1"
-		"OnMapSpawn" "fade_in2,Fade,,6,-1"
-		"OnMapSpawn" "intro_hit2,PlaySound,,1,-1"
-		"OnMapSpawn" "text_start,Display,,1,-1"
-		"OnMapSpawn" "effect_1,StartEffect,100,0,-1"
+		"OnMapSpawn" "start_sound,PlaySound,,4,-1"
+		"OnMapSpawn" "start_loop,PlaySound,,4.5,-1"
+		"OnMapSpawn" "text_timer,Enable,,6,-1"
+		"OnMapSpawn" "text_timer,Disable,,8,-1"
+		"OnMapSpawn" "gt_prompt2,Display,,8,-1"
+		"OnMapSpawn" "keyboard_sound,PlaySound,,8.1,-1"
+		"OnMapSpawn" "gt_prompt3,Display,,8,-1"
+		"OnMapSpawn" "keyboard_sound,PlaySound,,9.1,-1"
+		"OnMapSpawn" "keyboard_sound2,PlaySound,,10.2,-1"
+		"OnMapSpawn" "keyboard_sound3,PlaySound,,11,-1"
+		"OnMapSpawn" "keyboard_sound3,PlaySound,,11.5,-1"
+		"OnMapSpawn" "gt_prompt4,Display,,12.5,-1"
+		"OnMapSpawn" "processing_sound,PlaySound,,12.5,-1"
 	}
-	"origin" "-80 72 8"
+	"origin" "-126 52 8"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
+		"logicalpos" "[0 1000]"
 	}
 }
 entity
 {
-	"id" "912"
+	"id" "1167"
+	"classname" "env_screenoverlay"
+	"OverlayIndex" "-1"
+	"OverlayName1" "effects/advisor_fx_002"
+	"OverlayTime1" "1.0"
+	"OverlayTime10" "1.0"
+	"OverlayTime2" "1.0"
+	"OverlayTime3" "1.0"
+	"OverlayTime4" "1.0"
+	"OverlayTime5" "1.0"
+	"OverlayTime6" "1.0"
+	"OverlayTime7" "1.0"
+	"OverlayTime8" "1.0"
+	"OverlayTime9" "1.0"
+	"targetname" "start_overlay"
+	"origin" "-40 104 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1171"
 	"classname" "ambient_generic"
 	"health" "10"
-	"message" "ambient/levels/labs/machine_stop1.wav"
+	"message" "ambient/machines/keyboard_fast1_1second.wav"
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "48"
-	"targetname" "intro_hit1"
-	"origin" "-68 102 8"
+	"spawnflags" "49"
+	"targetname" "keyboard_sound"
+	"origin" "-96 48 8"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 7000]"
+		"logicalpos" "[0 1500]"
 	}
 }
 entity
 {
-	"id" "845"
-	"classname" "env_fade"
-	"duration" "0"
-	"holdtime" "5"
-	"renderamt" "255"
-	"rendercolor" "0 0 0"
-	"spawnflags" "8"
-	"targetname" "fade_in"
-	"origin" "-126 106 8"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 5000]"
-	}
-}
-entity
-{
-	"id" "923"
-	"classname" "env_fade"
-	"duration" "0.5"
-	"holdtime" "0"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"spawnflags" "1"
-	"targetname" "fade_in2"
-	"origin" "-128 136 8"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 5000]"
-	}
-}
-entity
-{
-	"id" "933"
-	"classname" "ambient_generic"
-	"health" "10"
-	"message" "ambient/machines/combine_terminal_idle1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"radius" "1250"
-	"spawnflags" "48"
-	"targetname" "intro_hit2"
-	"origin" "-100 152 8"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 7000]"
-	}
-}
-entity
-{
-	"id" "945"
+	"id" "1176"
 	"classname" "game_text"
 	"channel" "1"
-	"color" "255 255 255"
-	"color2" "255 255 255"
-	"effect" "2"
-	"fadein" "0.2"
+	"color" "0 255 255"
+	"color2" "0 255 255"
+	"effect" "0"
+	"fadein" "0.125"
 	"fadeout" "0.5"
-	"fxtime" "0.2"
-	"holdtime" "1.2"
-	"message" "DATASTREAM LOCK ENGAGED/n/nPLAYBACK INITIATED"
+	"fxtime" "0.25"
+	"holdtime" "99"
+	"message" "READY\n>_"
 	"spawnflags" "0"
-	"targetname" "text_start"
-	"x" "-1"
+	"targetname" "gt_prompt1"
+	"x" "0.3"
 	"y" "-1"
-	"origin" "-50 82 8"
+	"origin" "-58 164 8"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 7500]"
+		"logicalpos" "[0 2000]"
 	}
 }
 entity
 {
-	"id" "957"
-	"classname" "env_screeneffect"
-	"targetname" "effect_1"
-	"type" "1"
-	"origin" "-102 78 8"
+	"id" "1183"
+	"classname" "game_text"
+	"channel" "1"
+	"color" "0 255 255"
+	"color2" "0 255 255"
+	"effect" "0"
+	"fadein" "0.125"
+	"fadeout" "0.5"
+	"fxtime" "0.25"
+	"holdtime" "99"
+	"message" "READY\n>"
+	"spawnflags" "0"
+	"targetname" "gt_prompt2"
+	"x" "0.3"
+	"y" "-1"
+	"origin" "-28 168 8"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 8000]"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "1191"
+	"classname" "logic_timer"
+	"RefireTime" "0.5"
+	"spawnflags" "1"
+	"StartDisabled" "1"
+	"targetname" "text_timer"
+	connections
+	{
+		"OnTimerHigh" "gt_prompt1,Display,,0,-1"
+		"OnTimerLow" "gt_prompt2,Display,,0,-1"
+	}
+	"origin" "-148 74 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "1215"
+	"classname" "game_text"
+	"channel" "2"
+	"color" "0 255 255"
+	"color2" "0 255 255"
+	"effect" "2"
+	"fadein" "0.125"
+	"fadeout" "0.5"
+	"fxtime" "0.125"
+	"holdtime" "99"
+	"message" "\n ARCHIVE_PLAYBACK 5810 -184.22.53"
+	"spawnflags" "0"
+	"targetname" "gt_prompt3"
+	"x" "0.3"
+	"y" "-1"
+	"origin" "-44 184 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "1251"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/keyboard2_clicks.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "keyboard_sound2"
+	"origin" "-64 44 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "1257"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/keyboard7_clicks_enter.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "keyboard_sound3"
+	"origin" "-44 60 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "1270"
+	"classname" "game_text"
+	"channel" "3"
+	"color" "0 255 255"
+	"color2" "0 255 255"
+	"effect" "2"
+	"fadein" "0.05"
+	"fadeout" "0.5"
+	"fxtime" "0.05"
+	"holdtime" "99"
+	"message" "REPLAYING MASK DATA FROM ARCHIVE/n/nTIMESTAMP: T-6 MONTHS......"
+	"spawnflags" "0"
+	"targetname" "gt_prompt4"
+	"x" "0.3"
+	"y" "0.6"
+	"origin" "-84 196 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "1283"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/combine_terminal_idle4.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "48"
+	"targetname" "processing_sound"
+	"origin" "-24 128 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
 	}
 }
 cameras
