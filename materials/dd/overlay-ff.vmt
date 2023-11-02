@@ -1,5 +1,23 @@
-"UnlitGeneric"
+"Refract"
 {
 	"$basetexture" "dd/overlay-ff"
 	"$translucent" 1
+	"$additive" "1"
+	"$mod2x" "1"
+	"$znearer" 1
+ 	"$refractamount" ".16"
+ 	"$bluramount" "0"
+//	"$scale" "[1 1]"
+ 	"$dudvmap" "effects/strider_pinch_dudv"
+
+ 	"$normalmap" "effects/strider_pinch_normal"
+"Proxies"
+{
+"AnimatedTexture"
+{
+"animatedTextureVar" "$basetexture"
+"animatedTextureFrameNumVar" "$frame"
+"animatedTextureFrameRate" "20"
+}
+}
 }

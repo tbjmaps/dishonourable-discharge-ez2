@@ -6,47 +6,17 @@ event section "wait for left npc movement"
 }
 event section "wait for completion"
 {
-  time 3.360000 -1.000000
+  time 4.073334 -1.000000
   param "noaction"
 }
 actor "intro_puppet"
 {
   channel "chan"
   {
-    event lookat "Look at player_looktarget1"
+    event lookat "Look at intro_hallway_npc2"
     {
-      time 4.373333 5.513333
-      param "player_looktarget1"
-      event_ramp
-      {
-        0.0100 1.0000
-        1.1340 0.9944
-      }
-    }
-    event lookat "Look at player_looktarget2"
-    {
-      time 6.433334 8.533333
-      param "player_looktarget2"
-      event_ramp
-      {
-        0.0060 0.9889
-        2.0860 0.9806
-      }
-    }
-    event lookat "Look at player_looktarget2"
-    {
-      time 8.579999 9.693333
-      param "player_looktarget3"
-      event_ramp
-      {
-        0.0060 0.9889
-        1.0993 0.9806
-      }
-    }
-    event firetrigger "Firetrigger 1"
-    {
-      time 4.093333 -1.000000
-      param "1"
+      time 3.520000 8.680000
+      param "intro_hallway_npc2"
     }
   }
 }
@@ -57,9 +27,22 @@ actor "intro_hallway_npc1"
   {
     event moveto "Walk right"
     {
-      time 0.026666 1.519999
-      param "target_hallR"
+      time 0.019999 1.513332
+      param "target_hallL"
       param2 "Walk"
+    }
+    event lookat "Look at intro_puppet"
+    {
+      time 0.046667 8.693335
+      param "intro_puppet"
+    }
+    event speak "canals.mudcop1_02"
+    {
+      time 0.993333 3.326735
+      param "canals.mudcop1_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
     }
   }
 }
@@ -75,12 +58,6 @@ actor "intro_hallway_npc2"
       param2 "Walk"
       resumecondition
     }
-    event moveto "Moveto target_hallL"
-    {
-      time 2.873333 3.960000
-      param "target_hallL"
-      resumecondition
-    }
     event lookat "Look at intro_puppet"
     {
       time 1.640000 2.399999
@@ -90,6 +67,21 @@ actor "intro_hallway_npc2"
     {
       time 1.613335 2.360001
       param "intro_puppet"
+    }
+    event moveto "Move to room"
+    {
+      time 3.566667 4.613334
+      param "target_room"
+      param2 "Walk"
+      resumecondition
+    }
+    event speak "NPC_Combine.CopyThat"
+    {
+      time 3.640000 4.053628
+      param "NPC_Combine.CopyThat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
     }
   }
 }
