@@ -1,0 +1,146 @@
+// Choreo version 1
+event section "wait for frisk"
+{
+  time 3.726667 -1.000000
+  param "noaction"
+}
+event section "pause 2"
+{
+  time 9.107142 -1.000000
+  param "noaction"
+}
+actor "intro_evilguy1"
+{
+  channel "choreo"
+  {
+    event lookat "Look at intro_puppet"
+    {
+      time 0.046667 8.033335
+      param "intro_puppet"
+    }
+    event sequence "Wave 58 in"
+    {
+      time 6.346668 8.680001
+      param "Wave_close"
+      playoverscript
+      fixedlength
+    }
+  }
+  channel "speech"
+  {
+    event speak "flashback.badguy1_walkforward"
+    {
+      time 6.093333 7.791292
+      param "flashback.badguy1_walkforward"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback.badguy1_staythere"
+    {
+      time 2.093333 2.824762
+      param "flashback.badguy1_staythere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "intro_jess"
+{
+  channel "choreo"
+  {
+    event lookat "Look at 58"
+    {
+      time 0.026667 12.280002
+      param "intro_puppet"
+    }
+  }
+}
+
+actor "intro_puppet"
+{
+  channel "movement"
+  {
+    event moveto "Move to room"
+    {
+      time 7.719999 10.481904
+      param "intro_roomstage"
+      param2 "Walk"
+      resumecondition
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 11.095238 -1.000000
+      param "2"
+    }
+  }
+  channel "choreo"
+  {
+    event lookat "Look at intro_jess"
+    {
+      time 0.026667 8.200001
+      param "intro_jess"
+    }
+  }
+}
+
+actor "intro_evilguy2"
+{
+  channel "choreo"
+  {
+    event sequence "LineIdle02"
+    {
+      time 0.060000 2.940000
+      param "LineIdle02"
+    }
+    event moveto "Move to 58"
+    {
+      time 3.013334 4.240000
+      param "intro_puppet"
+      param2 "Walk"
+      resumecondition
+      distancetotarget 10.00
+    }
+    event lookat "Look at intro_puppet"
+    {
+      time 0.020000 14.413334
+      param "intro_puppet"
+    }
+    event gesture "Take gun"
+    {
+      time 3.893333 4.393333
+      param "g_palm_out_l"
+    }
+    event firetrigger "Fire trigger 1"
+    {
+      time 4.400000 -1.000000
+      param "1"
+    }
+    event face "Face intro_puppet"
+    {
+      time 3.893334 16.206665
+      param "intro_puppet"
+      lockbodyfacing
+    }
+    event moveto "Retreat"
+    {
+      time 5.066668 8.020001
+      param "bg2_retreat"
+      param2 "Walk"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "56"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
