@@ -9,6 +9,11 @@ event section "pause 2"
   time 9.107142 -1.000000
   param "noaction"
 }
+event section "wait for movement"
+{
+  time 14.452382 -1.000000
+  param "noaction"
+}
 actor "intro_evilguy1"
 {
   channel "choreo"
@@ -24,6 +29,29 @@ actor "intro_evilguy1"
       param "Wave_close"
       playoverscript
       fixedlength
+    }
+    event sequence "Idle_Pistol_Aim"
+    {
+      time 22.055555 22.055555
+      param "pistol_Aim_all"
+      fixedlength
+    }
+    event sequence "pistol_Aim_all"
+    {
+      time 22.690475 22.690475
+      param "pistol_Aim_all"
+      fixedlength
+    }
+    event generic "aim at jess"
+    {
+      time -0.023808 26.666668
+      param "AI_AIM"
+      param2 "intro_jess"
+    }
+    event face "Face intro_jess"
+    {
+      time 0.071429 26.785715
+      param "intro_jess"
     }
   }
   channel "speech"
@@ -43,6 +71,30 @@ actor "intro_evilguy1"
       fixedlength
       cctype "cc_master"
       cctoken ""
+    }
+    event gesture "signal to baton guy"
+    {
+      time 12.119047 13.174603
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.243243
+        "accent" 0.405405
+        "loop" 0.432432
+        "end" 0.702702
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.243243
+        "accent" 0.405405
+        "loop" 0.432432
+        "end" 0.702703
+      }
+    }
+    event lookat "Look at intro_jess"
+    {
+      time 8.251985 26.680555
+      param "intro_jess"
     }
   }
 }
@@ -70,10 +122,21 @@ actor "intro_puppet"
       param2 "Walk"
       resumecondition
     }
-    event firetrigger "Firetrigger 2"
+    event lookat "Look at intro_evilguy3"
     {
-      time 11.095238 -1.000000
-      param "2"
+      time 13.273809 16.214287
+      param "intro_evilguy3"
+    }
+    event face "Face intro_evilguy3"
+    {
+      time 13.369048 16.119049
+      param "intro_evilguy3"
+    }
+    event sequence "cower"
+    {
+      time 14.884919 15.851585
+      param "cower"
+      fixedlength
     }
   }
   channel "choreo"
@@ -120,9 +183,8 @@ actor "intro_evilguy2"
     }
     event face "Face intro_puppet"
     {
-      time 3.893334 16.206665
+      time -0.082857 8.278093
       param "intro_puppet"
-      lockbodyfacing
     }
     event moveto "Retreat"
     {
@@ -130,16 +192,58 @@ actor "intro_evilguy2"
       param "bg2_retreat"
       param2 "Walk"
     }
+    event face "Face intro_jess"
+    {
+      time 8.160711 26.611109
+      param "intro_jess"
+    }
+    event lookat "Look at intro_jess"
+    {
+      time 22.208330 26.652775
+      param "intro_jess"
+    }
+    event generic "aim at jess"
+    {
+      time -0.000001 26.619047
+      param "AI_AIM"
+      param2 "intro_jess"
+    }
+  }
+}
+
+actor "intro_evilguy3"
+{
+  channel "choreo"
+  {
+    event moveto "move to 58"
+    {
+      time 13.202380 15.773808
+      param "intro_puppet"
+      param2 "Run"
+      resumecondition
+      distancetotarget 14.00
+    }
+    event sequence "MeleeAttack01"
+    {
+      time 14.559523 15.592856
+      param "MeleeAttack01"
+      fixedlength
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 15.630952 -1.000000
+      param "2"
+    }
   }
 }
 
 scalesettings
 {
-  "CChoreoView" "56"
-  "RampTool" "100"
-  "ExpressionTool" "100"
-  "GestureTool" "100"
   "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "28"
 }
 fps 60
 snap off

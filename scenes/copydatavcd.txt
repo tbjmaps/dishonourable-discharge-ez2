@@ -1,17 +1,22 @@
 // Choreo version 1
-actor "intro_puppet"
+actor "intro_evilguy2"
 {
-  channel "chan"
+  channel "choreo"
   {
-    event lookat "Look at player_looktarget2"
+    event sequence "Aim at Jess"
     {
-      time 6.433334 6.933333
-      param "player_looktarget2"
-      event_ramp
-      {
-        0.0060 0.9889
-        0.4860 0.9806
-      }
+      time 19.632935 24.063490
+      param "Idle_Pistol_Aim"
+    }
+    event face "Face intro_jess"
+    {
+      time 19.638889 24.041668
+      param "intro_jess"
+    }
+    event lookat "Look at intro_jess"
+    {
+      time 19.624998 24.069443
+      param "intro_jess"
     }
   }
 }
