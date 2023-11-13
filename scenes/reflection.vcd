@@ -1,0 +1,65 @@
+// Choreo version 1
+actor "puppet_2"
+{
+  channel "choreo"
+  {
+    event lookat "look at target_room_picture"
+    {
+      time 0.033333 4.486666
+      param "target_room_picture"
+    }
+    event moveto "move to target_mirror_floor"
+    {
+      time 4.499999 8.153333
+      param "target_mirror_floor"
+      param2 "Walk"
+    }
+    event lookat "Look at target_mirror"
+    {
+      time 8.168335 28.946672
+      param "target_mirror"
+    }
+    event face "Face target_mirror"
+    {
+      time 8.168481 29.168480
+      param "target_mirror"
+    }
+  }
+  channel "audio"
+  {
+    event speak "flashback.58_intro_mywife"
+    {
+      time 0.953333 7.249523
+      param "flashback.58_intro_mywife"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback.58_intro_metrocop"
+    {
+      time 8.418479 13.332583
+      param "flashback.58_intro_metrocop"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "LineIdle02"
+    {
+      time 13.710149 28.793482
+      param "LineIdle02"
+      playoverscript
+    }
+  }
+}
+
+scalesettings
+{
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "CChoreoView" "16"
+}
+fps 60
+snap off
+ignorePhonemes off
