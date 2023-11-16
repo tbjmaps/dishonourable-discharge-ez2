@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "406"
+	"mapversion" "408"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "406"
+	"mapversion" "408"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -17847,12 +17847,13 @@ entity
 		"OnTrigger1" "npc_intro_mark,GiveWeapon,weapon_pistol,0,-1"
 		"OnTrigger2" "relay_kotrigger,Trigger,,0,-1"
 	}
-	"origin" "-576 3392 48"
+	"origin" "-576 3408 48"
 	editor
 	{
 		"color" "0 0 255"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
+		"comments" "Sequence where jess gets murdered. Fires relay_kotrigger"
 		"logicalpos" "[0 0]"
 	}
 }
@@ -23936,7 +23937,7 @@ entity
 		"OnTrigger" "relationship_bullseye,ApplyRelationship,,7,-1"
 		"OnTrigger" "npc_intro_john,UpdateEnemyMemory,intro_jess,7.1,-1"
 	}
-	"origin" "-592 3680 48"
+	"origin" "-576 3440 48"
 	editor
 	{
 		"color" "220 30 220"
@@ -26723,8 +26724,8 @@ entity
 	"pitchstart" "100"
 	"radius" "1250"
 	"spawnflags" "49"
-	"targetname" "ko_hit"
-	"origin" "219 2821 8"
+	"targetname" "snd_ko_hit"
+	"origin" "-624 3456 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -26742,8 +26743,8 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "1"
-	"targetname" "ko_fade2"
-	"origin" "-560 3664 48"
+	"targetname" "fade_ko_in"
+	"origin" "-592 3456 48"
 	editor
 	{
 		"color" "220 30 220"
@@ -26761,9 +26762,9 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "48"
-	"targetname" "ko_sound"
-	"origin" "166 2840 8.00001"
+	"spawnflags" "49"
+	"targetname" "snd_ko_tinnitus"
+	"origin" "-640 3456 8.00001"
 	editor
 	{
 		"color" "220 30 220"
@@ -26781,8 +26782,8 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "8"
-	"targetname" "ko_fade"
-	"origin" "-576 3664 48"
+	"targetname" "fade_ko_out"
+	"origin" "-608 3456 48"
 	editor
 	{
 		"color" "220 30 220"
