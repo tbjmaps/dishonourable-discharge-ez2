@@ -1,0 +1,55 @@
+// Choreo version 1
+event section "wait for move"
+{
+  time 6.693334 -1.000000
+  param "noaction"
+}
+actor "npc_intro_apt_puppet"
+{
+  channel "choreo"
+  {
+    event moveto "Moveto target_intro_aptdoor"
+    {
+      time 0.013334 7.046667
+      param "target_intro_aptdoor"
+      param2 "Walk"
+      resumecondition
+    }
+    event face "Face target_intro_aptdoor_looktarget"
+    {
+      time 7.059999 9.333332
+      param "target_intro_aptdoor_looktarget"
+    }
+  }
+  channel "voice"
+  {
+    event speak "flashback.58_intro_peoplecall"
+    {
+      time 0.033333 6.128571
+      param "flashback.58_intro_peoplecall"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "flashback.58_intro_ushumans"
+    {
+      time 6.246667 11.649252
+      param "flashback.58_intro_ushumans"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
