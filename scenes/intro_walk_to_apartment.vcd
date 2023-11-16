@@ -1,7 +1,7 @@
 // Choreo version 1
 event section "wait for move"
 {
-  time 6.693334 -1.000000
+  time 11.300001 -1.000000
   param "noaction"
 }
 actor "npc_intro_apt_puppet"
@@ -10,15 +10,38 @@ actor "npc_intro_apt_puppet"
   {
     event moveto "Moveto target_intro_aptdoor"
     {
-      time 0.013334 7.046667
+      time 0.013334 11.740000
       param "target_intro_aptdoor"
       param2 "Walk"
       resumecondition
     }
     event face "Face target_intro_aptdoor_looktarget"
     {
-      time 7.059999 9.333332
+      time 10.773333 13.046665
       param "target_intro_aptdoor_looktarget"
+    }
+    event sequence "Open_door_away"
+    {
+      time 11.786667 14.953334
+      param "Open_door_away"
+      event_ramp
+      {
+        0.0020 0.9917
+      }
+      fixedlength
+    }
+    event flexanimation "ff"
+    {
+      time 12.933334 14.913333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.3257 0.1200
+          0.6857 0.7600
+        }
+      }
     }
   }
   channel "voice"
@@ -39,13 +62,18 @@ actor "npc_intro_apt_puppet"
       cctype "cc_master"
       cctoken ""
     }
+    event firetrigger "Firetrigger 1"
+    {
+      time 13.126668 -1.000000
+      param "1"
+    }
   }
 }
 
 scalesettings
 {
   "CChoreoView" "100"
-  "ExpressionTool" "100"
+  "ExpressionTool" "70"
   "RampTool" "100"
   "SceneRampTool" "100"
   "GestureTool" "100"

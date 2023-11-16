@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "389"
+	"mapversion" "406"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "389"
+	"mapversion" "406"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -17708,6 +17708,10 @@ entity
 	"busyactor" "1"
 	"SceneFile" "scenes/intro_walk_to_apartment.vcd"
 	"targetname" "choreo_intro_hall"
+	connections
+	{
+		"OnTrigger1" "relay_intro_dooropen,Trigger,,0,-1"
+	}
 	"origin" "-576 3344 32"
 	editor
 	{
@@ -17837,13 +17841,13 @@ entity
 	"classname" "logic_choreographed_scene"
 	"busyactor" "1"
 	"SceneFile" "scenes/wifeshooting.vcd"
-	"targetname" "lcs_intro"
+	"targetname" "choreo_intro_apt"
 	connections
 	{
-		"OnTrigger1" "intro_evilguy2,GiveWeapon,weapon_pistol,0,-1"
+		"OnTrigger1" "npc_intro_mark,GiveWeapon,weapon_pistol,0,-1"
 		"OnTrigger2" "relay_kotrigger,Trigger,,0,-1"
 	}
-	"origin" "-656 3680 48"
+	"origin" "-576 3392 48"
 	editor
 	{
 		"color" "0 0 255"
@@ -17877,7 +17881,7 @@ entity
 	"SetGrenadeDropCapabilities" "7"
 	"SetProficiencyOverride" "-1"
 	"spawnflags" "516"
-	"targetname" "intro_evilguy2"
+	"targetname" "npc_intro_mark"
 	"waitingtorappel" "No"
 	"origin" "290 3034 0"
 	editor
@@ -22105,15 +22109,14 @@ entity
 		"OnTrigger" "snd_intro_keyboard,PlaySound,,9.1,-1"
 		"OnTrigger" "snd_intro_keyboard,PlaySound,,8.1,-1"
 		"OnTrigger" "text_intro_command,Display,,8,-1"
-		"OnTrigger" "text_intro_cursor2,Display,,8,-1"
 		"OnTrigger" "tmr_intro_cursor,Disable,,8,-1"
 		"OnTrigger" "tmr_intro_cursor,Enable,,6,-1"
 		"OnTrigger" "overlay_intro_mask_nv,StartOverlays,,5.1,-1"
 		"OnTrigger" "overlay_intro_mask,StartOverlays,,5,-1"
 		"OnTrigger" "snd_intro_computerloop,PlaySound,,4.5,-1"
 		"OnTrigger" "snd_intro_computerstart,PlaySound,,4,-1"
-		"OnTrigger" "text_intro_cursor1,Kill,,15.5,-1"
-		"OnTrigger" "text_intro_cursor2,Kill,,15.5,-1"
+		"OnTrigger" "text_intro_prompt,Kill,,15.5,-1"
+		"OnTrigger" "text_intro_cursor,Kill,,15.5,-1"
 		"OnTrigger" "text_intro_command,Kill,,15.5,-1"
 		"OnTrigger" "text_intro_wait,Kill,,15.5,-1"
 		"OnTrigger" "relay_intro_startplayback,Trigger,,16,-1"
@@ -22122,6 +22125,7 @@ entity
 		"OnTrigger" "snd_intro_keyboard3,PlaySound,,11.5,-1"
 		"OnTrigger" "snd_intro_keyboard3,PlaySound,,11,-1"
 		"OnTrigger" "snd_intro_keyboard2,PlaySound,,10.2,-1"
+		"OnTrigger" "text_intro_prompt,Display,,6,-1"
 	}
 	"origin" "-576 3040 32"
 	editor
@@ -22179,7 +22183,7 @@ entity
 	"angles" "0 180 0"
 	"m_bLoopActionSequence" "1"
 	"m_fMoveTo" "1"
-	"m_iszEntity" "intro_jess"
+	"m_iszEntity" "npc_intro_jessica"
 	"m_iszPlay" "sitchair1"
 	"spawnflags" "624"
 	"origin" "264 2976 1.52588e-05"
@@ -22254,7 +22258,7 @@ entity
 	"SetGrenadeDropCapabilities" "7"
 	"SetProficiencyOverride" "-1"
 	"spawnflags" "516"
-	"targetname" "intro_evilguy1"
+	"targetname" "npc_intro_john"
 	"waitingtorappel" "No"
 	"origin" "340 2974 0"
 	editor
@@ -22276,7 +22280,7 @@ entity
 	"fadein" "0.125"
 	"fadeout" "0.5"
 	"fxtime" "0.125"
-	"holdtime" "6.5"
+	"holdtime" "2.625"
 	"message" "\n>ARCHIVE_PLAYBACK 5810 -184.22.53"
 	"spawnflags" "0"
 	"targetname" "text_intro_command"
@@ -22298,8 +22302,8 @@ entity
 	"disposition" "1"
 	"spawnflags" "3"
 	"StartActive" "0"
-	"subject" "intro_evilguy*"
-	"target" "intro_jess"
+	"subject" "npc_intro_john"
+	"target" "npc_intro_jessica"
 	"targetname" "relationship_bullseye"
 	"origin" "246 2932 8"
 	editor
@@ -23926,12 +23930,11 @@ entity
 		"OnTrigger" "ko_fade2,Fade,,5,-1"
 		"OnTrigger" "murder_vc,Enable,,3,-1"
 		"OnTrigger" "ko_hit,PlaySound,,0,-1"
-		"OnTrigger" "intro_door,Close,,3,-1"
+		"OnTrigger" "door_apartment,Close,,3,-1"
 		"OnTrigger" "npc_intro_apt_puppet,Kill,,4,-1"
-		"OnTrigger" "intro_evilguy3,Kill,,4,-1"
+		"OnTrigger" "npc_intro_dennis,Kill,,4,-1"
 		"OnTrigger" "relationship_bullseye,ApplyRelationship,,7,-1"
-		"OnTrigger" "intro_evilguy1,UpdateEnemyMemory,intro_jess,7.1,-1"
-		"OnTrigger" "intro_evilguy2,UpdateEnemyMemory,intro_jess,7.1,-1"
+		"OnTrigger" "npc_intro_john,UpdateEnemyMemory,intro_jess,7.1,-1"
 	}
 	"origin" "-592 3680 48"
 	editor
@@ -24369,7 +24372,7 @@ entity
 	"spawnflags" "8192"
 	"spawnpos" "3"
 	"speed" "500"
-	"targetname" "intro_door"
+	"targetname" "door_apartment"
 	"origin" "132 2921 54"
 	editor
 	{
@@ -24921,10 +24924,10 @@ entity
 	"fadein" "0.125"
 	"fadeout" "0.5"
 	"fxtime" "0.25"
-	"holdtime" "3"
-	"message" "READY\n>_"
+	"holdtime" "9"
+	"message" "READY\n>"
 	"spawnflags" "0"
-	"targetname" "text_intro_cursor1"
+	"targetname" "text_intro_prompt"
 	"x" "0.3"
 	"y" "-1"
 	"origin" "-560 3136 32"
@@ -24940,17 +24943,17 @@ entity
 {
 	"id" "5603"
 	"classname" "game_text"
-	"channel" "1"
+	"channel" "4"
 	"color" "0 255 255"
 	"color2" "0 255 255"
 	"effect" "0"
-	"fadein" "0.125"
-	"fadeout" "0.5"
+	"fadein" "0"
+	"fadeout" "0.05"
 	"fxtime" "0.25"
-	"holdtime" "6.5"
-	"message" "READY\n>"
+	"holdtime" "0.25"
+	"message" "\n>_"
 	"spawnflags" "0"
-	"targetname" "text_intro_cursor2"
+	"targetname" "text_intro_cursor"
 	"x" "0.3"
 	"y" "-1"
 	"origin" "-544 3136 32"
@@ -24967,13 +24970,12 @@ entity
 	"id" "5605"
 	"classname" "logic_timer"
 	"RefireTime" "0.5"
-	"spawnflags" "1"
+	"spawnflags" "0"
 	"StartDisabled" "1"
 	"targetname" "tmr_intro_cursor"
 	connections
 	{
-		"OnTimerHigh" "text_intro_cursor1,Display,,0,-1"
-		"OnTimerLow" "text_intro_cursor2,Display,,0,-1"
+		"OnTimer" "text_intro_cursor,Display,,0,-1"
 	}
 	"origin" "-576 3104 32"
 	editor
@@ -24995,7 +24997,7 @@ entity
 	"fadein" "0.05"
 	"fadeout" "0.5"
 	"fxtime" "0.05"
-	"holdtime" "2"
+	"holdtime" "0"
 	"message" "REPLAYING MASK DATA FROM ARCHIVE/n/nTIMESTAMP: T-6 MONTHS......"
 	"spawnflags" "0"
 	"targetname" "text_intro_wait"
@@ -26613,7 +26615,7 @@ entity
 	"SetGrenadeDropCapabilities" "7"
 	"SetProficiencyOverride" "-1"
 	"spawnflags" "516"
-	"targetname" "intro_jess"
+	"targetname" "npc_intro_jessica"
 	"waitingtorappel" "No"
 	connections
 	{
@@ -26842,7 +26844,7 @@ entity
 	"SetGrenadeDropCapabilities" "7"
 	"SetProficiencyOverride" "-1"
 	"spawnflags" "516"
-	"targetname" "intro_evilguy3"
+	"targetname" "npc_intro_dennis"
 	"waitingtorappel" "No"
 	"origin" "196 2698 -3.8147e-06"
 	editor
@@ -28409,6 +28411,40 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11383"
+	"classname" "env_soundscape"
+	"radius" "128"
+	"soundscape" "streetwar.bank_machine_room"
+	"origin" "-560 2832 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "11401"
+	"classname" "logic_relay"
+	"targetname" "relay_intro_dooropen"
+	connections
+	{
+		"OnTrigger" "door_apartment,Open,,0,-1"
+		"OnTrigger" "choreo_intro_apt,Start,,0,-1"
+	}
+	"origin" "-576 3376 16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
 	}
 }
 cameras
