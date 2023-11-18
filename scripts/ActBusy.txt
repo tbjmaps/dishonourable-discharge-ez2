@@ -1,104 +1,11 @@
 "ActBusy.txt"
 {
-	"DD_Benchcop_Sit"
+
+	"dd_john_aimatjess"
 	{
-		"busy_sequence" 	"d1_t01_BreakRoom_Sit02"
-		"entry_sequence"	"d1_t01_BreakRoom_Sit02_Entry"
-		"exit_sequence"		"d1_t01_BreakRoom_Sit02_Exit"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_Truck_Sit1"
-	{
-		"busy_sequence" 	"d1_t01_BreakRoom_Sit01_Idle"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_Truck_Sit2"
-	{
-		"busy_sequence" 	"d1_t01_BreakRoom_Sit02"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-
-
-
-	"DD_Jill_ActBusyPostSeq"
-	{
-		"busy_sequence" 	"LineIdle03"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_Prisoncop_Clipboard"
-	{
-		"busy_sequence" 	"ez2_c0_rulecop_clipboard_idle"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_ConsoleCop1"
-	{
-		"busy_sequence"		"buttonfront"
-		"min_time"		"1"
-		"max_time"		"1"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_ConsoleCop2"
-	{
-		"busy_sequence"		"ez2_c0_rulecop_readboard"
-		"min_time"		"5"
-		"max_time"		"10"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_CellCit1"
-	{
-		"busy_sequence"		"sitcouchfeet1"
+		"busy_sequence"		"Idle_Pistol_Aim"
 		"min_time"		"0"
 		"max_time"		"0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_CellCit3"
-	{
-		"busy_sequence"		"d1_town05_Wounded_Idle_1"
-		"min_time"		"0"
-		"max_time"		"0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"DD_Sarah_ActBusy"
-	{
-		"busy_sequence"		"Sit_Chair"
-		"min_time"		"0"
-		"max_time"		"0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-	"dd_raid_actbusy_cop1_door"
-	{
-		"busy_sequence"		"leanwall_act_right_idle_pistol"
-		"min_time"		"0"
-		"max_time"		"0"
-		"interrupts"	"BA_INT_NONE"
-	}
-
-
-	"dd_raid_actbusy_cop2_door"
-	{
-		"busy_sequence"		"leanwall_act_crouch_left_B_idle_pistol"
-		"min_time"		"0"
-		"max_time"		"0"
-		"interrupts"	"BA_INT_NONE"
+		"interrupts"	"BA_INT_COMBAT"
 	}
 }
