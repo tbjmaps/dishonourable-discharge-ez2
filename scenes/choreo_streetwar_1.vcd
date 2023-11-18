@@ -1,0 +1,86 @@
+// Choreo version 1
+actor "npc_promo_puppet"
+{
+  channel "voice"
+  {
+    event speak "flashback.58_intro_uglyside"
+    {
+      time 0.013333 6.974966
+      param "flashback.58_intro_uglyside"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 5.480000 -1.000000
+      param "1"
+    }
+    event speak "flashback.58_intro_transfertoc8"
+    {
+      time 9.113333 12.747709
+      param "flashback.58_intro_transfertoc8"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at npc_promo_boss"
+    {
+      time 8.206667 12.286667
+      param "npc_promo_boss"
+    }
+    event speak "flashback.58_intro_newcity"
+    {
+      time 13.546665 19.842855
+      param "flashback.58_intro_newcity"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "npc_promo_boss"
+{
+  channel "chan"
+  {
+    event sequence "motionleft"
+    {
+      time 7.480000 11.260000
+      param "motionleft"
+      event_ramp
+      {
+        0.0250 0.0056
+        0.9321 0.9639
+        2.9536 0.9361
+      }
+    }
+    event lookat "Look at npc_promo_puppet"
+    {
+      time 7.473332 13.126666
+      param "npc_promo_puppet"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 12.780001 -1.000000
+      param "2"
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 20.633331 -1.000000
+      param "3"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "56"
+}
+fps 60
+snap off
+ignorePhonemes off

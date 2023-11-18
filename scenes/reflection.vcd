@@ -83,8 +83,16 @@ actor "npc_intro_reflection_puppet"
     }
     event firetrigger "Firetrigger 1"
     {
-      time 22.041666 -1.000000
+      time 30.208332 -1.000000
       param "1"
+    }
+    event speak "flashback.58_intro_forthat"
+    {
+      time 22.500000 29.461632
+      param "flashback.58_intro_forthat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
     }
   }
 }
