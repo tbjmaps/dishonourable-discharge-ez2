@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "572"
+	"mapversion" "573"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "572"
+	"mapversion" "573"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -25447,6 +25447,7 @@ entity
 		"OnTrigger" "crossfade_ko,SetNextBlendTime,1,5.2,-1"
 		"OnTrigger" "crossfade_ko,SetNextBlendMode,7,0.1,-1"
 		"OnTrigger" "text_outro,Display,,5,-1"
+		"OnTrigger" "snd_outro_hit,PlaySound,,8,-1"
 	}
 	"origin" "-568 3648 96"
 	editor
@@ -29558,26 +29559,23 @@ entity
 		"logicalpos" "[500 -768]"
 	}
 }
-hidden
+entity
 {
-	entity
+	"id" "5594"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
 	{
-		"id" "5594"
-		"classname" "logic_auto"
-		"spawnflags" "1"
-		connections
-		{
-			"OnMapSpawn" "relay_intro_master,Trigger,,0,1"
-		}
-		"origin" "-640 2976 32"
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-			"comments" "Fires relay_intro_master"
-			"logicalpos" "[0 1000]"
-		}
+		"OnMapSpawn" "relay_intro_master,Trigger,,0,1"
+	}
+	"origin" "-640 2976 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Fires relay_intro_master"
+		"logicalpos" "[0 1000]"
 	}
 }
 entity
@@ -39754,6 +39752,26 @@ entity
 		"logicalpos" "[0 1000]"
 	}
 }
+entity
+{
+	"id" "14582"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/machine1_hit1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "snd_outro_hit"
+	"origin" "-520 3536 96"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 14000]"
+	}
+}
 cameras
 {
 	"activecamera" "-1"
@@ -39761,8 +39779,4 @@ cameras
 cordons
 {
 	"active" "0"
-}
-quickhide
-{
-	"count" "2"
 }

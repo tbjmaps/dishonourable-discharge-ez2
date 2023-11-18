@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "573"
+	"mapversion" "574"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "573"
+	"mapversion" "574"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -29559,26 +29559,23 @@ entity
 		"logicalpos" "[500 -768]"
 	}
 }
-hidden
+entity
 {
-	entity
+	"id" "5594"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
 	{
-		"id" "5594"
-		"classname" "logic_auto"
-		"spawnflags" "1"
-		connections
-		{
-			"OnMapSpawn" "relay_intro_master,Trigger,,0,1"
-		}
-		"origin" "-640 2976 32"
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-			"comments" "Fires relay_intro_master"
-			"logicalpos" "[0 1000]"
-		}
+		"OnMapSpawn" "relay_intro_master,Trigger,,0,1"
+	}
+	"origin" "-640 2976 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Fires relay_intro_master"
+		"logicalpos" "[0 1000]"
 	}
 }
 entity
@@ -39775,6 +39772,131 @@ entity
 		"logicalpos" "[0 14000]"
 	}
 }
+entity
+{
+	"id" "14590"
+	"classname" "env_cubemap"
+	"origin" "28.1612 2140 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14594"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "24 2360 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14597"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "24 2576 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14600"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "16 2952 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14603"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "312 2952 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14606"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "-208 2144 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14609"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "-1088 2512 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14612"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "-1200 2512 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14615"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "-1376 3608 64.3899"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
 cameras
 {
 	"activecamera" "-1"
@@ -39782,8 +39904,4 @@ cameras
 cordons
 {
 	"active" "0"
-}
-quickhide
-{
-	"count" "2"
 }
