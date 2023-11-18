@@ -80,16 +80,16 @@ actor "npc_intro_john"
       {
         "apex" 0.243243
         "accent" 0.405405
+        "extreme" 0.422432
         "loop" 0.432432
-        "extreme" 0.473684
         "end" 0.702702
       }
       absolutetags shifted_time
       {
         "apex" 0.236842
         "accent" 0.405405
-        "loop" 0.578947
         "extreme" 0.473684
+        "loop" 0.578947
         "end" 0.578947
       }
       sequenceduration 1.300000
@@ -263,7 +263,7 @@ actor "npc_intro_mark"
     event moveto "Move to 58"
     {
       time 3.013334 4.240000
-      param "intro_puppet"
+      param "npc_intro_apt_puppet"
       param2 "Walk"
       resumecondition
       distancetotarget 10.00
