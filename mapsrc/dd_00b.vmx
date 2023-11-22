@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "34"
+	"mapversion" "35"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "32"
+	"nGridSpacing" "128"
 }
 palette_plus
 {
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "34"
+	"mapversion" "35"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -17173,7 +17173,7 @@ entity
 	"fogdir" "1 0 0"
 	"fogenable" "1"
 	"fogend" "4096"
-	"fogmaxdensity" "1"
+	"fogmaxdensity" ".7"
 	"fogstart" "2048"
 	"origin" "174.477 -4000 494.59"
 	editor
@@ -17182,6 +17182,74 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1000 -3268]"
+	}
+}
+entity
+{
+	"id" "1659"
+	"classname" "light"
+	"_light" "32 32 32 500"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "128 -1536 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -2768]"
+	}
+}
+entity
+{
+	"id" "1668"
+	"classname" "light"
+	"_light" "32 32 32 500"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "128 -2560 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -2768]"
+	}
+}
+entity
+{
+	"id" "1675"
+	"classname" "light"
+	"_light" "32 32 32 500"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "128 -3584 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -2768]"
+	}
+}
+entity
+{
+	"id" "1682"
+	"classname" "light"
+	"_light" "32 32 32 500"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "128 -4608 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -2768]"
 	}
 }
 cameras
