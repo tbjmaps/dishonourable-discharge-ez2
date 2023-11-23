@@ -869,7 +869,7 @@ Scheme
 			// note that this scales with the screen resolution
 			"1"
 			{
-				"name"		"Fixedsys" [!$OSX]
+				"name"		"Trebuchet MS" [!$OSX]
 				"name"		"Helvetica" [$OSX]
 				"tall"		"24"
 				"weight"	"900"
