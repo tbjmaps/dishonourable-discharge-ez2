@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "130"
+	"mapversion" "132"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -72,7 +72,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "130"
+	"mapversion" "132"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -8515,6 +8515,40 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1500 3000]"
+	}
+}
+entity
+{
+	"id" "2664"
+	"classname" "env_soundscape"
+	"radius" "128"
+	"soundscape" "prison.redlight_bunker"
+	"origin" "-881 934 72"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1500 3500]"
+	}
+}
+entity
+{
+	"id" "2678"
+	"classname" "ambient_generic"
+	"health" "4"
+	"message" "ambient/atmosphere/indoor2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "0"
+	"origin" "-997 1010 113.632"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1500 4000]"
 	}
 }
 cameras
