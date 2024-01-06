@@ -1,0 +1,56 @@
+// Choreo version 1
+actor "intro_puppet"
+{
+  channel "choreo"
+  {
+    event sequence "Sit_Ground_to_Idle"
+    {
+      time 4.734375 7.267708
+      param "Sit_Ground_to_Idle"
+      fixedlength
+    }
+    event sequence "Sit_Ground"
+    {
+      time 0.010416 4.723958
+      param "Sit_Ground"
+    }
+    event moveto "Moveto target_walkforward"
+    {
+      time 7.286459 8.947918
+      param "target_walkforward"
+      param2 "Walk"
+    }
+    event lookat "Look at target_blood"
+    {
+      time 9.371797 13.044198
+      param "target_blood"
+    }
+    event face "Face target_blood"
+    {
+      time 8.262820 9.999999
+      param "target_blood"
+    }
+    event face "Face target_lookup"
+    {
+      time 11.377193 14.657895
+      param "target_lookup"
+    }
+    event lookat "Look at target_lookup"
+    {
+      time 13.833334 15.947369
+      param "target_lookup"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "46"
+  "CChoreoView" "76"
+}
+fps 60
+snap off
+ignorePhonemes off
