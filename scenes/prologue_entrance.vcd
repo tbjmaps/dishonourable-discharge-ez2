@@ -1,0 +1,81 @@
+// Choreo version 1
+event section "wait"
+{
+  time 0.546667 -1.000000
+  param "noaction"
+}
+actor "cop_raidcop1"
+{
+  channel "choreo"
+  {
+    event moveto "Moveto targ_flankdoor"
+    {
+      time 0.053333 0.553333
+      param "targ_flankdoor"
+      param2 "Walk"
+    }
+    event sequence "leanwall_act_right_idle"
+    {
+      time 2.033334 7.833333
+      param "leanwall_act_right_idle"
+    }
+    event speak "NPC_Combine.StandingBy"
+    {
+      time 2.906667 3.517438
+      param "NPC_Combine.StandingBy"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event face "Face cop_raidcop2"
+    {
+      time 0.853333 5.599999
+      param "cop_raidcop2"
+    }
+  }
+}
+
+actor "cop_raidcop2"
+{
+  channel "choreo"
+  {
+    event moveto "Moveto targ_keypad"
+    {
+      time 0.026667 1.813334
+      param "targ_keypad"
+      param2 "Walk"
+      resumecondition
+    }
+    event speak "NPC_Combine.MoveIn"
+    {
+      time 4.300000 4.667302
+      param "NPC_Combine.MoveIn"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event sequence "buttonfront"
+    {
+      time 5.086668 5.586668
+      param "buttonfront"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 5.513333 -1.000000
+      param "1"
+    }
+  }
+  active "0"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
