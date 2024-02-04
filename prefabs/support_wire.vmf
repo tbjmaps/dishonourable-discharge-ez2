@@ -1,0 +1,66 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8864"
+	"mapversion" "856"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "41591"
+	"mapversion" "856"
+	"classname" "worldspawn"
+	"chaptertitlenomessage" "1"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+	"vscriptlanguage_client" "-2"
+}
+entity
+{
+	"id" "41592"
+	"classname" "move_rope"
+	"angles" "0 0 0"
+	"MoveSpeed" "64"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/cable_metalwinch01"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "bridge_support_cable&i_2"
+	"TextureScale" "1"
+	"Type" "2"
+	"Width" "2"
+	"origin" "-1368 -844 716"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "41595"
+	"classname" "move_rope"
+	"MoveSpeed" "64"
+	"NextKey" "bridge_support_cable&i_2"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/cable_metalwinch01"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "bridge_support_cable&i_1"
+	"TextureScale" "1"
+	"Type" "2"
+	"Width" "2"
+	"origin" "-1368 -844 840"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
