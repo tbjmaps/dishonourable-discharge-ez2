@@ -1,0 +1,72 @@
+// Choreo version 1
+event section "wait"
+{
+  time 0.920000 -1.000000
+  param "noaction"
+}
+actor "cop_raidcop1"
+{
+  channel "chan"
+  {
+    event speak "prologue.lookingfortrouble"
+    {
+      time 1.833333 2.425465
+      param "prologue.lookingfortrouble"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event moveto "Moveto greet_targ1"
+    {
+      time 0.620000 1.120000
+      param "!player"
+      param2 "Walk"
+      resumecondition
+      distancetotarget 65.00
+    }
+  }
+}
+
+actor "cop_raidcop2"
+{
+  channel "chan"
+  {
+    event speak "prologue.laugh"
+    {
+      time 2.766667 3.643129
+      param "prologue.laugh"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at cop_raidcop1"
+    {
+      time 2.780000 3.780000
+      param "cop_raidcop1"
+    }
+    event gesture "hg_nod"
+    {
+      time 0.026667 0.526667
+      param "hg_nod"
+    }
+    event moveto "Moveto greet_targ1"
+    {
+      time 0.606666 1.106666
+      param "!player"
+      param2 "Walk"
+      distancetotarget 65.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
