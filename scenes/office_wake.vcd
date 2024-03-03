@@ -40,16 +40,24 @@ actor "intro_puppet"
       time 13.833334 15.947369
       param "target_lookup"
     }
+    event speak "f01.hithead"
+    {
+      time 11.424343 14.852415
+      param "f01.hithead"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
   }
 }
 
 scalesettings
 {
-  "SceneRampTool" "100"
-  "GestureTool" "100"
-  "ExpressionTool" "100"
+  "CChoreoView" "64"
   "RampTool" "46"
-  "CChoreoView" "76"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
 }
 fps 60
 snap off
