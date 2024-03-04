@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "3536"
+	"mapversion" "3537"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -120,7 +120,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "3536"
+	"mapversion" "3537"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -41631,16 +41631,28 @@ entity
 }
 entity
 {
-	"id" "183563"
-	"classname" "info_player_start"
-	"angles" "0 255 0"
-	"origin" "7077 466 257"
+	"id" "186543"
+	"classname" "game_text"
+	"channel" "1"
+	"color" "0 255 255"
+	"color2" "0 128 128"
+	"effect" "2"
+	"fadein" "0.01"
+	"fadeout" "1"
+	"fxtime" "0.01"
+	"holdtime" "20"
+	"message" ">Neural link interrupted. Syncope?"
+	"spawnflags" "1"
+	"targetname" "outro_text1"
+	"x" "0.1"
+	"y" "0.7"
+	"origin" "7102.92 388.49 264"
 	editor
 	{
-		"color" "0 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[1000 -12768]"
+		"logicalpos" "[0 3500]"
 	}
 }
 entity
@@ -109239,22 +109251,19 @@ hidden
 		}
 	}
 }
-hidden
+entity
 {
-	entity
+	"id" "367"
+	"classname" "info_player_start"
+	"angles" "0 0 0"
+	"origin" "-452 -96 57"
+	editor
 	{
-		"id" "367"
-		"classname" "info_player_start"
-		"angles" "0 0 0"
-		"origin" "-452 -96 57"
-		editor
-		{
-			"color" "0 255 0"
-			"visgroupid" "29"
-			"visgroupshown" "0"
-			"visgroupautoshown" "1"
-			"logicalpos" "[0 13500]"
-		}
+		"color" "0 255 0"
+		"visgroupid" "29"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
 	}
 }
 entity
@@ -113430,32 +113439,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "186543"
-	"classname" "game_text"
-	"channel" "1"
-	"color" "0 255 255"
-	"color2" "0 128 128"
-	"effect" "2"
-	"fadein" "0.01"
-	"fadeout" "1"
-	"fxtime" "0.01"
-	"holdtime" "20"
-	"message" ">Neural link interrupted. Syncope?"
-	"spawnflags" "1"
-	"targetname" "outro_text1"
-	"x" "0.1"
-	"y" "0.7"
-	"origin" "7102.92 388.49 264"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
 	}
 }
 cameras

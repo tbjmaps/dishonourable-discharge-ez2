@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "3535"
+	"mapversion" "3536"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -120,7 +120,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "3535"
+	"mapversion" "3536"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -113303,6 +113303,8 @@ entity
 		"OnTrigger" "snd_tinnitus,PlaySound,,0,-1"
 		"OnTrigger" "fade_ko_toblack,Fade,,0.1,-1"
 		"OnTrigger" "snd_ko_notif,PlaySound,,3,-1"
+		"OnTrigger" "outro_text1,Display,,3,-1"
+		"OnTrigger" "sc,Command,map facility01,6,-1"
 	}
 	"origin" "7118 412 264"
 	editor
