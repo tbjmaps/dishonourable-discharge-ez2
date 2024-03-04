@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "!player"
+{
+  channel "sound"
+  {
+    event speak "p03.58_shit"
+    {
+      time 3.500000 4.237619
+      param "p03.58_shit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "choreo"
+  {
+  }
+}
+
+actor "puppet_end"
+{
+  channel "choreo"
+  {
+    event lookat "Look at target_monitors"
+    {
+      time 0.125000 38.547623
+      param "target_monitors"
+    }
+    event face "Face target_monitors"
+    {
+      time -0.041668 38.575401
+      param "target_monitors"
+    }
+  }
+}
+
+scalesettings
+{
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "CChoreoView" "28"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -118,6 +118,9 @@ actor "!player"
       cctoken ""
     }
   }
+  channel "choreo"
+  {
+  }
 }
 
 actor "cop_raidcop1"
@@ -159,13 +162,30 @@ actor "cop_raidcop2"
   }
 }
 
+actor "puppet_end"
+{
+  channel "choreo"
+  {
+    event lookat "Look at target_monitors"
+    {
+      time 0.125000 38.547623
+      param "target_monitors"
+    }
+    event face "Face target_monitors"
+    {
+      time -0.041668 38.575401
+      param "target_monitors"
+    }
+  }
+}
+
 scalesettings
 {
   "RampTool" "100"
   "GestureTool" "100"
   "ExpressionTool" "100"
   "SceneRampTool" "100"
-  "CChoreoView" "48"
+  "CChoreoView" "28"
 }
 fps 60
 snap off
