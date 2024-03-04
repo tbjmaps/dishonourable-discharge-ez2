@@ -1,0 +1,172 @@
+// Choreo version 1
+actor "!player"
+{
+  channel "sound"
+  {
+    event speak "NPC_MetroPolice.Radio.On"
+    {
+      time 5.066667 5.141134
+      param "NPC_MetroPolice.Radio.On"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.Off"
+    {
+      time 8.913334 9.059638
+      param "NPC_MetroPolice.Radio.Off"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Trainyard.cop_needanyhelp"
+    {
+      time 5.339999 6.380997
+      param "Trainyard.cop_needanyhelp"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.On"
+    {
+      time 7.846669 7.921136
+      param "NPC_MetroPolice.Radio.On"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Cupcop.Chuckle"
+    {
+      time 8.020000 8.896462
+      param "NPC_MetroPolice.Cupcop.Chuckle"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.Off"
+    {
+      time 6.426666 6.572970
+      param "NPC_MetroPolice.Radio.Off"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "p03.whoturnedofflights"
+    {
+      time 0.393333 3.150045
+      param "p03.whoturnedofflights"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Shoot at cops"
+    {
+      time 10.492754 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 18.069445 -1.000000
+      param "2"
+    }
+    event speak "p03.officerneedsassistance"
+    {
+      time 13.097223 14.770148
+      param "p03.officerneedsassistance"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.On"
+    {
+      time 12.775001 13.003481
+      param "NPC_MetroPolice.Radio.On"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.Off"
+    {
+      time 14.857222 15.307924
+      param "NPC_MetroPolice.Radio.Off"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.On"
+    {
+      time 15.608335 15.836815
+      param "NPC_MetroPolice.Radio.On"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.Off"
+    {
+      time 18.482222 18.628525
+      param "NPC_MetroPolice.Radio.Off"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "p03.overrun"
+    {
+      time 16.486113 18.355341
+      param "p03.overrun"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "cop_raidcop1"
+{
+  channel "choreo"
+  {
+    event sequence "pistolangryidle2"
+    {
+      time 10.692754 11.192754
+      param "pistolangryidle2"
+    }
+    event face "Face cit_shootygeorge"
+    {
+      time 10.630435 11.130435
+      param "cit_shootygeorge"
+    }
+    event sequence "LineIdle02"
+    {
+      time 5.384058 7.710145
+      param "LineIdle02"
+    }
+  }
+}
+
+actor "cop_raidcop2"
+{
+  channel "choreo"
+  {
+    event sequence "pistolangryidle2"
+    {
+      time 10.789276 11.289276
+      param "pistolangryidle2"
+    }
+    event face "Face cit_shootygeorge"
+    {
+      time 10.753625 11.253625
+      param "cit_shootygeorge"
+    }
+  }
+}
+
+scalesettings
+{
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "CChoreoView" "48"
+}
+fps 60
+snap off
+ignorePhonemes off
