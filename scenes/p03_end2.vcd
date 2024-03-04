@@ -1,15 +1,67 @@
 // Choreo version 1
+event section "wait for walk "
+{
+  time 9.809524 -1.000000
+  param "noaction"
+}
 actor "!player"
 {
   channel "sound"
   {
     event speak "p03.58_shit"
     {
-      time 3.500000 4.237619
+      time 0.238095 0.975714
       param "p03.58_shit"
       fixedlength
       cctype "cc_master"
       cctoken ""
+    }
+    event speak "p03.58_requestbackup"
+    {
+      time 3.142857 6.809138
+      param "p03.58_requestbackup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.On"
+    {
+      time 2.976191 3.050658
+      param "NPC_MetroPolice.Radio.On"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_MetroPolice.Radio.Off"
+    {
+      time 6.904764 7.051068
+      param "NPC_MetroPolice.Radio.Off"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 7.880953 -1.000000
+      param "1"
+    }
+    event speak "eli_lab.al_laugh01"
+    {
+      time 8.428572 10.300204
+      param "eli_lab.al_laugh01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 10.428575 -1.000000
+      param "2"
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 10.857143 -1.000000
+      param "3"
     }
   }
   channel "choreo"
@@ -23,13 +75,37 @@ actor "puppet_end"
   {
     event lookat "Look at target_monitors"
     {
-      time 0.125000 38.547623
+      time 0.094112 23.805470
       param "target_monitors"
     }
     event face "Face target_monitors"
     {
-      time -0.041668 38.575401
+      time 0.005953 23.837309
       param "target_monitors"
+    }
+  }
+}
+
+actor "cit_hittyjohn"
+{
+  channel "choreo"
+  {
+    event sequence "swing"
+    {
+      time 9.714289 11.380956
+      param "swing"
+      fixedlength
+    }
+    event face "Face puppet_end"
+    {
+      time 5.476191 21.214287
+      param "puppet_end"
+    }
+    event moveto "Moveto targ_johntarget"
+    {
+      time 5.500000 6.000000
+      param "targ_johntarget"
+      param2 "Walk"
     }
   }
 }

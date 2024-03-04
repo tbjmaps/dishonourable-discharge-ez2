@@ -3,21 +3,10 @@ actor "!player"
 {
   channel "sound"
   {
-    event speak "NPC_MetroPolice.Radio.On"
+    event firetrigger "Firetrigger 2"
     {
-      time 12.775001 13.003481
-      param "NPC_MetroPolice.Radio.On"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
-    }
-    event speak "NPC_MetroPolice.Radio.Off"
-    {
-      time 14.857222 15.307924
-      param "NPC_MetroPolice.Radio.Off"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
+      time 13.452384 -1.000000
+      param "2"
     }
   }
 }
