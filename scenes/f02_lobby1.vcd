@@ -1,0 +1,79 @@
+// Choreo version 1
+actor "cop_lobby_dave"
+{
+  channel "voice"
+  {
+    event moveto "Moveto target_dave"
+    {
+      time 2.820000 3.320000
+      param "target_dave"
+      param2 "Walk"
+    }
+  }
+}
+
+actor "cop_lobby_dan"
+{
+  channel "voice"
+  {
+    event moveto "Moveto target_dan"
+    {
+      time 3.100000 3.600000
+      param "target_dan"
+      param2 "Walk"
+    }
+  }
+}
+
+actor "!player"
+{
+  channel "voice"
+  {
+    event speak "f02.vo_58_cavalry"
+    {
+      time 0.040000 3.969229
+      param "f02.vo_58_cavalry"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "f02.vo_overwatch1"
+    {
+      time 4.653334 12.449886
+      param "f02.vo_overwatch1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 10.813727 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 13.049020 -1.000000
+      param "2"
+    }
+    event speak "f02.vo_58_ohshit1"
+    {
+      time 12.715686 14.382103
+      param "f02.vo_58_ohshit1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
