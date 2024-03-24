@@ -29,14 +29,6 @@ actor "!player"
 {
   channel "voice"
   {
-    event speak "f02.vo_58_cavalry"
-    {
-      time 0.040000 3.969229
-      param "f02.vo_58_cavalry"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
-    }
     event speak "f02.vo_overwatch1"
     {
       time 4.653334 12.449886
@@ -63,12 +55,28 @@ actor "!player"
       cctype "cc_master"
       cctoken ""
     }
+    event speak "f02.vo_58_wherehaveyoubeen"
+    {
+      time 0.120806 2.110761
+      param "f02.vo_58_wherehaveyoubeen"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "f02.vo_58_heyiminhere"
+    {
+      time 2.529140 4.345058
+      param "f02.vo_58_heyiminhere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
   }
 }
 
 scalesettings
 {
-  "CChoreoView" "68"
+  "CChoreoView" "80"
   "RampTool" "100"
   "ExpressionTool" "100"
   "GestureTool" "100"
