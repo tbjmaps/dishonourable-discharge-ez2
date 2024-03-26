@@ -1,12 +1,12 @@
 // Choreo version 1
-actor "!player"
+actor "intro_puppet"
 {
-  channel "sound"
+  channel "choreo"
   {
-    event firetrigger "Firetrigger 2"
+    event sequence "Sit_Ground"
     {
-      time 13.452384 -1.000000
-      param "2"
+      time 0.010416 4.723958
+      param "Sit_Ground"
     }
   }
 }

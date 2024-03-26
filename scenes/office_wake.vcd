@@ -11,8 +11,14 @@ actor "intro_puppet"
     }
     event sequence "Sit_Ground"
     {
-      time 0.010416 4.723958
+      time 3.072916 4.723958
       param "Sit_Ground"
+      event_ramp
+      {
+        0.4917 0.5343
+        1.0000 0.9976
+        1.6500 0.9905
+      }
     }
     event moveto "Moveto target_walkforward"
     {
@@ -48,13 +54,25 @@ actor "intro_puppet"
       cctype "cc_master"
       cctoken ""
     }
+    event sequence "injured3"
+    {
+      time 0.010416 4.255208
+      param "injured3"
+      event_ramp
+      {
+        0.0125 1.0000
+        0.1087 1.0000
+        2.9917 0.9976
+        3.6729 0.5154
+      }
+    }
   }
 }
 
 scalesettings
 {
   "CChoreoView" "64"
-  "RampTool" "46"
+  "RampTool" "48"
   "ExpressionTool" "100"
   "GestureTool" "100"
   "SceneRampTool" "100"
