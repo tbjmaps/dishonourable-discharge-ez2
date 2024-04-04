@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "835"
+	"mapversion" "849"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -90,7 +90,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "835"
+	"mapversion" "849"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -32344,7 +32344,7 @@ entity
 	"spawnflags" "516"
 	"targetname" "flashback1_cop1"
 	"waitingtorappel" "No"
-	"origin" "2816 -768 -384"
+	"origin" "2816 -744 -384"
 	editor
 	{
 		"color" "231 244 0"
@@ -32380,7 +32380,7 @@ entity
 	"spawnflags" "516"
 	"targetname" "flashback1_cit1"
 	"waitingtorappel" "No"
-	"origin" "2816 -768 -384"
+	"origin" "2816 -744 -384"
 	editor
 	{
 		"color" "231 244 0"
@@ -32399,7 +32399,7 @@ entity
 	"m_iszEntity" "flashback1_cit1"
 	"spawnflags" "96"
 	"targetname" "flashback1_locations"
-	"origin" "2816 -768 -384"
+	"origin" "2816 -744 -384"
 	editor
 	{
 		"color" "231 244 0"
@@ -32418,7 +32418,7 @@ entity
 	"m_iszEntity" "flashback1_cop1"
 	"spawnflags" "96"
 	"targetname" "flashback1_locations"
-	"origin" "2816 -768 -384"
+	"origin" "2816 -744 -384"
 	editor
 	{
 		"color" "231 244 0"
@@ -33896,7 +33896,7 @@ entity
 	"PitchScale" "1.0"
 	"Sensitivity" "10"
 	"spawnflags" "143"
-	"speaker_dsp_preset" "47"
+	"speaker_dsp_preset" "48"
 	"SpeakerName" "spk_hallucination"
 	"targetname" "mic_hallucination"
 	"VolumeScale" "1.0"
@@ -37376,7 +37376,7 @@ entity
 {
 	"id" "32710"
 	"classname" "light"
-	"_light" "255 255 255 200"
+	"_light" "150 225 255 300"
 	"_lightHDR" "-1 -1 -1 1"
 	"_lightscaleHDR" "1"
 	"_quadratic_attn" "1"
@@ -37564,18 +37564,21 @@ entity
 {
 	"id" "32604"
 	"classname" "logic_relay"
+	"spawnflags" "0"
 	"targetname" "relay_hallucination"
 	connections
 	{
-		"OnTrigger" "effect_stun,StartEffect,5,0,-1"
+		"OnTrigger" "effect_stun,StartEffect,15,0,-1"
 		"OnTrigger" "flashback1_scriptintro,SetCameraViewEntity,flashback1_camera,0,-1"
 		"OnTrigger" "flashback1_scriptintro,Activate,,0.1,-1"
 		"OnTrigger" "flashback1_scriptintro,SetNextBlendMode,6,0.3,-1"
-		"OnTrigger" "flashback1_scriptintro,SetNextBlendTime,0.6,0.4,-1"
+		"OnTrigger" "flashback1_scriptintro,SetNextBlendTime,2,0.4,-1"
 		"OnTrigger" "flashback1_measuremove,SetMeasureTarget,!PLAYER,0,-1"
 		"OnTrigger" "lcs_flashback,Start,,0.1,-1"
 		"OnTrigger" "flashback1_locations,BeginSequence,,0,-1"
 		"OnTrigger" "flashback1_scriptintro,SetBlendMode,8,0.2,-1"
+		"OnTrigger" "speedmod_1,ModifySpeed,0.1,0,-1"
+		"OnTrigger" "speedmod_1,ModifySpeed,1,15,-1"
 	}
 	"origin" "740 -820 -264"
 	editor
@@ -47602,6 +47605,59 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "34815"
+	"classname" "env_soundscape"
+	"radius" "128"
+	"soundscape" "ep1_c17_00.tunnel_wet"
+	"origin" "584 -784 -245.527"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "34828"
+	"classname" "ambient_generic"
+	"health" "10"
+	"lfomodpitch" "20"
+	"lfomodvol" "5"
+	"lforate" "15"
+	"lfotype" "2"
+	"message" "ambient/levels/citadel/citadel_sickdrone_loop4.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "0"
+	"origin" "744 -796 -264"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "34992"
+	"classname" "player_speedmod"
+	"spawnflags" "0"
+	"targetname" "speedmod_1"
+	"origin" "704 -804 -237.812"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
 	}
 }
 cameras
