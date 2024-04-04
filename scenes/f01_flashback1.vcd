@@ -1,0 +1,114 @@
+// Choreo version 1
+actor "!player"
+{
+  channel "choreo"
+  {
+    event speak "f01.vo_58_whatthathallucinating"
+    {
+      time 13.218750 18.830769
+      param "f01.vo_58_whatthathallucinating"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "flashback1_cit1"
+{
+  channel "choreo"
+  {
+    event sequence "apcarrestslam"
+    {
+      time 0.006666 19.668304
+      param "apcarrestslam"
+    }
+    event face "Face targ_look_grp1"
+    {
+      time -0.016666 6.029631
+      param "targ_look_grp1"
+    }
+    event face "Face flashback1_cit2"
+    {
+      time 6.064816 19.578373
+      param "flashback1_cit2"
+      lockbodyfacing
+    }
+    event speak "f01.vo_no"
+    {
+      time 3.474702 4.854044
+      param "f01.vo_no"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "flashback1_cop1"
+{
+  channel "choreo"
+  {
+    event sequence "harrassapcslam"
+    {
+      time 0.017930 19.739014
+      param "harrassapcslam"
+    }
+    event speak "f01.vo_cleanup"
+    {
+      time 10.069942 12.287561
+      param "f01.vo_cleanup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 6.250001 -1.000000
+      param "2"
+    }
+  }
+}
+
+actor "flashback1_cop2"
+{
+  channel "choreo"
+  {
+    event face "Face flashback1_cit2"
+    {
+      time 0.022727 19.586096
+      param "flashback1_cit2"
+    }
+    event speak "f01.vo_readytoprosecute"
+    {
+      time 0.031249 2.643925
+      param "f01.vo_readytoprosecute"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event generic "AI_AIM to flashback1_cit2"
+    {
+      time 2.880952 19.523808
+      param "AI_AIM"
+      param2 "flashback1_cit2"
+    }
+    event sequence "pistolangryidle2"
+    {
+      time 3.202381 19.630951
+      param "pistolangryidle2"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "56"
+}
+fps 60
+snap off
+ignorePhonemes off
