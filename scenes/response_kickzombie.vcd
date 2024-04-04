@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "!player"
+{
+  channel "voice"
+  {
+    event speak "response.58_ohshutup"
+    {
+      time 0.033334 2.720590
+      param "response.58_ohshutup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

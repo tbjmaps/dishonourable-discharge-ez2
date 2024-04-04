@@ -1,6 +1,21 @@
 criterion "IsBenchCop" "classname" "dd_bench_cop" required
 criterion "IsMuteCop" "classname" "dd_mute_cop" required
 criterion "IsCellCit1" "classname" "dd_cell1_cit" required
+criterion "Is58" "classname" "player58" required
+
+response TauntFastZombieTorsoResponse
+{
+	speak "response.58_ohshutup" respeakdelay 30
+}
+
+
+rule TauntFastZombieTorso
+{
+	criteria Is58 EnemyIsFastZombieTorso ConceptEnemyDead EnemyVisible EnemyIsFastZombieTorso
+	// 
+	response TauntFastZombieTorsoResponse
+}
+
 
 
 response "BenchCopResponse"
