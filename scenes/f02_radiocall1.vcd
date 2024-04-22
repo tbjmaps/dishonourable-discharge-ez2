@@ -3,38 +3,6 @@ actor "!player"
 {
   channel "voice"
   {
-    event speak "f02.vo_rg_introduction"
-    {
-      time 0.020000 2.237279
-      param "f02.vo_rg_introduction"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
-    }
-    event speak "f02.vo_rg_escape1"
-    {
-      time 6.413334 10.169842
-      param "f02.vo_rg_escape1"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
-    }
-    event speak "f02.vo_rg_escape2"
-    {
-      time 13.413334 19.532835
-      param "f02.vo_rg_escape2"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
-    }
-    event speak "f02.vo_rg_outside"
-    {
-      time 22.899624 27.569963
-      param "f02.vo_rg_outside"
-      fixedlength
-      cctype "cc_master"
-      cctoken ""
-    }
     event speak "f02.vo_58_ohwhatnow"
     {
       time 3.291667 4.587132
@@ -61,7 +29,7 @@ actor "!player"
     }
     event speak "f02.vo_58_hello"
     {
-      time 28.312498 29.170797
+      time 28.624998 29.483297
       param "f02.vo_58_hello"
       fixedlength
       cctype "cc_master"
@@ -71,6 +39,38 @@ actor "!player"
     {
       time 31.333336 33.315491
       param "f02.vo_58_whatthehell"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "f02.vo_rg_introduction"
+    {
+      time 0.062500 1.763566
+      param "f02.vo_rg_introduction"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "f02.vo_rg_escape1"
+    {
+      time 5.604166 10.197794
+      param "f02.vo_rg_escape1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "f02.vo_rg_escape2"
+    {
+      time 13.270834 19.748974
+      param "f02.vo_rg_escape2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "f02.vo_rg_outside"
+    {
+      time 22.687500 28.155550
+      param "f02.vo_rg_outside"
       fixedlength
       cctype "cc_master"
       cctoken ""
