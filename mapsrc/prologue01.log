@@ -643,3 +643,132 @@ Level flags = 0
 Total triangle count: 5411
 Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.bsp
 1 second elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/prologue01/concrete/blendbunk_conc01_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 100 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (206470 bytes)
+Placing static props...
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Water found with no water_lod_control entity, creating a default one.
+Compacting texture/material tables...
+Reduced 681 texinfos to 439
+Reduced 117 texdatas to 110 (2932 bytes to 2677)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.bsp
+0 seconds elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.prt
+ 203 portalclusters
+ 409 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 1298 visible clusters (5.45%)
+Total clusters visible: 23809
+Average clusters visible: 117
+Building PAS...
+Average clusters audible: 187
+visdatasize:11817  compressed from 12992
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.bsp
+1799 faces
+172906 square feet [24898498.00 square inches]
+3 Displacements
+1426 Square Feet [205433.95 Square Inches]
+1799 patches before subdivision
+27445 patches after subdivision
+29 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 3165666, max 476
+transfer lists:  24.2 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(14957, 9883, 5769)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(2347, 1401, 692)
+Build Patch/Sample Hash Table(s).....Done<0.0062 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   7/1024          336/49152    ( 0.7%) 
+brushes                583/8192         6996/98304    ( 7.1%) 
+brushsides            4072/65536       32576/524288   ( 6.2%) 
+planes                1720/65536       34400/1310720  ( 2.6%) 
+vertexes              2942/65536       35304/786432   ( 4.5%) 
+nodes                  623/65536       19936/2097152  ( 1.0%) 
+texinfos               439/12288       31608/884736   ( 3.6%) 
+texdata                110/2048         3520/65536    ( 5.4%) 
+dispinfos                3/0             528/0        ( 0.0%) 
+disp_verts             243/0            4860/0        ( 0.0%) 
+disp_tris              384/0             768/0        ( 0.0%) 
+disp_lmsamples        3956/0            3956/0        ( 0.0%) 
+faces                 1799/65536      100744/3670016  ( 2.7%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             1293/65536       72408/3670016  ( 2.0%) 
+leaves                 631/65536       20192/2097152  ( 1.0%) 
+leaffaces             2112/65536        4224/131072   ( 3.2%) 
+leafbrushes           1166/65536        2332/131072   ( 1.8%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            14184/512000      56736/2048000  ( 2.8%) 
+edges                 9033/256000      36132/1024000  ( 3.5%) 
+LDR worldlights         28/65536        2464/5767168  ( 0.0%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            1/32768          12/393216   ( 0.0%) 
+waterstrips            230/32768        2300/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          4512/65536        9024/131072   ( 6.9%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                20/8192         7040/2883584  ( 0.2%) 
+LDR lightdata         [variable]      741100/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       11817/16777216 ( 0.1%) 
+entdata               [variable]       48452/393216   (12.3%) 
+LDR ambient table      631/65536        2524/262144   ( 1.0%) 
+HDR ambient table      631/65536        2524/262144   ( 1.0%) 
+LDR leaf ambient      1813/65536       50764/1835008  ( 2.8%) 
+HDR leaf ambient       631/65536       17668/1835008  ( 1.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/2128     ( 0.0%) 
+dtl prp lght          [variable]           1/19       ( 5.3%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/14448    ( 0.0%) 
+pakfile               [variable]        1679/0        ( 0.0%) 
+physics               [variable]      206470/4194304  ( 4.9%) 
+physics terrain       [variable]        1197/1048576  ( 0.1%) 
+
+Level flags = 0
+
+Total triangle count: 5411
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\prologue01.bsp
+1 second elapsed
