@@ -1,0 +1,39 @@
+//=============================================================================
+//
+// Purpose: Half-Life 2 mod game definition file (.fgd) 
+//			Defines new entities for the metrozombie.
+//
+//=============================================================================
+
+//-------------------------------------------------------------------------
+//
+// NPCs
+//
+//-------------------------------------------------------------------------
+
+@NPCClass base(BaseZombie) studio("models/zombie/zombiecop.mdl") = npc_metrozombie : "Metrozombie"
+[
+	NumGrenades(choices) : "Number of Grenades" : "1" : "The number of grenades this zombine can pull out." =
+	[
+		"0" : "None"
+		"1" : "1"
+		"2" : "2"
+		"3" : "3"
+		"4" : "4"
+		"5" : "5"
+		"999999" : "Unlimited"
+	]
+	GrenadeType(choices) : "Grenade Type" : "" =
+	[
+		"" : "Random"
+		"npc_grenade_frag" : "Grenade"
+		"npc_manhack"  : "Manhack"
+		"weapon_stunstick"  : "Stun Stick"
+	]
+	// Inputs
+	input StartSprint(void) : "Forces the zombine to sprint."
+	input PullGrenade(void) : "Forces the zombine to pull a grenade."
+	
+	// Outputs
+	output OnPullGrenade(ehandle) : "Fires when the zombine pulls a grenade. Passes the grenade."
+]
