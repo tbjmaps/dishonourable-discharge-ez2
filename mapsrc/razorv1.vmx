@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "335"
+	"mapversion" "345"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -78,7 +78,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "335"
+	"mapversion" "345"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -1133,6 +1133,114 @@ entity
 }
 entity
 {
+	"id" "14006"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "40 255 225"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "1"
+	"origin" "7357.82 36.9535 275.379"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "13987"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "40 255 225"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "1"
+	"origin" "7357.38 -38.868 275.379"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "13982"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"scale" "0.25"
+	"origin" "7429.08 5.70396 291.015"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "13697"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/thumper_startup1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "snd_start"
+	"origin" "7402 -25 179"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "13721"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"health" "10"
+	"message" "ambient/machines/train_idle.wav"
+	"pitch" "100"
+	"pitchstart" "30"
+	"radius" "1250"
+	"spawnflags" "49"
+	"spinup" "50"
+	"targetname" "snd_idle2"
+	"origin" "7414 30 179"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
 	"id" "13310"
 	"classname" "func_useableladder"
 	"origin" "7432 96 88"
@@ -1450,8 +1558,9 @@ entity
 	"parentname" "razortrain"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
+	"targetname" "rt_prop"
 	"origin" "7168 0 120"
 	editor
 	{
@@ -1465,11 +1574,12 @@ entity
 {
 	"id" "13477"
 	"classname" "light"
-	"_light" "255 255 255 200"
+	"_light" "255 255 255 8000"
 	"_lightHDR" "-1 -1 -1 1"
 	"_lightscaleHDR" "1"
 	"_quadratic_attn" "1"
-	"origin" "7256 -142 206.859"
+	"spawnflags" "0"
+	"origin" "7360 -88 232"
 	editor
 	{
 		"color" "220 30 220"
@@ -1524,61 +1634,16 @@ entity
 }
 entity
 {
-	"id" "13721"
-	"classname" "ambient_generic"
-	"cspinup" "0"
-	"health" "10"
-	"message" "ambient/machines/train_idle.wav"
-	"pitch" "100"
-	"pitchstart" "30"
-	"radius" "1250"
-	"spawnflags" "49"
-	"spinup" "50"
-	"targetname" "snd_idle2"
-	"origin" "7414 30 179"
+	"id" "14054"
+	"classname" "light"
+	"_light" "255 255 255 800"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"origin" "6996 160 232"
 	editor
 	{
 		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 0]"
-	}
-}
-entity
-{
-	"id" "13697"
-	"classname" "ambient_generic"
-	"health" "10"
-	"message" "ambient/machines/thumper_startup1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"radius" "1250"
-	"spawnflags" "49"
-	"targetname" "snd_start"
-	"origin" "7402 -25 179"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 0]"
-	}
-}
-entity
-{
-	"id" "13982"
-	"classname" "env_sprite"
-	"framerate" "10.0"
-	"GlowProxySize" "2.0"
-	"HDRColorScale" "1.0"
-	"model" "sprites/glow01.spr"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"scale" "0.25"
-	"origin" "7429.08 5.70396 291.015"
-	editor
-	{
-		"color" "20 140 20"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -1586,22 +1651,23 @@ entity
 }
 entity
 {
-	"id" "13987"
-	"classname" "env_sprite"
-	"framerate" "10.0"
-	"GlowProxySize" "2.0"
-	"HDRColorScale" "1.0"
-	"model" "sprites/glow01.spr"
-	"parentname" "razortrain"
+	"id" "14071"
+	"classname" "prop_dynamic"
+	"angles" "0 90 -90"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/prison_throwswitchlever001.mdl"
+	"modelscale" "1.0"
 	"renderamt" "255"
-	"rendercolor" "40 255 225"
-	"rendermode" "9"
-	"scale" "0.25"
-	"spawnflags" "1"
-	"origin" "7357.38 -38.868 275.379"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "7352 -26.129 200.287"
 	editor
 	{
-		"color" "20 140 20"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
@@ -1609,25 +1675,60 @@ entity
 }
 entity
 {
-	"id" "14006"
-	"classname" "env_sprite"
-	"framerate" "10.0"
-	"GlowProxySize" "2.0"
-	"HDRColorScale" "1.0"
-	"model" "sprites/glow01.spr"
+	"id" "14081"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"BreakOnPlayerKick" "0"
+	"DisableBoneFollowers" "0"
+	"disableflashlight" "0"
+	"disablereceiveshadows" "0"
+	"DisplacementImpossible" "0"
+	"EFlags" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HoldAnimation" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_combine/combine_interface001a.mdl"
+	"modelscale" "1.0"
 	"parentname" "razortrain"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
 	"renderamt" "255"
-	"rendercolor" "40 255 225"
-	"rendermode" "9"
-	"scale" "0.25"
-	"spawnflags" "1"
-	"origin" "7357.82 36.9535 275.379"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"updatechildren" "0"
+	"viewhideflags" "0"
+	"origin" "7355.46 -48 173.192"
 	editor
 	{
-		"color" "20 140 20"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14096"
+	"classname" "info_player_start"
+	"angles" "0 0 0"
+	"origin" "7384 -68 168"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras
