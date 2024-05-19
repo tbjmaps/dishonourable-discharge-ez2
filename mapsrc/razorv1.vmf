@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8864"
-	"mapversion" "372"
+	"mapversion" "374"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -78,7 +78,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "372"
+	"mapversion" "374"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -1133,6 +1133,101 @@ entity
 }
 entity
 {
+	"id" "14200"
+	"classname" "logic_relay"
+	"targetname" "relay_poweron"
+	"origin" "7744 184 66.375"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "6989"
+	"classname" "path_track"
+	"angles" "0 180 0"
+	"orientationtype" "2"
+	"spawnflags" "0"
+	"target" "track_razor2"
+	"targetname" "track_razor1"
+	"origin" "7680 0 24"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "13987"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "40 255 225"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "0"
+	"origin" "7853.38 -38.868 275.379"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "13982"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"scale" "0.25"
+	"origin" "7925.08 5.70396 291.015"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "13697"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/thumper_startup1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "snd_start"
+	"origin" "7898 -25 179"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
 	"id" "1089"
 	"classname" "light_environment"
 	"_ambient" "150 150 150 100"
@@ -1674,97 +1769,19 @@ entity
 }
 entity
 {
-	"id" "13697"
-	"classname" "ambient_generic"
-	"health" "10"
-	"message" "ambient/machines/thumper_startup1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"radius" "1250"
-	"spawnflags" "49"
-	"targetname" "snd_start"
-	"origin" "7898 -25 179"
+	"id" "14459"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"solid" "6"
+	"origin" "7861 -44 216.208"
 	editor
 	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 0]"
-	}
-}
-entity
-{
-	"id" "13982"
-	"classname" "env_sprite"
-	"framerate" "10.0"
-	"GlowProxySize" "2.0"
-	"HDRColorScale" "1.0"
-	"model" "sprites/glow01.spr"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"scale" "0.25"
-	"origin" "7925.08 5.70396 291.015"
-	editor
-	{
-		"color" "20 140 20"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "13987"
-	"classname" "env_sprite"
-	"framerate" "10.0"
-	"GlowProxySize" "2.0"
-	"HDRColorScale" "1.0"
-	"model" "sprites/glow01.spr"
-	"parentname" "razortrain"
-	"renderamt" "255"
-	"rendercolor" "40 255 225"
-	"rendermode" "9"
-	"scale" "0.25"
-	"spawnflags" "0"
-	"origin" "7853.38 -38.868 275.379"
-	editor
-	{
-		"color" "20 140 20"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "6989"
-	"classname" "path_track"
-	"angles" "0 180 0"
-	"orientationtype" "2"
-	"spawnflags" "0"
-	"target" "track_razor2"
-	"targetname" "track_razor1"
-	"origin" "7680 0 24"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
-	"id" "14200"
-	"classname" "logic_relay"
-	"targetname" "relay_poweron"
-	"origin" "7744 184 66.375"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
 	}
 }
 cameras
