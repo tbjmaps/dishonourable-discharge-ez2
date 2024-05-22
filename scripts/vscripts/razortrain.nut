@@ -1,12 +1,9 @@
 // Driveable razor train script !!!!
 
-const maxSpeed=500;	// u/s
-const accelRate=50;
-const decelRate=50;
+const maxSpeed=250;	// u/s
 
 trackPowerOn <- false;		// track power is switched on
 trainStarted <- false; 		// train has been started up
-reverserState <- 0; 		// -1 = reverse, 0 = power off, 1 = forward
 throttleState <- 0; 		// -1 = brake, 0 = neutral, 1 = power
 throttleDirection <- true; // cycle through throttle modes
 
@@ -15,6 +12,44 @@ throttle <- null
 console <- null;
 
 
+const accelRate 		= 0.005
+const decelRate 		= -0.004
+const cruiseDecelRate 	= -0.001
+
+velocity <- 0.0; 	// current velocity of the train - 0-1
+
+function think()
+{
+	deltaV <- 0;
+	prevVelocity <- 0;
+
+	// first get the throttle state
+	if (throttleState == 0) {
+		deltaV = cruiseDecelRate;
+		
+	} else if (throttleState == -1) {
+		deltaV = decelRate;
+	
+	} else if (throttleState == 1) {
+		deltaV = accelRate;
+	}
+
+	// apply deltaV to velocity
+	velocity += deltaV; 
+
+	if (deltaV <= 0) // negative deltaV so we are decelerating
+	{
+
+			if (velocity<=0) velocity=0;
+	
+	}
+	
+	if (velocity>=1) velocity=1;
+
+	
+	DoEntFire("razortrain", "SetSpeedDir",velocity.tostring(), 0, null, null);
+	DoEntFire("razortrain_speedo", "SetPosition", velocity.tostring(), 0, null, null);
+}
 
 
 function razortrainStart() {
@@ -66,37 +101,22 @@ function razortrainThrottle() {
 
 		printl(throttleState);
 		DoEntFire("razortrain_handle", "SetAnimation", animName, 0, null, null)
+
 		
 	}
 	
 }
 
 function razortrainReverser() {
-	if (throttleState == 0) { // only allow reverser movement when throttle 0
-	
-		printl("Reverser input");
 	
 		if (trainStarted == false) {
 			// startup sequence upon first reverser movement
-			reverserState = 1;
 			DoEntFire("razortrain_reverser", "SetAnimation", "Neutral_To_F", 0, null, null)
 			razortrainStart()
-			
-		} else {
-			if (reverserState == 1) {
-				reverserState = -1;
-				DoEntFire("razortrain_reverser", "SetAnimation", "F_To_B", 0, null, null);
-				
-			} else if (reverserState == -1) {
-				reverserState = 1;
-				DoEntFire("razortrain_reverser", "SetAnimation", "B_To_F", 0, null, null);
-			}
 		}
-	
 			
 	}
 	
-}
 
 function OnPostSpawn() {
 	printl("Razor train script started");
