@@ -1,0 +1,1329 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8864"
+	"mapversion" "1"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "139"
+	"mapversion" "1"
+	"classname" "worldspawn"
+	"chaptertitlenomessage" "1"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+	"vscriptlanguage_client" "-2"
+}
+entity
+{
+	"id" "140"
+	"classname" "func_movelinear"
+	"blockdamage" "0"
+	"disablereceiveshadows" "0"
+	"EFlags" "0"
+	"movedir" "0 90 0"
+	"movedistance" "5"
+	"origin" "116.25 -68.75 79.74"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"spawnflags" "0"
+	"speed" "100"
+	"startposition" "0"
+	"targetname" "razortrain_speedo"
+	"viewhideflags" "0"
+	solid
+	{
+		"id" "141"
+		side
+		{
+			"id" "30"
+			"plane" "(115 -69 79.4927) (116 -69 79.4927) (116 -70 79.4927)"
+			vertices_plus
+			{
+				"v" "115 -69 79.4927"
+				"v" "116 -69 79.4927"
+				"v" "116 -70 79.4927"
+				"v" "115 -70 79.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 -1 0 32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29"
+			"plane" "(115 -70 78.4927) (116 -70 78.4927) (116 -69 78.4927)"
+			vertices_plus
+			{
+				"v" "115 -70 78.4927"
+				"v" "116 -70 78.4927"
+				"v" "116 -69 78.4927"
+				"v" "115 -69 78.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 -1 0 32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "28"
+			"plane" "(115 -69 79.4927) (115 -70 79.4927) (115 -70 78.4927)"
+			vertices_plus
+			{
+				"v" "115 -69 79.4927"
+				"v" "115 -70 79.4927"
+				"v" "115 -70 78.4927"
+				"v" "115 -69 78.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 -32] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "27"
+			"plane" "(116 -69 78.4927) (116 -70 78.4927) (116 -70 79.4927)"
+			vertices_plus
+			{
+				"v" "116 -69 78.4927"
+				"v" "116 -70 78.4927"
+				"v" "116 -70 79.4927"
+				"v" "116 -69 79.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 -32] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26"
+			"plane" "(116 -69 79.4927) (115 -69 79.4927) (115 -69 78.4927)"
+			vertices_plus
+			{
+				"v" "116 -69 79.4927"
+				"v" "115 -69 79.4927"
+				"v" "115 -69 78.4927"
+				"v" "116 -69 78.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "25"
+			"plane" "(116 -70 78.4927) (115 -70 78.4927) (115 -70 79.4927)"
+			vertices_plus
+			{
+				"v" "116 -70 78.4927"
+				"v" "115 -70 78.4927"
+				"v" "115 -70 79.4927"
+				"v" "116 -70 79.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "144"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"BreakOnPlayerKick" "0"
+	"DisableBoneFollowers" "0"
+	"disableflashlight" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"DisplacementImpossible" "0"
+	"EFlags" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HoldAnimation" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/models/props/razortraincontrols_throttlebrake.mdl"
+	"modelscale" "1.0"
+	"parentname" "razortrain"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "razortrain_handle"
+	"updatechildren" "0"
+	"viewhideflags" "0"
+	"origin" "123 -66.8113 73.7937"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "148"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "3"
+	"health" "10"
+	"message" "plats/ttrain_brake1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "17"
+	"spinup" "0"
+	"targetname" "snd_brake"
+	"origin" "219 28 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "151"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "hl1/ambience/steamburst1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "snd_hiss"
+	"origin" "17.5 -89.5 -36.3793"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "154"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"disablereceiveshadows" "1"
+	"disableshadows" "1"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/models/props/razortest1.mdl"
+	"modelscale" "1.0"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "rt_prop"
+	"origin" "-60 -8 -25.5073"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "158"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/thumper_startup1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "snd_start3"
+	"origin" "147 42 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "161"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "plats/elevator_large_start1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "snd_start2"
+	"origin" "174 -33 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "164"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/levels/citadel/core_contained_loop1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "17"
+	"targetname" "razortrain_snd_idle"
+	"origin" "154 13 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "167"
+	"classname" "func_useableladder"
+	"origin" "204 88 -57.51"
+	"parentname" "razortrain"
+	"point0" "204 88 -145.51"
+	"point1" "204 88 30.49"
+	"origin" "204 88 -57.51"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -12268]"
+	}
+}
+entity
+{
+	"id" "171"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "40 255 225"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "0"
+	"targetname" "rt_cabglow"
+	"origin" "129.82 28.9535 129.872"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "175"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"BreakOnPlayerKick" "0"
+	"DisableBoneFollowers" "0"
+	"disableflashlight" "0"
+	"disablereceiveshadows" "1"
+	"DisplacementImpossible" "0"
+	"EFlags" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HoldAnimation" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/models/props/razortraincontrols_speedo.mdl"
+	"modelscale" "1.0"
+	"parentname" "razortrain_speedo"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "razortrain_controls_speedo"
+	"updatechildren" "0"
+	"viewhideflags" "0"
+	"origin" "115.94 -69.4215 76.9557"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "179"
+	"classname" "env_shake"
+	"amplitude" "4"
+	"duration" "1"
+	"frequency" "10"
+	"radius" "500"
+	"spawnflags" "0"
+	"targetname" "shake_start"
+	"origin" "179.5 -22 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 500]"
+	}
+}
+entity
+{
+	"id" "182"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "rt_rly_start"
+	connections
+	{
+		"OnTrigger" "snd_start2,PlaySound,,0,-1"
+		"OnTrigger" "snd_idle2,PlaySound,,4,0"
+		"OnTrigger" "snd_idle,PlaySound,,0,-1"
+		"OnTrigger" "spr_status,DisableDraw,,0,-1"
+		"OnTrigger" "rt_con,Skin,0,1,-1"
+		"OnTrigger" "snd_relays,PlaySound,,2,-1"
+		"OnTrigger" "rt_prop,Skin,0,2,-1"
+		"OnTrigger" "rt_cabglow,EnableDraw,,2,-1"
+		"OnTrigger" "snd_start3,PlaySound,,4,-1"
+		"OnTrigger" "shake_start,StartShake,,4,-1"
+		"OnTrigger" "snd_hiss,PlaySound,,7,-1"
+		"OnTrigger" "snd_relays,PlaySound,,8,-1"
+		"OnTrigger" "rt_light,EnableDraw,,8,-1"
+		"OnTrigger" "rt_pt,TurnOn,,8,-1"
+		"OnTrigger" "hint_reverser,ShowHint,,9,-1"
+		"OnTrigger" "btn_reverser,Unlock,,9,-1"
+		"OnTrigger" "razortrain_handle,,,0,-1"
+	}
+	"origin" "155 -25 54.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "184"
+	"classname" "prop_interactable"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_mining/freightelevatorbutton02.mdl"
+	"modelscale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"SetCooldown" "1.0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "512"
+	"use_maxs" "0 0 0"
+	"use_mins" "-0 -0 -0"
+	connections
+	{
+		"OnPressed" "relay_poweron,Trigger,,0,-1"
+	}
+	"origin" "80.5601 183.791 -93.3703"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "187"
+	"classname" "logic_relay"
+	"targetname" "relay_poweron"
+	"origin" "20 176 -79.1323"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "189"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"BreakOnPlayerKick" "0"
+	"DisableBoneFollowers" "0"
+	"disableflashlight" "0"
+	"disablereceiveshadows" "1"
+	"DisplacementImpossible" "0"
+	"EFlags" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HoldAnimation" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/models/props/razortraincontrols.mdl"
+	"modelscale" "1.0"
+	"parentname" "razortrain"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "1"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "razortrain_controls"
+	"updatechildren" "0"
+	"viewhideflags" "0"
+	"origin" "126.81 -64.0725 71.5807"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "193"
+	"classname" "info_player_start"
+	"angles" "0 330 0"
+	"origin" "-180 144 -144.507"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "195"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"parentname" "razortrain_reverser"
+	"renderamt" "255"
+	"rendercolor" "0 255 225"
+	"renderfx" "10"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "1"
+	"targetname" "razortrain_spr_status"
+	"origin" "122.59 -50.5288 80.8557"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "199"
+	"classname" "logic_script"
+	"targetname" "razortrain_scripthost"
+	"thinkfunction" "think"
+	"vscripts" "razortrain.nut"
+	"origin" "154 -8 66.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "201"
+	"classname" "point_spotlight"
+	"angles" "0 180 0"
+	"HaloMaterial" "sprites/light_glow03.vmt"
+	"HaloScale" "60"
+	"HDRColorScale" "1.0"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "2"
+	"spotlightlength" "500"
+	"SpotlightMaterial" "sprites/glow_test02.vmt"
+	"spotlightwidth" "50"
+	"targetname" "rt_light"
+	"origin" "-323.018 -8.63839 89.5477"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "204"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/alarms/klaxon1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "17"
+	"targetname" "razortrain_snd_klaxon"
+	"origin" "183 16 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "207"
+	"classname" "func_tracktrain"
+	"bank" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"dmg" "0"
+	"EFlags" "0"
+	"height" "4"
+	"ManualAccelSpeed" "50"
+	"ManualDecelSpeed" "50"
+	"ManualSpeedChanges" "1"
+	"MoveSound" "ambient/machines/razor_train_wheels_loop2.wav"
+	"MoveSoundMaxPitch" "200"
+	"MoveSoundMaxTime" "0"
+	"MoveSoundMinPitch" "60"
+	"MoveSoundMinTime" "0"
+	"orientationtype" "1"
+	"origin" "-44 -8 -121.51"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"spawnflags" "16"
+	"speed" "0"
+	"StartSound" "plats/elevator_start1.wav"
+	"startspeed" "1000"
+	"StopSound" "ambient/levels/labs/machine_stop1.wav"
+	"target" "track_razor1"
+	"targetname" "razortrain"
+	"velocitytype" "2"
+	"viewhideflags" "0"
+	"volume" "10"
+	"wheels" "50"
+	solid
+	{
+		"id" "208"
+		side
+		{
+			"id" "6"
+			"plane" "(-36 -16 -105.507) (-52 -16 -105.507) (-52 0 -105.507)"
+			vertices_plus
+			{
+				"v" "-36 -16 -105.507"
+				"v" "-52 -16 -105.507"
+				"v" "-52 0 -105.507"
+				"v" "-36 0 -105.507"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[-1 -0 0 -48] 0.25"
+			"vaxis" "[-0 1 0 -31.9975] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(-36 0 -137.507) (-52 0 -137.507) (-52 -16 -137.507)"
+			vertices_plus
+			{
+				"v" "-36 0 -137.507"
+				"v" "-52 0 -137.507"
+				"v" "-52 -16 -137.507"
+				"v" "-36 -16 -137.507"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[-1 -0 0 -48] 0.25"
+			"vaxis" "[-0 1 0 -31.9975] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(-36 -16 -105.507) (-36 0 -105.507) (-36 0 -137.507)"
+			vertices_plus
+			{
+				"v" "-36 -16 -105.507"
+				"v" "-36 0 -105.507"
+				"v" "-36 0 -137.507"
+				"v" "-36 -16 -137.507"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 -1 0 31.9975] 0.25"
+			"vaxis" "[0 0 -1 -38.0292] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "3"
+			"plane" "(-52 -16 -137.507) (-52 0 -137.507) (-52 0 -105.507)"
+			vertices_plus
+			{
+				"v" "-52 -16 -137.507"
+				"v" "-52 0 -137.507"
+				"v" "-52 0 -105.507"
+				"v" "-52 -16 -105.507"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 -1 0 31.9975] 0.25"
+			"vaxis" "[0 0 -1 -38.0292] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2"
+			"plane" "(-52 -16 -105.507) (-36 -16 -105.507) (-36 -16 -137.507)"
+			vertices_plus
+			{
+				"v" "-52 -16 -105.507"
+				"v" "-36 -16 -105.507"
+				"v" "-36 -16 -137.507"
+				"v" "-52 -16 -137.507"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[-1 -0 0 -48] 0.25"
+			"vaxis" "[0 0 -1 -38.0292] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1"
+			"plane" "(-52 0 -137.507) (-36 0 -137.507) (-36 0 -105.507)"
+			vertices_plus
+			{
+				"v" "-52 0 -137.507"
+				"v" "-36 0 -137.507"
+				"v" "-36 0 -105.507"
+				"v" "-52 0 -105.507"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[-1 -0 0 -48] 0.25"
+			"vaxis" "[0 0 -1 -38.0292] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 3000]"
+	}
+}
+entity
+{
+	"id" "210"
+	"classname" "env_projectedtexture"
+	"angles" "-0 -180 0"
+	"brightnessscale" "4"
+	"enableshadows" "1"
+	"farz" "2048"
+	"lightcolor" "255 255 255 200"
+	"lightfov" "110"
+	"lightworld" "1"
+	"linear_attn" "1"
+	"nearz" "4.0"
+	"parentname" "razortrain"
+	"ProjectedTextureVersion" "1"
+	"shadowatten" "0.0"
+	"shadowquality" "1"
+	"spawnflags" "2"
+	"targetname" "rt_pt"
+	"texturename" "effects/flashlight001"
+	"origin" "-321.25 -8.87 89.4277"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "213"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "3"
+	"health" "10"
+	"message" "dd/razortrain-accel.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "17"
+	"spinup" "0"
+	"targetname" "snd_accel"
+	"origin" "202 -1 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "216"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"parentname" "razortrain_reverser"
+	"renderamt" "255"
+	"rendercolor" "0 255 225"
+	"renderfx" "10"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "0"
+	"targetname" "razortrain_spr_throttle"
+	"origin" "132.707 -66.8833 71.3049"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "220"
+	"classname" "path_track"
+	"angles" "0 180 0"
+	"orientationtype" "2"
+	"spawnflags" "0"
+	"target" "track_razor2"
+	"targetname" "track_razor1"
+	"origin" "-44 -8 -121.507"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "223"
+	"classname" "func_button"
+	"disablereceiveshadows" "0"
+	"EFlags" "0"
+	"lip" "0"
+	"locked_sentence" "0"
+	"locked_sound" "0"
+	"movedir" "0 0 0"
+	"origin" "123 -66.5 75.49"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"sounds" "0"
+	"spawnflags" "1025"
+	"speed" "5"
+	"targetname" "btn_throttle"
+	"unlocked_sentence" "0"
+	"unlocked_sound" "0"
+	"viewhideflags" "0"
+	"wait" "0.01"
+	connections
+	{
+		"OnPressed" "razortrain_scripthost,FireUser2,,0,-1"
+	}
+	solid
+	{
+		"id" "224"
+		side
+		{
+			"id" "12"
+			"plane" "(118 -64 85.4927) (128 -64 85.4927) (128 -69 85.4927)"
+			vertices_plus
+			{
+				"v" "118 -64 85.4927"
+				"v" "128 -64 85.4927"
+				"v" "128 -69 85.4927"
+				"v" "118 -69 85.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 36] 0.25"
+			"vaxis" "[0 -1 0 48] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "11"
+			"plane" "(118 -69 65.4927) (128 -69 65.4927) (128 -64 65.4927)"
+			vertices_plus
+			{
+				"v" "118 -69 65.4927"
+				"v" "128 -69 65.4927"
+				"v" "128 -64 65.4927"
+				"v" "118 -64 65.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 36] 0.25"
+			"vaxis" "[0 -1 0 48] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "10"
+			"plane" "(118 -64 85.4927) (118 -69 85.4927) (118 -69 65.4927)"
+			vertices_plus
+			{
+				"v" "118 -64 85.4927"
+				"v" "118 -69 85.4927"
+				"v" "118 -69 65.4927"
+				"v" "118 -64 65.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 -48] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "9"
+			"plane" "(128 -64 65.4927) (128 -69 65.4927) (128 -69 85.4927)"
+			vertices_plus
+			{
+				"v" "128 -64 65.4927"
+				"v" "128 -69 65.4927"
+				"v" "128 -69 85.4927"
+				"v" "128 -64 85.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 -48] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "8"
+			"plane" "(128 -64 85.4927) (118 -64 85.4927) (118 -64 65.4927)"
+			vertices_plus
+			{
+				"v" "128 -64 85.4927"
+				"v" "118 -64 85.4927"
+				"v" "118 -64 65.4927"
+				"v" "128 -64 65.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 36] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7"
+			"plane" "(128 -69 65.4927) (118 -69 65.4927) (118 -69 85.4927)"
+			vertices_plus
+			{
+				"v" "128 -69 65.4927"
+				"v" "118 -69 65.4927"
+				"v" "118 -69 85.4927"
+				"v" "128 -69 85.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 36] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "227"
+	"classname" "func_button"
+	"disablereceiveshadows" "0"
+	"EFlags" "0"
+	"lip" "0"
+	"locked_sentence" "0"
+	"locked_sound" "0"
+	"movedir" "0 0 0"
+	"origin" "120 -51.5 75.49"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"sounds" "0"
+	"spawnflags" "1025"
+	"speed" "5"
+	"targetname" "btn_reverser"
+	"unlocked_sentence" "0"
+	"unlocked_sound" "0"
+	"viewhideflags" "0"
+	"wait" "0.5"
+	connections
+	{
+		"OnPressed" "razortrain_scripthost,FireUser3,,0,-1"
+	}
+	solid
+	{
+		"id" "228"
+		side
+		{
+			"id" "18"
+			"plane" "(115 -49 85.4927) (125 -49 85.4927) (125 -54 85.4927)"
+			vertices_plus
+			{
+				"v" "115 -49 85.4927"
+				"v" "125 -49 85.4927"
+				"v" "125 -54 85.4927"
+				"v" "115 -54 85.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 -1 0 44] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "17"
+			"plane" "(115 -54 65.4927) (125 -54 65.4927) (125 -49 65.4927)"
+			vertices_plus
+			{
+				"v" "115 -54 65.4927"
+				"v" "125 -54 65.4927"
+				"v" "125 -49 65.4927"
+				"v" "115 -49 65.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 -1 0 44] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "16"
+			"plane" "(115 -49 85.4927) (115 -54 85.4927) (115 -54 65.4927)"
+			vertices_plus
+			{
+				"v" "115 -49 85.4927"
+				"v" "115 -54 85.4927"
+				"v" "115 -54 65.4927"
+				"v" "115 -49 65.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 -44] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(125 -49 65.4927) (125 -54 65.4927) (125 -54 85.4927)"
+			vertices_plus
+			{
+				"v" "125 -49 65.4927"
+				"v" "125 -54 65.4927"
+				"v" "125 -54 85.4927"
+				"v" "125 -49 85.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 -44] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(125 -49 85.4927) (115 -49 85.4927) (115 -49 65.4927)"
+			vertices_plus
+			{
+				"v" "125 -49 85.4927"
+				"v" "115 -49 85.4927"
+				"v" "115 -49 65.4927"
+				"v" "125 -49 65.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(125 -54 65.4927) (115 -54 65.4927) (115 -54 85.4927)"
+			vertices_plus
+			{
+				"v" "125 -54 65.4927"
+				"v" "115 -54 65.4927"
+				"v" "115 -54 85.4927"
+				"v" "125 -54 85.4927"
+			}
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 48] 0.25"
+			"vaxis" "[0 0 -1 -6.02917] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "231"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow01.spr"
+	"parentname" "razortrain"
+	"renderamt" "255"
+	"rendercolor" "40 255 225"
+	"rendermode" "9"
+	"scale" "0.25"
+	"spawnflags" "0"
+	"targetname" "rt_cabglow"
+	"origin" "129.38 -46.868 129.872"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "235"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "plats/elevator_start1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "razortrain_snd_relays"
+	"origin" "167 40 33.4927"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 0]"
+	}
+}
+entity
+{
+	"id" "238"
+	"classname" "prop_dynamic"
+	"angles" "52 0 0"
+	"BreakOnPlayerKick" "0"
+	"DisableBoneFollowers" "0"
+	"disableflashlight" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"DisplacementImpossible" "0"
+	"EFlags" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HoldAnimation" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/models/props/razortraincontrols_reverser.mdl"
+	"modelscale" "1.0"
+	"parentname" "razortrain"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "razortrain_reverser"
+	"updatechildren" "0"
+	"viewhideflags" "0"
+	"origin" "120.94 -53.0081 75.3827"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
