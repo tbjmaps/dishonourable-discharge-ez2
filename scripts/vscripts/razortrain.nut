@@ -65,7 +65,7 @@ function razortrainStart() {
 		DoEntFire("razortrain_spr_status", "Color", "255 0 0", 0, null, null)
 		DoEntFire("razortrain_spr_status", "SetRenderFX", "11", 0, null, null)
 		
-		DoEntFire("razortrain_spr_status", "Color", "0 255 255", 2, null, null)
+		DoEntFire("razortrain_spr_status", "Color", "255 255 0", 2, null, null)
 		DoEntFire("razortrain_spr_status", "SetRenderFX", "10", 2, null, null)
 		
 	} else {
@@ -160,6 +160,7 @@ function OnPostSpawn() {
 
 function razortrainTurnOnTrackPower() {
 	trackPowerOn <- true;
+	DoEntFire("razortrain_spr_status", "Color", "0 255 255", 2, null, null)
 	printl("track power on");
 }
 
