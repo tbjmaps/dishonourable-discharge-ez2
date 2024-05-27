@@ -77,9 +77,7 @@ function razortrainStart() {
 		DoEntFire("razortrain_controls", "Skin", "0", 1.5, null, null)
 		DoEntFire("razortrain_snd_relays", "PlaySound", "", 2.0, null, null)
 		DoEntFire("rt_prop", "Skin", "0", 2.0, null, null)	
-		
-		DoEntFire("rt_light", "LightOn", "0", 2.0, null, null)
-		DoEntFire("rt_pt", "TurnOn", "0", 2.0, null, null)
+	
 		
 		trainStarted = true; // now started
 		
@@ -161,12 +159,27 @@ function OnPostSpawn() {
 function razortrainTurnOnTrackPower() {
 	trackPowerOn <- true;
 	DoEntFire("razortrain_spr_status", "Color", "0 255 255", 2, null, null)
+	
+		DoEntFire("rt_light", "LightOn", "0", 2.0, null, null)
+		DoEntFire("rt_pt", "TurnOn", "0", 2.0, null, null)
+	
 	printl("track power on");
+}
+
+function razortrainTurnOffTrackPower() {
+	trackPowerOn <- false;
+	DoEntFire("razortrain_spr_status", "Color", "255 255 0", 2, null, null)
+	
+		DoEntFire("rt_light", "LightOff", "0", 2.0, null, null)
+		DoEntFire("rt_pt", "TurnOff", "0", 2.0, null, null)
+	
+	printl("track power off");
 }
 
 
 self.ConnectOutput("OnUser1", "razortrainTurnOnTrackPower")
 self.ConnectOutput("OnUser2", "razortrainThrottle")
 self.ConnectOutput("OnUser3", "razortrainReverser")
+self.ConnectOutput("OnUser4", "razortrainTurnOffTrackPower")
 
 
