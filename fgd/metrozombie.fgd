@@ -1,16 +1,3 @@
-//=============================================================================
-//
-// Purpose: Half-Life 2 mod game definition file (.fgd) 
-//			Defines new entities for the metrozombie.
-//
-//=============================================================================
-
-//-------------------------------------------------------------------------
-//
-// NPCs
-//
-//-------------------------------------------------------------------------
-
 @NPCClass base(BaseZombie) studio("models/zombie/zombiecop.mdl") = npc_metrozombie : "Metrozombie"
 [
 	NumGrenades(choices) : "Number of Grenades" : "1" : "The number of grenades this zombine can pull out." =
