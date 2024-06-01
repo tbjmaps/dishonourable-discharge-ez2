@@ -35,31 +35,13 @@
 		//
 		SearchPaths
 		{
-			// First, mount all user customizations.  This will search for VPKs and subfolders
-			// and mount them in alphabetical order.  The easiest way to distribute a mod is to
-			// pack up the custom content into a VPK.  To "install" a mod, just drop it in this
-			// folder.
-			//
-			// Note that this folder is scanned only when the game is booted.
-			game+mod+addon			|gameinfo_path|custom/*
-			game+mod+addon			entropyzero2/custom/*
-			game+mod+addon			ep2/custom/*
-			game+mod+addon			episodic/custom/*
-			game+mod+addon			hl2/custom/*
-
-			// Now search loose files.  We'll set the directory containing the gameinfo.txt file
-			// as the first "mod" search path (after any user customizations).  This is also the one
-			// that's used when writing to the "mod" path.
+			// Dishonourable Discharge
 			game+mod+mod_write+default_write_path		|gameinfo_path|.
 			gamebin				|gameinfo_path|bin
-			game+mod			|gameinfo_path|ez2/*
 			
-			// Where the game's binaries are
+			// Ez2
 			gamebin				entropyzero2/bin
 			game+mod			entropyzero2/ez2/ez2.vpk
-
-			//mount Workshop stuff			
-			game+mod+addon			"|gameinfo_path|../../workshop/content/1583720/*"
 			
 			// Get our shared Mapbase files.
 			// They should be right next to this mod.
