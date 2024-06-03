@@ -9877,3 +9877,129 @@ Level flags = 0
 Total triangle count: 23534
 Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.bsp
 11 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\materials
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Patching WVT material: maps/facility04/nature/blendpavedirt01_nodetail_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (1)
+Find Visible Detail Sides...
+Merged 1018 detail faces...done (1)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (1)
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (1510852 bytes)
+Placing static props...
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 5952 texinfos to 5115
+Reduced 50 texdatas to 43 (1244 bytes to 993)
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.bsp
+3 seconds elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.bsp
+reading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.prt
+ 329 portalclusters
+ 714 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 4258 visible clusters (7.38%)
+Total clusters visible: 57659
+Average clusters visible: 175
+Building PAS...
+Average clusters audible: 298
+visdatasize:28167  compressed from 31584
+writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.bsp
+10041 faces
+16 degenerate faces
+199409 square feet [28714964.00 square inches]
+1 Displacements
+348 Square Feet [50182.32 Square Inches]
+10025 patches before subdivision
+65151 patches after subdivision
+23 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 11432444, max 1107
+transfer lists:  87.2 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(22855, 6016, 2246)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(3682, 779, 270)
+Build Patch/Sample Hash Table(s).....Done<0.0120 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes               5385/8192        64620/98304    (65.7%) 
+brushsides           50855/65536      406840/524288   (77.6%) 
+planes               17540/65536      350800/1310720  (26.8%) 
+vertexes             14619/65536      175428/786432   (22.3%) 
+nodes                  835/65536       26720/2097152  ( 1.3%) 
+texinfos              5115/12288      368280/884736   (41.6%) 
+texdata                 43/2048         1376/65536    ( 2.1%) 
+dispinfos                1/0             176/0        ( 0.0%) 
+disp_verts              81/0            1620/0        ( 0.0%) 
+disp_tris              128/0             256/0        ( 0.0%) 
+disp_lmsamples        1024/0            1024/0        ( 0.0%) 
+faces                10041/65536      562296/3670016  (15.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             8483/65536      475048/3670016  (12.9%) 
+leaves                 844/65536       27008/2097152  ( 1.3%) 
+leaffaces            11507/65536       23014/131072   (17.6%) 
+leafbrushes           6979/65536       13958/131072   (10.6%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges            75953/512000     303812/2048000  (14.8%) 
+edges                47089/256000     188356/1024000  (18.4%) 
+LDR worldlights         22/65536        1936/5767168  ( 0.0%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips            609/32768        6090/327680   ( 1.9%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices         13536/65536       27072/131072   (20.7%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/8192            0/2883584  ( 0.0%) 
+LDR lightdata         [variable]     4396540/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]       28167/16777216 ( 0.2%) 
+entdata               [variable]      106949/393216   (27.2%) 
+LDR ambient table      844/65536        3376/262144   ( 1.3%) 
+HDR ambient table      844/65536        3376/262144   ( 1.3%) 
+LDR leaf ambient      1723/65536       48244/1835008  ( 2.6%) 
+HDR leaf ambient       844/65536       23632/1835008  ( 1.3%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/31612    ( 0.0%) 
+pakfile               [variable]        1333/0        ( 0.0%) 
+physics               [variable]     1510852/4194304  (36.0%) 
+physics terrain       [variable]         531/1048576  ( 0.1%) 
+
+Level flags = 0
+
+Total triangle count: 23534
+Writing d:\steam\steamapps\sourcemods\entropyzero2-addonworkspace\mapsrc\facility04.bsp
+11 seconds elapsed
