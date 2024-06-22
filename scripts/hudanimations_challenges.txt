@@ -1,0 +1,150 @@
+// sample animation script
+//
+//
+// commands:
+//	Animate <panel name> <variable> <target value> <interpolator> <start time> <duration>
+//		variables:
+//			FgColor
+//			BgColor
+//			Position
+//			Size
+//			Blur		(hud panels only)
+//			TextColor	(hud panels only)
+//			Ammo2Color	(hud panels only)
+//			Alpha		(hud weapon selection only)
+//			SelectionAlpha  (hud weapon selection only)
+//			TextScan	(hud weapon selection only)
+//
+//		interpolator:
+//			Linear
+//			Accel - starts moving slow, ends fast
+//			Deaccel - starts moving fast, ends slow
+//
+//	RunEvent <event name> <start time>
+//		starts another even running at the specified time
+//
+//	StopEvent <event name> <start time>
+//		stops another event that is current running at the specified time
+//
+//	StopAnimation <panel name> <variable> <start time>
+//		stops all animations refering to the specified variable in the specified panel
+//
+//	StopPanelAnimations <panel name> <start time>
+//		stops all active animations operating on the specified panel
+//
+//
+// Useful game console commands:
+//	cl_Animationinfo <hudelement name> or <panelname> 
+//		displays all the animatable variables for the hud element
+//
+
+
+event BonusProgressSpoil
+{
+	StopEvent	BonusProgressFlash  0.0
+	StopEvent	BonusProgressFlashRed  0.0
+	
+	Animate HudBonusProgress	FgColor		"BrightFg"	Linear	0.0		0.25
+	
+	Animate HudBonusProgress		Blur		"5"			Linear	0.0		0.1
+	Animate HudBonusProgress		Blur		"0"			Deaccel	0.1		3.0
+}
+
+event BonusProgressFlash
+{
+	//StopEvent	BonusProgressSpoil  0.0
+
+	Animate	HudBonusProgress	BgColor	"BgColor"	Linear	0.0	0.0
+	
+	Animate	HudBonusProgress	TextColor "FgColor" Linear 0.0 0.04
+	Animate	HudBonusProgress	FgColor   "FgColor" Linear 0.0 0.03
+	
+	Animate	HudBonusProgress		Blur		"3"			Linear	0.0		0.1
+	Animate	HudBonusProgress		Blur		"0"			Deaccel	0.1		2.0
+}
+
+event BonusProgressFlashRed
+{
+	Animate HudBonusProgress	FgColor		"BrightFg"	Linear	0.0		0.25
+	Animate HudBonusProgress	FgColor		"FgColor"		Linear	0.3		0.75
+	
+	Animate HudBonusProgress		Blur		"3"			Linear	0.0		0.1
+	Animate HudBonusProgress		Blur		"0"			Deaccel	0.1		2.0
+}
+
+event BonusProgressFlashNewGoal
+{
+	//StopEvent	BonusProgressSpoil  0.0
+
+	Animate	HudBonusProgress	BgColor	"BgColor"	Linear	0.0	0.0
+	
+	Animate	HudBonusProgress	TextColor "FgColor" Linear 0.0 0.04
+	Animate	HudBonusProgress	FgColor   "FgColor" Linear 0.0 0.03
+	
+	Animate	HudBonusProgress		Blur		"5"			Linear	0.0		0.1
+	Animate	HudBonusProgress		Blur		"0"			Deaccel	0.1		2.0
+}
+
+event BonusProgressNewGoalBronze
+{
+	StopEvent	BonusProgressNewGoalSilver  0.0
+	StopEvent	BonusProgressNewGoalGold  0.0
+	
+	Animate HudBonusProgress	Ammo2Color		"FgColor"		Linear	0.0		0.1
+	
+	Animate HudBonusProgress	Ammo2Color		"BronzeColor"	Linear	0.2		1.0
+	Animate HudBonusProgress	Ammo2Color		"FgColor"		Linear	1.0		1.8
+	Animate HudBonusProgress	Ammo2Color		"BronzeColor"	Linear	1.8		2.6
+	
+	//Animate HudBonusProgress	Ammo2Color		"BronzeColor"	Deaccel	0.2		0.75
+}
+
+event BonusProgressNewGoalSilver
+{
+	StopEvent	BonusProgressNewGoalBronze  0.0
+	StopEvent	BonusProgressNewGoalGold  0.0
+	
+	Animate HudBonusProgress	Ammo2Color		"FgColor"		Linear	0.0		0.1
+	
+	Animate HudBonusProgress	Ammo2Color		"SilverColor"	Linear	0.2		1.0
+	Animate HudBonusProgress	Ammo2Color		"FgColor"		Linear	1.0		1.8
+	Animate HudBonusProgress	Ammo2Color		"SilverColor"	Linear	1.8		2.6
+	
+	//Animate HudBonusProgress	Ammo2Color		"SilverColor"	Deaccel	0.2		0.75
+}
+
+event BonusProgressNewGoalGold
+{
+	StopEvent	BonusProgressNewGoalBronze  0.0
+	StopEvent	BonusProgressNewGoalSilver  0.0
+	
+	Animate HudBonusProgress	Ammo2Color		"FgColor"		Linear	0.0		0.1
+	
+	Animate HudBonusProgress	Ammo2Color		"GoldColor"		Linear	0.2		1.0
+	Animate HudBonusProgress	Ammo2Color		"FgColor"		Linear	1.0		1.8
+	Animate HudBonusProgress	Ammo2Color		"GoldColor"		Linear	1.8		2.6
+	
+	//Animate HudBonusProgress	Ammo2Color		"GoldColor"		Deaccel	0.2		0.75
+}
+
+//--------------------------------------------------------------------------------------
+
+event BonusProgressExpandToNormal
+{
+	StopPanelAnimations HudBonusProgress 0.0
+	
+	Animate HudBonusProgress	Position	"16 380"	Deaccel	0.0		0.5	[!$DECK]
+	Animate HudBonusProgress	Size		"115 36"	Deaccel	0.0		0.5	[!$DECK]
+	Animate HudBonusProgress	Position	"16 378"	Deaccel	0.0		0.5	[$DECK]
+	Animate HudBonusProgress	Size		"133 44"	Deaccel	0.0		0.5	[$DECK]
+}
+
+event BonusProgressExpandToMassChallenge
+{
+	StopPanelAnimations HudBonusProgress 0.0
+	
+	Animate HudBonusProgress	Position	"16 380"	Deaccel	0.0		0.5	[!$DECK]
+	Animate HudBonusProgress	Size		"160 36"	Deaccel	0.0		0.5	[!$DECK]
+	Animate HudBonusProgress	Position	"16 378"	Deaccel	0.0		0.5	[$DECK]
+	Animate HudBonusProgress	Size		"178 44"	Deaccel	0.0		0.5	[$DECK]
+}
