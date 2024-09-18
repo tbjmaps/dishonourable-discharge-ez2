@@ -1,0 +1,170 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8864"
+	"mapversion" "1443"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "98845"
+	"mapversion" "1443"
+	"classname" "worldspawn"
+	"chaptertitlenomessage" "1"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+	"vscriptlanguage_client" "-2"
+}
+entity
+{
+	"id" "98846"
+	"classname" "npc_combine_s"
+	"additionalequipment" "weapon_smg1"
+	"angles" "0 240 0"
+	"BaseSpeedModifier" "1.0"
+	"CanOrderSurrender" "2"
+	"CanPlayerGive" "2"
+	"damagefilter" "df_none"
+	"DisablePlayerUse" "0"
+	"DontPickupWeapons" "1"
+	"DontUseSpeechSemaphore" "0"
+	"FriendlyFireOverride" "2"
+	"model" "models/police.mdl"
+	"NumGrenades" "5"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"ResponseContext" "classname:mutecop"
+	"SetAlternateCapable" "0"
+	"SetDynamicInteractions" "2"
+	"SetProficiencyOverride" "-1"
+	"skin" "1"
+	"spawnflags" "1573380"
+	"squadname" "player_squad"
+	"tacticalvariant" "0"
+	"targetname" "cop_raidcop1"
+	"UnderthrowGrenades" "0"
+	"usemarch" "0"
+	"waitingtorappel" "No"
+	"origin" "-600 248 712"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -5268]"
+	}
+}
+entity
+{
+	"id" "98848"
+	"classname" "npc_combine_s"
+	"additionalequipment" "weapon_pistol"
+	"angles" "0 270 0"
+	"BaseSpeedModifier" "1.0"
+	"CanOrderSurrender" "2"
+	"CanPlayerGive" "2"
+	"damagefilter" "df_none"
+	"DisablePlayerUse" "0"
+	"DontPickupWeapons" "1"
+	"DontUseSpeechSemaphore" "0"
+	"FriendlyFireOverride" "2"
+	"model" "models/police.mdl"
+	"NumGrenades" "5"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"ResponseContext" "classname:mutecop"
+	"SetAlternateCapable" "0"
+	"SetDynamicInteractions" "2"
+	"SetProficiencyOverride" "-1"
+	"skin" "1"
+	"spawnflags" "1573380"
+	"squadname" "player_squad"
+	"tacticalvariant" "0"
+	"targetname" "cop_raidcop2"
+	"UnderthrowGrenades" "0"
+	"usemarch" "0"
+	"waitingtorappel" "No"
+	"origin" "-654 260 712"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 -5268]"
+	}
+}
+entity
+{
+	"id" "98850"
+	"classname" "filter_damage_type"
+	"damagetype" "67108864"
+	"filtertype" "1"
+	"Negated" "Allow entities that match criteria"
+	"targetname" "df_none"
+	"origin" "-592 272 768"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 12500]"
+	}
+}
+entity
+{
+	"id" "98852"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "template_newgamesquad"
+	"Template01" "cop_raidcop1"
+	"Template02" "cop_raidcop2"
+	"origin" "-592 272 752"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 2500]"
+	}
+}
+entity
+{
+	"id" "98854"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "template_newgamesquad,ForceSpawn,,0,-1"
+		"OnMapSpawn" "cop_raidcop*,EnableAlwaysTransition,,0.1,-1"
+	}
+	"origin" "-592 272 736"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 3000]"
+	}
+}
+entity
+{
+	"id" "98856"
+	"classname" "ai_goal_follow"
+	"actor" "cop_raidcop*"
+	"goal" "!player"
+	"MaximumState" "3"
+	"StartActive" "1"
+	"origin" "-592 272 720"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -10268]"
+	}
+}
