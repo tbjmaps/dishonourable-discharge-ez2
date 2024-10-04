@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8868"
-	"mapversion" "799"
+	"mapversion" "800"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -119,7 +119,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "799"
+	"mapversion" "800"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -24512,6 +24512,7 @@ entity
 		"OnBreak" "pd_fence_kill,Kill,,0,-1"
 		"OnBreak" "pp_aftermath_doorpush,EnableMotion,,0,-1"
 		"OnBreak" "explode_aftermath_doorpush,Explode,,0.01,-1"
+		"OnBreak" "pp_aftermath_sign,EnableMotion,,0,-1"
 	}
 	solid
 	{
@@ -40419,6 +40420,7 @@ entity
 	"rendermode" "0"
 	"spawnflags" "11042816"
 	"spawnobject" "0"
+	"targetname" "pp_aftermath_sign"
 	"viewhideflags" "0"
 	solid
 	{
@@ -43311,7 +43313,7 @@ entity
 	"rendercolor" "255 255 255"
 	"shadowcastdist" "0"
 	"skin" "0"
-	"spawnflags" "264"
+	"spawnflags" "1800"
 	"targetname" "pp_aftermath_doorpush"
 	"origin" "-96 560 64"
 	editor
