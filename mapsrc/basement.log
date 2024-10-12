@@ -34521,3 +34521,145 @@ Level flags = 0
 Total triangle count: 2855
 Writing d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.bsp
 2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\dishonourabledischarge\materials
+Loading d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...10**** leaked ****
+Entity prop_static (449.52 892.93 127.74) leaked!
+--- MAP LEAKED ---
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.bsp
+reading d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.prt
+LoadPortals: couldn't read d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.prt
+
+
+
+materialPath: D:\steam\steamapps\sourcemods\dishonourabledischarge\materials
+Loading d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 192 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (105431 bytes)
+Placing static props...
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 373 texinfos to 205
+Reduced 41 texdatas to 37 (964 bytes to 825)
+Writing d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.bsp
+2 seconds elapsed
+
+
+
+12 threads
+reading d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.bsp
+reading d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.prt
+  78 portalclusters
+ 156 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 129 visible clusters (4.65%)
+Total clusters visible: 2777
+Average clusters visible: 35
+Building PAS...
+Average clusters audible: 69
+visdatasize:2155  compressed from 2496
+writing d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[48 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.bsp
+Error! Unable to load file "models/props/de_dust/hr_dust/dust_garbage_container/dust_trash_bag.dx80.vtx"
+888 faces
+23529 square feet [3388184.50 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+888 patches before subdivision
+4630 patches after subdivision
+19 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 372915, max 329
+transfer lists:   2.8 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(9613, 10207, 8714)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(2671, 2912, 2321)
+Build Patch/Sample Hash Table(s).....Done<0.0005 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  12/1024          576/49152    ( 1.2%) 
+brushes                295/8192         3540/98304    ( 3.6%) 
+brushsides            1979/65536       15832/524288   ( 3.0%) 
+planes                1080/65536       21600/1310720  ( 1.6%) 
+vertexes              1508/65536       18096/786432   ( 2.3%) 
+nodes                  484/65536       15488/2097152  ( 0.7%) 
+texinfos               205/12288       14760/884736   ( 1.7%) 
+texdata                 37/2048         1184/65536    ( 1.8%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  888/65536       49728/3670016  ( 1.4%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              685/65536       38360/3670016  ( 1.0%) 
+leaves                 497/65536       15904/2097152  ( 0.8%) 
+leaffaces              927/65536        1854/131072   ( 1.4%) 
+leafbrushes            496/65536         992/131072   ( 0.8%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges             6993/512000      27972/2048000  ( 1.4%) 
+edges                 4482/256000      17928/1024000  ( 1.8%) 
+LDR worldlights         19/65536        1672/5767168  ( 0.0%) 
+HDR worldlights          0/65536           0/5767168  ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips             65/32768         650/327680   ( 0.2%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          1668/65536        3336/131072   ( 2.5%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 7/8192         2464/2883584  ( 0.1%) 
+LDR lightdata         [variable]      163008/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        2155/16777216 ( 0.0%) 
+entdata               [variable]       51915/393216   (13.2%) 
+LDR ambient table      497/65536        1988/262144   ( 0.8%) 
+HDR ambient table      497/65536        1988/262144   ( 0.8%) 
+LDR leaf ambient       909/65536       25452/1835008  ( 1.4%) 
+HDR leaf ambient       497/65536       13916/1835008  ( 0.8%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/6474     ( 0.0%) 
+pakfile               [variable]         652/0        ( 0.0%) 
+physics               [variable]      105431/4194304  ( 2.5%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 2480
+Writing d:\steam\steamapps\sourcemods\dishonourabledischarge\mapsrc\basement.bsp
+2 seconds elapsed
